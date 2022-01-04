@@ -1,7 +1,6 @@
-ECHO 'Uploading'
+@ECHO  OFF
 e:
-cd %1
-git pull --rebase
+CD %1
+git add -A
 git commit -m "Website updates."
 git push origin main
-ECHO 'Uplaoded'
