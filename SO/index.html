@@ -360,23 +360,29 @@
                                                     <td class="col-4 small pb-0" colspan="3">Log</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a>DO-1234567890</a></td>
-                                                    <td class="text-end">26 Februari 2021</td>
+                                                    <td><a>DO-1234567890<br><small class="text-muted">26 Februari 2021</small><br></a></td>
+                                                    <td class="text-end"></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-end pt-1 pb-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a>DO-1234567891</a></td>
-                                                    <td class="text-end">27 Februari 2021</td>
+                                                    <td class="pb-0"><a>DO-1234567890<br></a></td>
+                                                    <td class="text-end pb-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-danger small">Dibatalkan</td>
-                                                    <td class="text-end small">27 Februari 2021</td>
+                                                    <td class="text-end py-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a>DO-1234567892</a></td>
-                                                    <td class="text-end">28 Februari 2021</td>
+                                                    <td class="pt-0 small text-muted">26 Februari 2021</td>
+                                                    <td class="text-end pt-0 small text-danger">Dibatalkan</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-end pt-1 pb-0"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a>DO-1234567891<br><small class="text-muted">26 Februari 2021</small><br></a></td>
+                                                    <td class="text-end"></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -492,6 +498,78 @@
                 </div>
                 <div class="modal-body"><img class="img-fluid" src="../assets/img/644ba460-45c0-48d3-9153-a4435f5b0226.jpg"></div>
                 <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-2">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Status SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="small text-success mb-1">Diterbitkan</p>
+                                <p class="small">Dokumen SO sudah di-input kedalam sistem dan dalam keadaan aktif(tidak di void)</p>
+                                <p class="small text-danger mb-1">Dibatalkan</p>
+                                <p class="small">Dokumen SO sudah diterbitkan dan telah dibatalkan.</p>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalDetail">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Detail Penerimaan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Start: detail-table2 -->
+                    <div class="table-responsive table general-table table-sm mb-0">
+                        <table class="table mt-3">
+                            <thead>
+                                <tr></tr>
+                            </thead>
+                            <tbody class="no-border">
+                                <tr class="sub-header">
+                                    <td class="col-3">Kode</td>
+                                    <td class="col-3">Nama</td>
+                                    <td class="text-center col-3">Qty</td>
+                                    <td class="text-center col-1">Diterima</td>
+                                    <td class="text-center col-1">Kekurangan</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">IT-1</td>
+                                    <td class="col-3">ITEM 1</td>
+                                    <td class="text-center col-3">2</td>
+                                    <td class="text-center col-1">1</td>
+                                    <td class="text-center col-1 text-danger">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">IT-2</td>
+                                    <td class="col-3">ITEM 2</td>
+                                    <td class="text-center col-3">1</td>
+                                    <td class="text-center col-1">0</td>
+                                    <td class="text-center col-1 text-danger">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">IT-3</td>
+                                    <td class="col-3">ITEM 3</td>
+                                    <td class="text-center col-3">1</td>
+                                    <td class="text-center col-1">1</td>
+                                    <td class="text-center col-1">0</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Total</td>
+                                    <td class="text-center col-3">4</td>
+                                    <td class="text-center col-1">2</td>
+                                    <td class="text-center col-1 text-danger">2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- End: detail-table2 -->
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-4">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
