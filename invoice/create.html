@@ -68,7 +68,7 @@
                     </div><!-- Start: group title -->
                     <div id="menu-catalogue" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Invoice</p>
+                            <p class="mb-0 description">Invoice Supplier</p>
                         </div>
                     </div><!-- End: group title -->
                     <!-- Start: link-clickable -->
@@ -92,7 +92,7 @@
                     <!-- Start: group title -->
                     <div id="menu-transaction-3" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Pembayaran</p>
+                            <p class="mb-0 description">Pembayaran Pembelian</p>
                         </div>
                     </div><!-- End: group title -->
                     <!-- Start: link-clickable -->
@@ -107,16 +107,24 @@
                             <p class="mb-0 minititle">Bayar Invoice<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div><!-- End: link-clickable -->
-                    <!-- Start: link-clickable -->
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/createEtc.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Bayar Lain Lain<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div><!-- End: link-clickable -->
                     <!-- Start: group title -->
                     <div id="menu-transaction-2" class="row mx-0">
-                        <div class="col-12 pt-2 pb-1"></div>
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Faktur Pajak Pembelian</p>
+                        </div>
                     </div><!-- End: group title -->
+                    <!-- Start: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/faktur/index.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Lihat Faktur Pajak<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div><!-- End: link-clickable -->
+                    <!-- Start: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/faktur/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Lampirkan Faktur Pajak<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div><!-- End: link-clickable -->
                 </div>
             </div>
             <div class="body-center-content">
@@ -126,10 +134,10 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Input Invoice</p>
+                                        <p class="mb-0 title">Input Invoice Supplier</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Invoice</a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">input Invoice&nbsp;</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Invoice Supplier</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Input Invoice&nbsp;</a></li>
                                         </ol>
                                     </div>
                                 </div>
@@ -294,8 +302,7 @@
                                         <div class="row mx-0 bg-white py-3">
                                             <div class="col-12 px-2">
                                                 <div class="row mb-2">
-                                                    <div class="col-12"><label class="form-label text-muted">No. Faktur Pajak (opsional)</label><input type="text" class="form-control form-control-sm" placeholder="No. Faktur"></div>
-                                                    <div class="col-12 mt-3"><label class="form-label text-muted">Unggah Dokumen Invoice &amp; Faktur Pajak (opsional)</label>
+                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen Invoice &amp; Faktur Pajak (opsional)</label>
                                                         <div class="border p-4 clickable">
                                                             <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
                                                         </div>
@@ -330,8 +337,8 @@
                             </thead>
                             <tbody class="no-border">
                                 <tr class="sub-header no-border">
-                                    <td class="col-3">Nomor&nbsp;</td>
-                                    <td class="col-3">Tanggal Invoice</td>
+                                    <td class="col-3">Nomor SO</td>
+                                    <td class="col-3">Tanggal SO</td>
                                     <td class="col-3">Supplier</td>
                                 </tr>
                                 <tr class="clickable" onclick="openModal(&#39;modalItemNew&#39;)">

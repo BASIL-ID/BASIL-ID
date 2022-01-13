@@ -68,7 +68,7 @@
                     </div><!-- Start: group title -->
                     <div id="menu-catalogue" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Invoice</p>
+                            <p class="mb-0 description">Invoice Supplier</p>
                         </div>
                     </div><!-- End: group title -->
                     <!-- Start: link-clickable -->
@@ -92,7 +92,7 @@
                     <!-- Start: group title -->
                     <div id="menu-transaction-3" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Pembayaran</p>
+                            <p class="mb-0 description">Pembayaran Pembelian</p>
                         </div>
                     </div><!-- End: group title -->
                     <!-- Start: link-clickable -->
@@ -107,16 +107,24 @@
                             <p class="mb-0 minititle">Bayar Invoice<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div><!-- End: link-clickable -->
-                    <!-- Start: link-clickable -->
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/createEtc.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Bayar Lain Lain<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div><!-- End: link-clickable -->
                     <!-- Start: group title -->
                     <div id="menu-transaction-2" class="row mx-0">
-                        <div class="col-12 pt-2 pb-1"></div>
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Faktur Pajak Pembelian</p>
+                        </div>
                     </div><!-- End: group title -->
+                    <!-- Start: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/index.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Lihat Faktur Pajak<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div><!-- End: link-clickable -->
+                    <!-- Start: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input Faktur Pajak<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div><!-- End: link-clickable -->
                 </div>
             </div>
             <div class="body-center-content py-2">
@@ -170,11 +178,7 @@
                                                     <td class="col-8">DO-1234567890</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>No. Faktur Pajak</td>
-                                                    <td>TAX-12312376</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Batas Akhir Bayar</td>
+                                                    <td>Tanggal Jatuh Tempo</td>
                                                     <td>2 Februari 2021</td>
                                                 </tr>
                                                 <tr>
@@ -304,6 +308,31 @@
                                         <table class="table table stripe table-sm mb-0 mt-3">
                                             <thead>
                                                 <tr>
+                                                    <th>Faktur Pajak</th>
+                                                    <th class="text-end"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td>No</td>
+                                                    <td class="text-end">FP-123213124</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tanggal&nbsp; Faktur</td>
+                                                    <td class="text-end">26 Januari 2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-muted">Tanggal&nbsp; Dilampirkan</td>
+                                                    <td class="text-end text-muted">26 Januari 2021<br></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- End: detail-table -->
+                                    <!-- Start: detail-table -->
+                                    <div class="table-responsive">
+                                        <table class="table table stripe table-sm mb-0 mt-3">
+                                            <thead>
+                                                <tr>
                                                     <th colspan="2">Invoice</th>
                                                     <th class="text-end"><a class="small" href="#" onclick="openModal(&#39;modalStatusDo&#39;)">Info</a></th>
                                                 </tr>
@@ -311,7 +340,7 @@
                                             <tbody class="no-border">
                                                 <tr></tr>
                                                 <tr>
-                                                    <td class="col-4 small pb-0" colspan="3">Status</td>
+                                                    <td class="col-4 small pb-2" colspan="3">Status</td>
                                                 </tr>
                                                 <tr class="status-flow">
                                                     <td class="text-center col-4 small pb-0 first"><img src="../assets/img/invoice.png" width="22"></td>
@@ -343,7 +372,7 @@
                                             <tbody class="no-border">
                                                 <tr></tr>
                                                 <tr>
-                                                    <td class="col-4 small pb-0" colspan="3">Log</td>
+                                                    <td class="col-4 small pb-0" colspan="3">Log Pembayaran</td>
                                                 </tr>
                                                 <tr></tr>
                                                 <tr></tr>
@@ -356,7 +385,7 @@
                                     </div><!-- End: detail-table -->
                                     <!-- Start: detail-table -->
                                     <div class="table-responsive">
-                                        <table class="table table stripe table-sm mb-0 mt-3">
+                                        <table class="table table stripe table-sm mb-0 mt-2">
                                             <tbody class="no-border">
                                                 <tr></tr>
                                                 <tr></tr>

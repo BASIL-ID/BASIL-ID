@@ -68,7 +68,7 @@
                     </div><!-- Start: group title -->
                     <div id="menu-catalogue" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Invoice</p>
+                            <p class="mb-0 description">Invoice Supplier</p>
                         </div>
                     </div><!-- End: group title -->
                     <!-- Start: link-clickable -->
@@ -92,7 +92,7 @@
                     <!-- Start: group title -->
                     <div id="menu-transaction-3" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Pembayaran</p>
+                            <p class="mb-0 description">Pembayaran Pembelian</p>
                         </div>
                     </div><!-- End: group title -->
                     <!-- Start: link-clickable -->
@@ -107,16 +107,24 @@
                             <p class="mb-0 minititle">Bayar Invoice<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div><!-- End: link-clickable -->
-                    <!-- Start: link-clickable -->
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/createEtc.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Bayar Lain Lain<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div><!-- End: link-clickable -->
                     <!-- Start: group title -->
                     <div id="menu-transaction-2" class="row mx-0">
-                        <div class="col-12 pt-2 pb-1"></div>
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Faktur Pajak Pembelian</p>
+                        </div>
                     </div><!-- End: group title -->
+                    <!-- Start: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/index.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Lihat Faktur Pajak<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div><!-- End: link-clickable -->
+                    <!-- Start: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input Faktur Pajak<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div><!-- End: link-clickable -->
                 </div>
             </div>
             <div class="body-center-content">
@@ -133,61 +141,90 @@
                                         </ol>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Informasi Pembayaran</strong></label></div>
+                                <div class="row mb-3">
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Daftar Invoice</strong></label></div>
+                                    <div class="row">
+                                        <div class="col-3 px-3">
+                                            <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="No Invoice"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="input-group input-group-sm w-auto ml-2 filterDisplay"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all">Ada Faktur Pajak&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;">Akan Jatuh Tempo&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
+                                        </div>
+                                        <div class="col-3 px-3 text-right pr-0">
+                                            <div class="input-group input-group-sm w-auto ml-2 filterDisplay text-right pull-right pr-0"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all">Filter&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;">Sort&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 px-3">
-                                        <div class="row mx-0 bg-white py-3">
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Oleh</label>
-                                                <p class="mb-0 subtitle small text-capitalize">Agus Tri<br></p>
-                                                <p class="mb-0 description black">08123567800</p><label class="form-label text-muted mt-3">Pada</label>
-                                                <p class="mb-0 subtitle small text-capitalize">23 Februari 2021, 12:00<br></p>
-                                                <p class="description black">Ubah (SUPERVISOR)</p>
-                                            </div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">No. Bukti Pembayaran</label><input type="text" class="form-control form-control-sm" placeholder="No. Dokumen"><label class="form-label text-muted mt-3">Tanggal Pembayaran</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"></div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Keterangan (opsional)</label><textarea class="form-control no-resize" rows="5"></textarea></div>
+                                        <div class="row mx-0 bg-white">
+                                            <!-- Start: detail-table2 -->
+                                            <div class="table-responsive table general-table table-sm mb-0">
+                                                <table class="table mt-3">
+                                                    <thead class="no-border">
+                                                        <tr class="no-border"></tr>
+                                                    </thead>
+                                                    <tbody class="no-border">
+                                                        <tr>
+                                                            <td class="text-start col-4 text-right"><img src="../assets/img/check.svg" width="13px">&nbsp; No. Invoice</td>
+                                                            <td class="text-start text-right">No. Faktur Pajak</td>
+                                                            <td class="text-end text-right">Supplier</td>
+                                                            <td class="text-end text-right">Jatuh Tempo</td>
+                                                            <td class="text-end text-right">Tagihan</td>
+                                                            <td class="text-end text-right">Terbayar</td>
+                                                            <td class="text-end text-right"></td>
+                                                        </tr>
+                                                        <tr></tr>
+                                                        <tr class="clickable">
+                                                            <td class="text-start col-2 text-right"><img src="../assets/img/check.svg" width="13px;">&nbsp; INV-12334567890</td>
+                                                            <td class="text-start text-right">FP-12334567890</td>
+                                                            <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">27 Januari 2021</td>
+                                                            <td class="text-end text-right">12.000</td>
+                                                            <td class="text-end text-right">2.000</td>
+                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                        </tr>
+                                                        <tr class="clickable">
+                                                            <td class="text-start col-2 text-right"><img src="../assets/img/check.svg" width="13px;">&nbsp; INV-12334567891</td>
+                                                            <td class="text-start text-right">_</td>
+                                                            <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">27 Januari 2021</td>
+                                                            <td class="text-end text-right">10.000</td>
+                                                            <td class="text-end text-right">0</td>
+                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                        </tr>
+                                                        <tr class="clickable">
+                                                            <td class="text-start col-2 text-right"><img src="../assets/img/checked.svg" width="13px;">&nbsp; INV-12334567892</td>
+                                                            <td class="text-start text-right">_</td>
+                                                            <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">27 Januari 2021</td>
+                                                            <td class="text-end text-right">50.000</td>
+                                                            <td class="text-end text-right">10.000</td>
+                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                        </tr>
+                                                        <tr class="clickable">
+                                                            <td class="text-start col-2 text-right"><img src="../assets/img/checked.svg" width="13px;">&nbsp; INV-12334567893</td>
+                                                            <td class="text-start text-right">FP-12334567893</td>
+                                                            <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">27 Januari 2021</td>
+                                                            <td class="text-end text-right">120.000</td>
+                                                            <td class="text-end text-right">0</td>
+                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                        </tr>
+                                                        <tr class="clickable">
+                                                            <td class="text-start col-2 text-right"><img src="../assets/img/check.svg" width="13px;">&nbsp; INV-12334567894</td>
+                                                            <td class="text-start text-right">FP-12334567894</td>
+                                                            <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">27 Januari 2021</td>
+                                                            <td class="text-end text-right">9.000</td>
+                                                            <td class="text-end text-right">0</td>
+                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div><!-- End: detail-table2 -->
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Invoice</strong></label></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="row mx-0 bg-white py-2">
-                                                    <div class="col pr-0"><input type="text" class="form-control" placeholder="No. Invoice"></div>
-                                                    <div class="col-auto">
-                                                        <p class="link-icon browse-icon" onclick="openModal(&#39;modalItem&#39;);"><img src="../assets/img/browse.svg" width="16"></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2 mx-0">
-                                    <div class="col-12 bg-white py-3">
-                                        <div class="row">
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Dokumen Invoice</label>
-                                                <p class="mb-0 subtitle small text-capitalize">INV-01235678900<br></p>
-                                                <p class="mb-0 description black">21 Februari 2021, 12:00</p><a href="#">Ubah</a>
-                                            </div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Supplier</label>
-                                                <p class="mb-0 subtitle small text-capitalize">Vernon</p>
-                                                <p class="mb-0 description black">Jl. Letjen Sutoyo 103<br></p>
-                                                <p class="mb-0 description text-muted">0812345678<br></p>
-                                            </div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Diinput</label>
-                                                <p class="mb-0 subtitle small text-capitalize">Agus tri</p>
-                                                <p class="mb-0 description black">20 Februari 2021, 11:00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2 mx-0 hide-invoice">
-                                    <div class="text-center col-12 bg-white"><a class="text-center" href="#" onclick="toggleShowComponent(&#39;.expand-invoice&#39;, &#39;.hide-invoice&#39;)">Lihat Detail Invoice</a></div>
                                 </div>
                                 <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
                                     <div class="col-12 bg-white">
@@ -277,75 +314,12 @@
                                     <div class="text-center col-12 bg-white"><a class="text-center" href="#" onclick="toggleHideComponent(&#39;.expand-invoice&#39;, &#39;.hide-invoice&#39;)">Sembunyikan Detail Invoice</a></div>
                                 </div>
                                 <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Tagihan</strong></label></div>
-                                </div>
-                                <div class="row mt-2 mx-0">
-                                    <div class="col-12 bg-white">
-                                        <!-- Start: detail-table2 -->
-                                        <div class="table-responsive table general-table table-sm mb-0">
-                                            <table class="table mt-3">
-                                                <thead class="no-border">
-                                                    <tr class="no-border"></tr>
-                                                </thead>
-                                                <tbody class="no-border">
-                                                    <tr>
-                                                        <td class="text-start col-4" colspan="2">Tagihan</td>
-                                                        <td class="text-end col-4 text-right">59.400</td>
-                                                    </tr>
-                                                    <tr></tr>
-                                                    <tr>
-                                                        <td class="text-start col-4" colspan="2">Pembayaran Tahap 1<br>
-                                                            <p class="description text-muted mb-0">Akun COA BANK - Ref#123<br>11 Februari 2021, 12:00</p>
-                                                        </td>
-                                                        <td class="text-end col-2 text-right">10.000</td>
-                                                    </tr>
-                                                    <tr class="no-bottom">
-                                                        <td class="text-start col-4" colspan="2"><strong>Tagihan Belum Dibayar</strong></td>
-                                                        <td class="text-end col-4 text-right"><strong>49.400</strong></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div><!-- End: detail-table2 -->
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Pembayaran</strong></label></div>
-                                </div>
-                                <div class="row">
                                     <div class="col-12 px-3">
-                                        <div class="row mx-0 bg-white py-3">
-                                            <div class="col-6 px-2"><select class="form-control form-control-sm" placeholder="Akun" value="null">
-                                                    <optgroup label="Akun">
-                                                        <option value="12">COA Bank</option>
-                                                        <option value="13">COA Cash</option>
-                                                    </optgroup>
-                                                </select></div>
-                                            <div class="col-6 px-2"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;"></div>
-                                            <div class="col-12 px-2 mt-3 input-group">
-                                                <div class="input-group-prepend">
-                                                    <p class="input-group-text mb-0">Pembayaran</p>
-                                                </div><input type="text" class="form-control form-control-sm" placeholder="Keterangan Pembayaran">
+                                        <div class="text-end text-right row mx-0">
+                                            <div class="col-6 bg-white pt-3">
+                                                <p class="text-start description text-muted">2 Invoice Selected</p>
                                             </div>
-                                            <div class="col-12 px-2 mt-3"><input type="text" class="form-control form-control-sm" placeholder="Referensi Pembayaran (opsional)"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Lampiran&nbsp;</strong></label></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12 px-3">
-                                        <div class="row mx-0 bg-white py-3">
-                                            <div class="col-12 px-2">
-                                                <div class="row mb-2">
-                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen Bukti Pembayaran (opsional)</label>
-                                                        <div class="border p-4 clickable">
-                                                            <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 mt-3"><label class="form-label text-muted">Tambahkan Tagging Dokumen (opsional)&nbsp;</label><input type="text" class="form-control mb-2" placeholder="Isi dengan format &quot;judul:nilai&quot;, tekan enter untuk menambahkan"><span class="link-icon small py-1 px-2 tag">Judul Tag : Nilai Tag | X</span></div>
-                                                </div>
-                                            </div>
+                                            <div class="col-6 bg-white py-2"><button class="btn btn-primary btn-sm" type="button" onclick="redirect(&#39;/createNext&#39;)">Bayar Invoice</button></div>
                                         </div>
                                     </div>
                                 </div>

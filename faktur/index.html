@@ -136,16 +136,16 @@
                                 <p class="link-icon-white py-1"><img src="../assets/img/back.png" width="16"></p>
                             </div>
                             <div class="col py-2">
-                                <p class="mb-0 title">PAO-1234567890</p>
+                                <p class="mb-0 title">FP-1234567890</p>
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Lihat Pembayaran</a></li>
-                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Pembayaran</a></li>
+                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Lihat Faktur Pajak</a></li>
+                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Faktur Pajak</a></li>
                                 </ol>
                             </div>
                             <div class="col-auto pr-0 d-flex flex-row flex-row-reverse align-items-center">
                                 <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
                                     <div class="dropdown-menu">
-                                        <h6 class="dropdown-header b-dropdown-text">Menu SO</h6><a class="dropdown-item" href="#">Muat Ulang</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalCancel&#39;)">Batalkan DO</a>
+                                        <h6 class="dropdown-header b-dropdown-text">Menu SO</h6><a class="dropdown-item" href="#">Muat Ulang</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalCancel&#39;)">Batalkan SO</a>
                                     </div>
                                 </div>
                             </div>
@@ -161,21 +161,41 @@
                                         <table class="table table stripe table-sm mb-0">
                                             <thead>
                                                 <tr>
-                                                    <th colspan="2">Informasi</th>
+                                                    <th colspan="2">Informasi Faktur Pajak</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="no-border">
                                                 <tr>
-                                                    <td class="col-4">No Pembayaran</td>
-                                                    <td class="col-8">PAO-1234567890</td>
+                                                    <td class="col-4">No. Faktur</td>
+                                                    <td class="col-8">FP-1234567890</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Tanggal Pembayaran</td>
-                                                    <td class="col-8">23 Januari 2021</td>
+                                                    <td class="col-4">Tanggal Faktur</td>
+                                                    <td class="col-8">26 Januari 2021</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- End: detail-table -->
+                                    <!-- Start: detail-table -->
+                                    <div class="table-responsive mt-3">
+                                        <table class="table table stripe table-sm mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Referensi Invoice</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td class="col-4">No. Invoice</td>
+                                                    <td class="col-8">INV-1234567890</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Oleh</td>
-                                                    <td class="col-8">Agus Tri<br>08113530030</td>
+                                                    <td class="col-4">Tanggal Invoice</td>
+                                                    <td class="col-8">26 Januari 2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-4">Tanggal Jatuh Tempo</td>
+                                                    <td class="col-8">30 Januari 2021</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -184,49 +204,83 @@
                                     <div class="table-responsive table general-table table-sm mb-0">
                                         <table class="table mt-3">
                                             <thead>
-                                                <tr>
-                                                    <th class="table-title" colspan="2">Pembayaran</th>
-                                                </tr>
+                                                <tr></tr>
                                             </thead>
                                             <tbody class="no-border">
                                                 <tr class="sub-header">
-                                                    <td class="col-6">No. Invoice</td>
-                                                    <td class="text-start col-4">No. Faktur Pajak</td>
-                                                    <td class="text-end col-4">Tagihan Invoice</td>
-                                                    <td class="text-start col-4">Keterangan Pembayaran</td>
-                                                    <td class="text-end col-4">Nominal<br>Pembayaran</td>
-                                                    <td class="text-end col-4">No. Referensi</td>
-                                                    <td class="text-end col-4">Kekurangan Pembayaran</td>
+                                                    <td class="col-2">Kode</td>
+                                                    <td class="col-3">Nama</td>
+                                                    <td class="col-1">Qty</td>
+                                                    <td class="text-end col-2 text-right">Harga/Unit<br>(excl)</td>
+                                                    <td class="text-end col-2 text-right">Diskon/Unit</td>
+                                                    <td class="text-end col-2 text-right" colspan="2">Total<br>(excl)</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-8"><a href="#">INV-1234567890</a></td>
-                                                    <td class="text-start col-4"><a href="#">FP-1234567890</a><br></td>
-                                                    <td class="text-end col-4">120.000</td>
-                                                    <td class="text-end col-4">Pembayaran Tahap 1</td>
-                                                    <td class="text-end col-4">60.000</td>
-                                                    <td class="text-end col-4">Ab-1234568</td>
-                                                    <td class="text-end col-4">60.000</td>
+                                                    <td class="col-2">IT-1</td>
+                                                    <td class="col-3">ITEM 1</td>
+                                                    <td class="col-1">2</td>
+                                                    <td class="text-end col-2 text-right">10.000</td>
+                                                    <td class="text-end col-2 text-right">0</td>
+                                                    <td class="text-end col-2 text-right" colspan="2">20.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-8"><a href="#">INV-1234567891</a></td>
-                                                    <td class="text-start col-4"><a href="#">FP-123456789</a>1<br></td>
-                                                    <td class="text-end col-4">90.000</td>
-                                                    <td class="text-end col-4">Pelunasan Tagihan</td>
-                                                    <td class="text-end col-4">90.000</td>
-                                                    <td class="text-end col-4">Ab-1234518</td>
-                                                    <td class="text-end col-4">0</td>
+                                                    <td class="col-2">IT-2</td>
+                                                    <td class="col-3">ITEM 2</td>
+                                                    <td class="col-1">2</td>
+                                                    <td class="text-end col-2 text-right">10.000</td>
+                                                    <td class="text-end col-2 text-right">0</td>
+                                                    <td class="text-end col-2 text-right" colspan="2">20.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-8" colspan="5"><strong>Total Pembayaran</strong></td>
-                                                    <td class="text-end col-4" colspan="2"><strong>180.000</strong></td>
+                                                    <td class="col-2">IT-3</td>
+                                                    <td class="col-3">ITEM 3</td>
+                                                    <td class="col-1">4</td>
+                                                    <td class="text-end col-2 text-right">5.000</td>
+                                                    <td class="text-end col-2 text-right">0</td>
+                                                    <td class="text-end col-2 text-right" colspan="2">20.000</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-8" colspan="5"><strong>Total Kekurangan Pembayaran</strong></td>
-                                                    <td class="text-end col-4" colspan="2"><strong>60.000</strong></td>
+                                                    <td class="text-end col-2" colspan="6">Total Sebelum Pajak</td>
+                                                    <td class="text-end col-2 text-right" colspan="2">60.000</td>
+                                                </tr>
+                                                <tr></tr>
+                                                <tr></tr>
+                                                <tr>
+                                                    <td class="text-end col-2" colspan="6">PPN (10%)</td>
+                                                    <td class="text-end col-2 text-right" colspan="2">6000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-end col-2" colspan="6"><strong>Grand Total (incl)</strong></td>
+                                                    <td class="text-end col-2 text-right" colspan="2"><strong>66.000</strong></td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div><!-- End: detail-table2 -->
+                                    <!-- Start: detail-table2 -->
+                                    <div class="table-responsive table general-table table-sm mb-0">
+                                        <table class="table mt-3 mb-2">
+                                            <thead class="no-border">
+                                                <tr class="no-border">
+                                                    <th class="table-title no-border pb-0" colspan="2">Lampiran</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="no-border"></tbody>
+                                        </table>
+                                    </div><!-- End: detail-table2 -->
+                                    <div class="row mx-0">
+                                        <div class="col-12 px-1">
+                                            <p class="description mb-2 text-muted">Unggahan Dokumen Faktur Pajak</p>
+                                            <div class="row">
+                                                <div class="col-4"><img class="clickable img-fluid" src="../assets/img/644ba460-45c0-48d3-9153-a4435f5b0226.jpg" onclick="openImage(this);"></div>
+                                                <div class="col-4"><img class="clickable img-fluid" src="../assets/img/644ba460-45c0-48d3-9153-a4435f5b0226.jpg" onclick="openImage(this);"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-4">
+                                        <div class="col-12 px-1">
+                                            <p class="description mb-2 text-muted">Tagging Dokumen Faktur Pajak</p><span class="link-icon small py-1 px-2 tag">Judul Tag : Nilai Tag</span>
+                                        </div>
+                                    </div>
                                     <div class="clearfix py-4"></div>
                                 </div>
                                 <div id="right-section-1" class="col-3">
@@ -236,7 +290,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>Dokumen</th>
-                                                    <th class="text-end"><a class="small" href="#" onclick="openModal(&#39;modalStatusDo&#39;)">Info</a></th>
+                                                    <th class="text-end"><a class="small" href="#" onclick="openModal(&#39;modalStatusSo&#39;)">Info</a></th>
                                                 </tr>
                                             </thead>
                                             <tbody class="no-border">
@@ -245,7 +299,7 @@
                                                     <td class="text-end text-success">Diinput</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Tanggal&nbsp; Diinput</td>
+                                                    <td>Tanggal&nbsp; Diterbitkan</td>
                                                     <td class="text-end">26 Januari 2021</td>
                                                 </tr>
                                                 <tr>
@@ -267,10 +321,10 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Batalkan DO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Batalkan SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Anda akan membatalkan dokumen DO ini</p>
+                    <p>Anda akan membatalkan dokumen SO ini</p>
                 </div>
                 <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Batal</button><button class="btn btn-danger" type="button">Proses</button></div>
             </div>
@@ -280,15 +334,49 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Status Nota</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Status Penerimaan (DO)</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="small mb-1">Sedang Diproses</p>
+                    <p class="small">Dokumen SO sudah dikirimkan oleh supplier dan telah di-inputkan kedalam sistem. Saat ini menunggu pengiriman barang dari supplier</p>
+                    <p class="small mb-1">Sedang Dikirim</p>
+                    <p class="small">Sebagian barang yang telah diterima dan sebagian lagi belum dikirimkan. Penerimaan barang di hitung dari dokumen DO yang dibuat oleh penerima barang.</p>
+                    <p class="small mb-1">Selesai</p>
+                    <p class="small">Semua barang telah dikirimkan supplier dan diterima dan semua dokumen DO sudah dilengkapi.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Status SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p class="small text-success mb-1">Diterbitkan</p>
-                    <p class="small">Pembayaran telah dibayarkan ke supplier dan nota pembayaran telah di input kedalam sistem</p>
+                    <p class="small">Dokumen SO sudah di-input kedalam sistem dan dalam keadaan aktif(tidak di void)</p>
                     <p class="small text-danger mb-1">Dibatalkan</p>
-                    <p class="small">Dokumen nota pembayaran telah dibatalkan.</p>
+                    <p class="small">Dokumen SO sudah diterbitkan dan telah dibatalkan.</p>
                 </div>
                 <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Status SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="small text-success mb-1">Diterbitkan</p>
+                                <p class="small">Dokumen SO sudah di-input kedalam sistem dan dalam keadaan aktif(tidak di void)</p>
+                                <p class="small text-danger mb-1">Dibatalkan</p>
+                                <p class="small">Dokumen SO sudah diterbitkan dan telah dibatalkan.</p>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -296,12 +384,10 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Item 1 (IT-1)</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Detail Penerimaan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row mx-0 mb-3">
-                        <div class="col-12 px-0 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Cari SN / CN"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
-                    </div><!-- Start: detail-table2 -->
+                    <!-- Start: detail-table2 -->
                     <div class="table-responsive table general-table table-sm mb-0">
                         <table class="table mt-3">
                             <thead>
@@ -309,28 +395,38 @@
                             </thead>
                             <tbody class="no-border">
                                 <tr class="sub-header">
-                                    <td class="col-3">SN</td>
-                                    <td class="col-3">CN</td>
+                                    <td class="col-3">Kode</td>
+                                    <td class="col-3">Nama</td>
+                                    <td class="text-center col-3">Qty</td>
+                                    <td class="text-center col-1">Diterima</td>
+                                    <td class="text-center col-1">Kekurangan</td>
                                 </tr>
                                 <tr>
-                                    <td class="col-3">2137q7tdygjhahdja</td>
-                                    <td class="col-1">_</td>
+                                    <td class="col-3">IT-1</td>
+                                    <td class="col-3">ITEM 1</td>
+                                    <td class="text-center col-3">2</td>
+                                    <td class="text-center col-1">1</td>
+                                    <td class="text-center col-1 text-danger">1</td>
                                 </tr>
                                 <tr>
-                                    <td class="col-3">asdadjkashdadiasd</td>
-                                    <td class="col-1">_</td>
+                                    <td class="col-3">IT-2</td>
+                                    <td class="col-3">ITEM 2</td>
+                                    <td class="text-center col-3">1</td>
+                                    <td class="text-center col-1">0</td>
+                                    <td class="text-center col-1 text-danger">1</td>
                                 </tr>
                                 <tr>
-                                    <td class="col-3">9023jkr23jhksaasd</td>
-                                    <td class="col-1">_</td>
+                                    <td class="col-3">IT-3</td>
+                                    <td class="col-3">ITEM 3</td>
+                                    <td class="text-center col-3">1</td>
+                                    <td class="text-center col-1">1</td>
+                                    <td class="text-center col-1">0</td>
                                 </tr>
                                 <tr>
-                                    <td class="col-3">918237iskahdjkadsd</td>
-                                    <td class="col-1">_</td>
-                                </tr>
-                                <tr>
-                                    <td class="col-3">72gh37iskahdjkadsd</td>
-                                    <td class="text-start col-1">_</td>
+                                    <td colspan="2">Total</td>
+                                    <td class="text-center col-3">4</td>
+                                    <td class="text-center col-1">2</td>
+                                    <td class="text-center col-1 text-danger">2</td>
                                 </tr>
                             </tbody>
                         </table>

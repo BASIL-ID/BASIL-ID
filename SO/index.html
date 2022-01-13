@@ -68,7 +68,7 @@
                     </div><!-- Start: group title -->
                     <div id="menu-catalogue" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Invoice</p>
+                            <p class="mb-0 description">Invoice Supplier</p>
                         </div>
                     </div><!-- End: group title -->
                     <!-- Start: link-clickable -->
@@ -92,7 +92,7 @@
                     <!-- Start: group title -->
                     <div id="menu-transaction-3" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Pembayaran</p>
+                            <p class="mb-0 description">Pembayaran Pembelian</p>
                         </div>
                     </div><!-- End: group title -->
                     <!-- Start: link-clickable -->
@@ -107,16 +107,24 @@
                             <p class="mb-0 minititle">Bayar Invoice<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div><!-- End: link-clickable -->
-                    <!-- Start: link-clickable -->
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/createEtc.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Bayar Lain Lain<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div><!-- End: link-clickable -->
                     <!-- Start: group title -->
                     <div id="menu-transaction-2" class="row mx-0">
-                        <div class="col-12 pt-2 pb-1"></div>
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Faktur Pajak Pembelian</p>
+                        </div>
                     </div><!-- End: group title -->
+                    <!-- Start: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/index.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Lihat Faktur Pajak<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div><!-- End: link-clickable -->
+                    <!-- Start: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/payout/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input Faktur Pajak<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div><!-- End: link-clickable -->
                 </div>
             </div>
             <div class="body-center-content py-2">
@@ -194,8 +202,8 @@
                                             </thead>
                                             <tbody class="no-border">
                                                 <tr class="sub-header">
-                                                    <td class="col-2">Kode</td>
-                                                    <td class="col-3">Nama</td>
+                                                    <td class="col-2">Kode Item<br>(Material</td>
+                                                    <td class="col-3">Nama Item<br>(Description</td>
                                                     <td class="col-1">Qty</td>
                                                     <td class="text-end col-2 text-right">Harga/Unit<br>(excl ppn)</td>
                                                     <td class="text-end col-2 text-right">Harga/Unit<br>(incl ppn)</td>

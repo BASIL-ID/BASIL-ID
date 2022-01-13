@@ -143,32 +143,52 @@
                                                 </thead>
                                                 <tbody class="no-border">
                                                     <tr class="sub-header no-top">
-                                                        <td class="col-2">Kode</td>
-                                                        <td class="col-3">Nama</td>
-                                                        <td class="col-1">Qty Dipesan</td>
+                                                        <td class="col-2">Kode Item<br>(Material)</td>
+                                                        <td class="col-3">Nama Item<br>(Description)</td>
+                                                        <td class="text-end col-1">Qty Dipesan</td>
+                                                        <td class="text-end col-2 text-right">Qty Diinput</td>
                                                         <td class="col-2 text-right">Serial Number</td>
-                                                        <td class="text-end col-2 text-right">Qty Diterima</td>
-                                                    </tr>
-                                                    <tr class="clickable" onclick="openModal(&#39;modalSerial&#39;);">
-                                                        <td class="col-2">IT-1</td>
-                                                        <td class="col-3">ITEM 1</td>
-                                                        <td class="col-1">2</td>
-                                                        <td class="col-2">2 data diinput</td>
-                                                        <td class="text-end col-2 text-right">2</td>
+                                                        <td class="text-end col-2 text-right">Qty Sudah Diterima</td>
+                                                        <td class="text-start col-2 text-right">Ref. DO</td>
+                                                        <td class="text-start col-2 text-right">Keterangan</td>
                                                     </tr>
                                                     <tr class="clickable" onclick="openModal(&#39;modalNoSerial&#39;);">
                                                         <td class="col-2">IT-2</td>
                                                         <td class="col-3">ITEM 2</td>
-                                                        <td class="col-1">2</td>
+                                                        <td class="text-end col-1">2</td>
+                                                        <td class="text-end col-2 text-right">1</td>
                                                         <td class="col-2">Tanpa Serial</td>
-                                                        <td class="text-end col-2 text-right">_</td>
+                                                        <td class="text-end col-2 text-right">0</td>
+                                                        <td class="text-start col-2 text-right">_</td>
+                                                        <td class="text-start col-2 text-right">Belum Diterima</td>
                                                     </tr>
-                                                    <tr class="no-bottom clickable" onclick="openModal(&#39;modalSerial&#39;);">
+                                                    <tr class="clickable bg-warning" onclick="openModal(&#39;modalSerial&#39;);">
                                                         <td class="col-2">IT-3</td>
                                                         <td class="col-3">ITEM 3</td>
-                                                        <td class="col-1">4</td>
+                                                        <td class="text-end col-1">4</td>
+                                                        <td class="text-end col-2 text-right">0</td>
                                                         <td class="col-2">Belum diinput</td>
-                                                        <td class="text-end col-2 text-right">_</td>
+                                                        <td class="text-end col-2 text-right">1</td>
+                                                        <td class="text-end col-2 text-right">
+                                                            <ul class="pl-adjust">
+                                                                <li class="text-start">DO-123456789</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="text-start col-2 text-right">Diterima Sebagian</td>
+                                                    </tr>
+                                                    <tr class="no-bottom bg-success clickable normalcursor">
+                                                        <td class="col-2">IT-1</td>
+                                                        <td class="col-3">ITEM 1</td>
+                                                        <td class="text-end col-1">2</td>
+                                                        <td class="text-end col-2 text-right">0</td>
+                                                        <td class="col-2" onclick="openModal(&#39;modalDetailSN&#39;);"><a href="#">2 data diinput</a></td>
+                                                        <td class="text-end col-2 text-right">2</td>
+                                                        <td class="text-end col-2 text-right">
+                                                            <ul class="pl-adjust">
+                                                                <li class="text-start">DO-123456789</li>
+                                                            </ul>
+                                                        </td>
+                                                        <td class="text-start col-2 text-right">Lengkap</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -229,8 +249,8 @@
                             </thead>
                             <tbody class="no-border">
                                 <tr class="sub-header no-border">
-                                    <td class="col-3">Nomor&nbsp;</td>
-                                    <td class="col-3">Tanggal Invoice</td>
+                                    <td class="col-3">Nomor SO</td>
+                                    <td class="col-3">Tanggal SO</td>
                                     <td class="col-3">Supplier</td>
                                 </tr>
                                 <tr class="clickable" onclick="openModal(&#39;modalDetail&#39;)">
@@ -277,12 +297,11 @@
                     <div class="row">
                         <div class="col-5 border-right">
                             <div class="row">
-                                <div class="col-auto"><img src="../assets/img/7fc4f9f6c04863bc4d3555f13a0fc602.jpg" width="86px"></div>
-                                <div class="col pl-0">
-                                    <p class="description mb-0">Nama Item</p>
-                                    <p class="subtitle small mb-2">Iphone 13 Pro - Red Edition 1 TB&nbsp;</p>
-                                    <p class="description mb-0">Kode Item</p>
+                                <div class="col">
+                                    <p class="description mb-0">Kode Item (Material)</p>
                                     <p class="subtitle small mb-2">IT-12327810&nbsp;</p>
+                                    <p class="description mb-0">Nama Item (Description)</p>
+                                    <p class="subtitle small mb-2">Iphone 13 Pro - Red Edition 1 TB&nbsp;</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -394,8 +413,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="row mb-3">
-                                <div class="col-auto"><img src="../assets/img/7fc4f9f6c04863bc4d3555f13a0fc602.jpg" width="86px"></div>
-                                <div class="col pl-0">
+                                <div class="col">
                                     <p class="description mb-0">Nama Item</p>
                                     <p class="subtitle small mb-2">Iphone 13 Pro - Red Edition 1 TB&nbsp;</p>
                                     <p class="description mb-0">Kode Item</p>
@@ -460,11 +478,6 @@
                             <p class="mb-0 description black">Jl. Letjen Sutoyo 103<br></p>
                             <p class="mb-0 description text-muted">0812345678<br></p>
                         </div>
-                        <div class="col-4 px-2">
-                            <p class="description mb-0">Diinput</p>
-                            <p class="mb-0 subtitle small text-capitalize">Agus tri</p>
-                            <p class="mb-0 description black">20 Februari 2021, 11:00</p>
-                        </div>
                     </div>
                     <div class="row pt-3">
                         <div class="col-12">
@@ -476,44 +489,40 @@
                                     </thead>
                                     <tbody class="no-border">
                                         <tr class="sub-header">
-                                            <td class="col-2">Kode</td>
-                                            <td class="col-3">Nama</td>
-                                            <td class="col-1">Qty</td>
-                                            <td class="text-end col-2 text-right">Harga/Unit<br>(excl ppn)</td>
-                                            <td class="text-end col-2 text-right">Harga/Unit<br>(incl ppn)</td>
-                                            <td class="text-end col-2 text-right">Diskon/Unit<br>(incl ppn)</td>
-                                            <td class="text-end col-2 text-right">Nett/Unit<br>(incl ppn)</td>
-                                            <td class="text-end col-2 text-right">Total<br>(incl ppn)</td>
+                                            <td class="col-2">Kode Item<br>(Material)</td>
+                                            <td class="col-3">Nama Item<br>(Description)</td>
+                                            <td class="text-end col-1">Qty<br>Diipesan</td>
+                                            <td class="text-end col-2 text-right">Qty<br>Diterima</td>
+                                            <td class="text-start col-2 text-right">Ref. DO<br></td>
                                         </tr>
                                         <tr>
                                             <td class="col-2">IT-1</td>
                                             <td class="col-3">ITEM 1</td>
-                                            <td class="col-1">2</td>
-                                            <td class="text-end col-2">10.000</td>
-                                            <td class="text-end col-2 text-right">11.000</td>
-                                            <td class="text-end col-2 text-right">0</td>
-                                            <td class="text-end col-2 text-right">11.000</td>
-                                            <td class="text-end col-2 text-right">22.000</td>
+                                            <td class="text-end col-1">2</td>
+                                            <td class="text-end col-2">0</td>
+                                            <td class="text-start col-2 text-right">_</td>
                                         </tr>
                                         <tr>
                                             <td class="col-2">IT-2</td>
                                             <td class="col-3">ITEM 2</td>
-                                            <td class="col-1">2</td>
-                                            <td class="text-end col-2">10.000</td>
-                                            <td class="text-end col-2 text-right">10.000</td>
-                                            <td class="text-end col-2 text-right">0</td>
-                                            <td class="text-end col-2 text-right">10.000</td>
-                                            <td class="text-end col-2 text-right">20.000</td>
+                                            <td class="text-end col-1">2</td>
+                                            <td class="text-end col-2">1</td>
+                                            <td class="text-start col-2 text-right">
+                                                <ul class="pl-adjust">
+                                                    <li class="text-start">DO-123456789</li>
+                                                </ul>
+                                            </td>
                                         </tr>
-                                        <tr>
+                                        <tr class="clickable bg-success normalcursor">
                                             <td class="col-2">IT-3</td>
                                             <td class="col-3">ITEM 3</td>
-                                            <td class="col-1">4</td>
-                                            <td class="text-end col-2">5.000</td>
-                                            <td class="text-end col-2 text-right">5.500</td>
-                                            <td class="text-end col-2 text-right">0</td>
-                                            <td class="text-end col-2 text-right">5.500</td>
-                                            <td class="text-end col-2 text-right">22.000</td>
+                                            <td class="text-end col-1">4</td>
+                                            <td class="text-end col-2">4</td>
+                                            <td class="text-start col-2 text-right">
+                                                <ul class="pl-adjust">
+                                                    <li class="text-start">DO-123456789</li>
+                                                </ul>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -523,6 +532,58 @@
                 </div>
                 <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Pilih SO Ini</button></div>
                 <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-4">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Status SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="small text-success mb-1">Diterbitkan</p>
+                                <p class="small">Dokumen SO sudah di-input kedalam sistem dan dalam keadaan aktif(tidak di void)</p>
+                                <p class="small text-danger mb-1">Dibatalkan</p>
+                                <p class="small">Dokumen SO sudah diterbitkan dan telah dibatalkan.</p>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalDetailSN">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Item 1 (IT-1)</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-0 mb-3">
+                        <div class="col-12 px-0 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Cari SN / CN"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                    </div><!-- Start: detail-table2 -->
+                    <div class="table-responsive table general-table table-sm mb-0">
+                        <table class="table mt-3">
+                            <thead>
+                                <tr></tr>
+                            </thead>
+                            <tbody class="no-border">
+                                <tr class="sub-header">
+                                    <td class="col-3">SN</td>
+                                    <td class="col-3">CN</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">2137q7tdygjhahdja</td>
+                                    <td class="col-1">_</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">asdadjkashdadiasd</td>
+                                    <td class="col-1">_</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- End: detail-table2 -->
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-5">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
