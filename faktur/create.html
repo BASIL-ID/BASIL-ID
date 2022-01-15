@@ -301,7 +301,7 @@
                                         <div class="row mx-0 bg-white py-3">
                                             <div class="col-12 px-2">
                                                 <div class="row mb-2">
-                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen Invoice &amp; Faktur Pajak (opsional)</label>
+                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen Faktur Pajak (opsional)</label>
                                                         <div class="border p-4 clickable">
                                                             <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
                                                         </div>
@@ -323,11 +323,11 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Daftar SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Daftar Invoice</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row mx-0 mb-3">
-                        <div class="col-12 input-group px-0 input-group-sm searchbar"><input type="text" class="form-control" placeholder="No. SO"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                        <div class="col-12 input-group px-0 input-group-sm searchbar"><input type="text" class="form-control" placeholder="No. Invoice"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
                     </div><!-- Start: detail-table2 -->
                     <div class="table-responsive table general-table table-sm mb-0 pt-0">
                         <table class="table mt-3">
@@ -336,17 +336,17 @@
                             </thead>
                             <tbody class="no-border">
                                 <tr class="sub-header no-border">
-                                    <td class="col-3">Nomor SO</td>
-                                    <td class="col-3">Tanggal SO</td>
+                                    <td class="col-3">Nomor Invoice</td>
+                                    <td class="col-3">Tanggal Invoice</td>
                                     <td class="col-3">Supplier</td>
                                 </tr>
                                 <tr class="clickable" onclick="openModal(&#39;modalItemNew&#39;)">
-                                    <td class="col-3">SO-01235678</td>
+                                    <td class="col-3">INV-01235678</td>
                                     <td class="col-3">23 Februari 2021</td>
                                     <td class="col-3">Vernon</td>
                                 </tr>
                                 <tr class="clickable" onclick="openModal(&#39;modalItemNew&#39;);">
-                                    <td class="col-3">SO-91236736</td>
+                                    <td class="col-3">INV-91236736</td>
                                     <td class="col-3">27 Februari 2021</td>
                                     <td class="col-3">Metrodata</td>
                                 </tr>
@@ -378,12 +378,12 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Detail SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Detail Invoice</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-4 px-2">
-                            <p class="description mb-0">Dokumen SO</p>
+                            <p class="description mb-0">Dokumen Invoice</p>
                             <p class="mb-0 subtitle small text-capitalize">SO-01235678900<br></p>
                             <p class="mb-0 description black">21 Februari 2021, 12:00</p>
                         </div>
@@ -454,23 +454,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Pilih SO Ini</button></div>
-                <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-3">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Status SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p class="small text-success mb-1">Diterbitkan</p>
-                                <p class="small">Dokumen SO sudah di-input kedalam sistem dan dalam keadaan aktif(tidak di void)</p>
-                                <p class="small text-danger mb-1">Dibatalkan</p>
-                                <p class="small">Dokumen SO sudah diterbitkan dan telah dibatalkan.</p>
-                            </div>
-                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
-                        </div>
-                    </div>
-                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Pilih Invoice Ini</button></div>
             </div>
         </div>
     </div>

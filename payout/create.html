@@ -143,15 +143,74 @@
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-12 px-3"><label class="form-label"><strong>Daftar Invoice</strong></label></div>
-                                    <div class="row">
-                                        <div class="col-3 px-3">
-                                            <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="No Invoice"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                                    <div class="col-12 pb-3">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <p class="text-start mb-0 subtitle small">12.1233 Invoice</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="text-end mb-0 subtitle small">Rp. 290.000.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-1">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <p class="text-start description mb-0 black">Jatuh Tempo Terdekat</p>
+                                                                    <p class="text-start description mb-0">12 Januari 2022</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="text-end description text-muted mb-0">2 Invoice</p>
+                                                                    <p class="text-end mb-0 subtitle small">Rp. 2.000.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <p class="title mb-0 text-danger">Telah Jatuh Tempo</p>
+                                                            <p class="text-start description mb-3">7 Invoice</p>
+                                                            <p class="text-end mb-0 subtitle small">RP. 12.000.000</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <p class="title mb-0">NET 15</p>
+                                                            <p class="text-start description mb-3">12 Invoice</p>
+                                                            <p class="text-end mb-0 subtitle small">Rp. 20.000.000</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <p class="title mb-0">NET 30</p>
+                                                            <p class="text-start description mb-3">19 Invoice</p>
+                                                            <p class="text-end mb-0 subtitle small">Rp. 80.000.000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-6">
-                                            <div class="input-group input-group-sm w-auto ml-2 filterDisplay"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all">Ada Faktur Pajak&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;">Akan Jatuh Tempo&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
-                                        </div>
-                                        <div class="col-3 px-3 text-right pr-0">
-                                            <div class="input-group input-group-sm w-auto ml-2 filterDisplay text-right pull-right pr-0"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all">Filter&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;">Sort&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-3 px-3">
+                                                <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="No Invoice"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                                            </div>
+                                            <div class="col-6"></div>
+                                            <div class="col-3 px-3 text-right pr-0">
+                                                <div class="input-group input-group-sm w-auto ml-2 filterDisplay text-right pull-right pr-0"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" onclick="openModal(&#39;modalFilter&#39;)">Filter&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;" onclick="openModal(&#39;modalSort&#39;)">Sort&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -169,60 +228,87 @@
                                                             <td class="text-start col-4 text-right"><img src="../assets/img/check.svg" width="13px">&nbsp; No. Invoice</td>
                                                             <td class="text-start text-right">No. Faktur Pajak</td>
                                                             <td class="text-end text-right">Supplier</td>
+                                                            <td class="text-end text-right">Tanggal Invoice</td>
                                                             <td class="text-end text-right">Jatuh Tempo</td>
                                                             <td class="text-end text-right">Tagihan</td>
                                                             <td class="text-end text-right">Terbayar</td>
                                                             <td class="text-end text-right"></td>
                                                         </tr>
                                                         <tr></tr>
-                                                        <tr class="clickable">
+                                                        <tr class="clickable bg-warning">
                                                             <td class="text-start col-2 text-right"><img src="../assets/img/check.svg" width="13px;">&nbsp; INV-12334567890</td>
                                                             <td class="text-start text-right">FP-12334567890</td>
                                                             <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">1 Januari 2021</td>
                                                             <td class="text-end text-right">27 Januari 2021</td>
                                                             <td class="text-end text-right">12.000</td>
                                                             <td class="text-end text-right">2.000</td>
-                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" role="button">Menu</a>
+                                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#" onclick="openModal(&#39;modalItemNew&#39;)">Lihat Invoice</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalFP&#39;)">Lihat Faktur Pajak</a></div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
-                                                        <tr class="clickable">
+                                                        <tr class="clickable bg-danger">
                                                             <td class="text-start col-2 text-right"><img src="../assets/img/check.svg" width="13px;">&nbsp; INV-12334567891</td>
                                                             <td class="text-start text-right">_</td>
                                                             <td class="text-end text-right">Vernon</td>
-                                                            <td class="text-end text-right">27 Januari 2021</td>
+                                                            <td class="text-end text-right">1 Januari 2021</td>
+                                                            <td class="text-end text-right text-danger">27 Januari 2020</td>
                                                             <td class="text-end text-right">10.000</td>
                                                             <td class="text-end text-right">0</td>
-                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" role="button">Menu</a>
+                                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#" onclick="openModal(&#39;modalItemNew&#39;)">Lihat Invoice</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalInputFP&#39;)">Input Faktur Pajak</a></div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                         <tr class="clickable">
                                                             <td class="text-start col-2 text-right"><img src="../assets/img/checked.svg" width="13px;">&nbsp; INV-12334567892</td>
                                                             <td class="text-start text-right">_</td>
                                                             <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">1 Januari 2021</td>
                                                             <td class="text-end text-right">27 Januari 2021</td>
                                                             <td class="text-end text-right">50.000</td>
                                                             <td class="text-end text-right">10.000</td>
-                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" role="button">Menu</a>
+                                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#" onclick="openModal(&#39;modalItemNew&#39;)">Lihat Invoice</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalInputFP&#39;)">Input Faktur Pajak</a></div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                         <tr class="clickable">
                                                             <td class="text-start col-2 text-right"><img src="../assets/img/checked.svg" width="13px;">&nbsp; INV-12334567893</td>
                                                             <td class="text-start text-right">FP-12334567893</td>
                                                             <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">1 Januari 2021</td>
                                                             <td class="text-end text-right">27 Januari 2021</td>
                                                             <td class="text-end text-right">120.000</td>
                                                             <td class="text-end text-right">0</td>
-                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" role="button">Menu</a>
+                                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#" onclick="openModal(&#39;modalItemNew&#39;)">Lihat Invoice</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalFP&#39;)">Lihat Faktur Pajak</a></div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
-                                                        <tr class="clickable">
+                                                        <tr class="clickable bg-warning">
                                                             <td class="text-start col-2 text-right"><img src="../assets/img/check.svg" width="13px;">&nbsp; INV-12334567894</td>
                                                             <td class="text-start text-right">FP-12334567894</td>
                                                             <td class="text-end text-right">Vernon</td>
+                                                            <td class="text-end text-right">1 Januari 2021</td>
                                                             <td class="text-end text-right">27 Januari 2021</td>
                                                             <td class="text-end text-right">9.000</td>
                                                             <td class="text-end text-right">0</td>
-                                                            <td class="text-end text-right"><a href="#">Menu</a></td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" role="button">Menu</a>
+                                                                    <div class="dropdown-menu"><a class="dropdown-item" href="#" onclick="openModal(&#39;modalItemNew&#39;)">Lihat Invoice</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalFP&#39;)">Lihat Faktur Pajak</a></div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                             </div><!-- End: detail-table2 -->
+                                            <div class="text-end col-12 mb-3"><span class="description p-1">Keterangan</span><span class="description p-1 bg-danger black">Invoice Jatuh Tempo</span><span class="description p-1 bg-warning black">Invoice Belum Jatuh Tempo</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -330,55 +416,92 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modalItem">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalSort">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Daftar Invoice</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Urutkan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row mx-0 mb-3">
-                        <div class="col-12 input-group px-0 input-group-sm searchbar"><input type="text" class="form-control" placeholder="No. Invoice"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
-                    </div><!-- Start: detail-table2 -->
+                    <!-- Start: detail-table2 -->
                     <div class="table-responsive table general-table table-sm mb-0 pt-0">
                         <table class="table mt-3">
                             <thead>
                                 <tr></tr>
                             </thead>
                             <tbody class="no-border">
-                                <tr class="sub-header no-border">
-                                    <td class="col-3">Nomor&nbsp;</td>
-                                    <td class="col-3">Tanggal Invoice</td>
-                                    <td class="col-3">Supplier</td>
+                                <tr class="clickable">
+                                    <td class="col-auto" width="15px;"><img src="../assets/img/checked.svg" width="13px"></td>
+                                    <td class="col">Nomor Invoice kecil ke besar</td>
                                 </tr>
-                                <tr class="clickable" onclick="openModal(&#39;modalItemNew&#39;)">
-                                    <td class="col-3">INV-01235678</td>
-                                    <td class="col-3">23 Februari 2021</td>
-                                    <td class="col-3">Vernon</td>
+                                <tr class="clickable">
+                                    <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                    <td class="col">Nomor Invoice besar ke kecil</td>
                                 </tr>
-                                <tr class="clickable" onclick="openModal(&#39;modalItemNew&#39;);">
-                                    <td class="col-3">INV-91236736</td>
-                                    <td class="col-3">27 Februari 2021</td>
-                                    <td class="col-3">Metrodata</td>
+                                <tr class="clickable">
+                                    <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                    <td class="col">Tanggal jatuh tempo terdekat</td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                    <td class="col">Tanggal jatuh tempo terlama</td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                    <td class="col">Tanggal Invoice terlama</td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                    <td class="col">Tanggal invoice terbaru</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div><!-- End: detail-table2 -->
                 </div>
-                <div class="modal-footer"></div>
-                <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-1">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Terapkan</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modalSort-1">
+                    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Status SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h4 class="modal-title">Urutkan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p class="small text-success mb-1">Diterbitkan</p>
-                                <p class="small">Dokumen SO sudah di-input kedalam sistem dan dalam keadaan aktif(tidak di void)</p>
-                                <p class="small text-danger mb-1">Dibatalkan</p>
-                                <p class="small">Dokumen SO sudah diterbitkan dan telah dibatalkan.</p>
+                                <!-- Start: detail-table2 -->
+                                <div class="table-responsive table general-table table-sm mb-0 pt-0">
+                                    <table class="table mt-3">
+                                        <thead>
+                                            <tr></tr>
+                                        </thead>
+                                        <tbody class="no-border">
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/checked.svg" width="13px"></td>
+                                                <td class="col">Nomor Invoice kecil ke besar</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Nomor Invoice besar ke kecil</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Tanggal jatuh tempo terdekat</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Tanggal jatuh tempo terlama</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Tanggal Invoice terlama</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Tanggal invoice terbaru</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!-- End: detail-table2 -->
                             </div>
-                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Terapkan</button></div>
                         </div>
                     </div>
                 </div>
@@ -405,12 +528,13 @@
                             <p class="mb-0 description text-muted">0812345678<br></p>
                         </div>
                         <div class="col-4 px-2">
-                            <p class="description mb-0">Diinput</p>
-                            <p class="mb-0 subtitle small text-capitalize">Agus tri</p>
+                            <p class="description mb-0">Jatuh Tempo</p>
                             <p class="mb-0 description black">20 Februari 2021, 11:00</p>
+                            <p class="description mb-0 mt-3">Faktur Pajak</p>
+                            <p class="mb-0 description black">FP-1233456789<br><a href="javascript:void(0);" onclick="openModal(&#39;modalFP&#39;)">Lihat</a></p>
                         </div>
                     </div>
-                    <div class="row pt-3">
+                    <div class="row pt-1">
                         <div class="col-12">
                             <!-- Start: detail-table2 -->
                             <div class="table-responsive table general-table table-sm mb-0">
@@ -465,20 +589,162 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Pilih Invoice Ini</button></div>
-                <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-3">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalFP">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Detail Faktur Pajak</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Dokumen Faktur</p>
+                            <p class="mb-0 subtitle small text-capitalize">FP-1234567890</p>
+                            <p class="mb-0 description black">2 Januari 2021<br></p>
+                        </div>
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Tanggal Input</p>
+                            <p class="mb-0 subtitle small">20 Februari 2021, 11:00</p>
+                        </div>
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Diiinput Oleh</p>
+                            <p class="mb-0 subtitle small">Adi Suparnjo</p>
+                        </div>
+                    </div>
+                    <div class="row pt-1">
+                        <div class="col-12">
+                            <hr class="my-2">
+                            <p class="description mb-0">Catatan</p>
+                            <p class="mb-0 subtitle small text-capitalize">Faktur pajak sudah diterima dengan baik</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalInputFP">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Input Faktur Pajak</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6 px-2">
+                            <p class="description mb-0">Referensi Invoice</p>
+                            <p class="mb-0 subtitle small text-capitalize">INV-1234567890</p>
+                            <p class="mb-0 description black">2 Januari 2021<br></p>
+                        </div>
+                        <div class="col-6 px-2">
+                            <p class="description mb-0">Supplier</p>
+                            <p class="mb-0 subtitle small">Vernon</p>
+                            <p class="mb-0 description black">Jl. Letjend Sutoyo 102<br>0123567890</p>
+                        </div>
+                    </div>
+                    <div class="row pt-1">
+                        <div class="col-12">
+                            <hr class="my-2">
+                            <div class="row">
+                                <div class="col-8 px-2"><label class="form-label text-muted">No. Faktur</label><input type="text" class="form-control form-control-sm" placeholder="No. Dokumen"></div>
+                                <div class="col-4 px-2"><label class="form-label text-muted">Tanggal Faktur</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"></div>
+                                <div class="col-12 px-2"><label class="form-label text-muted mt-3">Catatan&nbsp;(opsional)<br></label><textarea class="form-control no-resize" rows="2"></textarea></div>
+                                <div class="col-12"><label class="form-label text-muted mt-3">Unggah Dokumen Faktur Pajak (opsional)</label>
+                                    <div class="border p-4 clickable">
+                                        <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3"><label class="form-label text-muted">Tambahkan Tagging Dokumen (opsional)&nbsp;</label><input type="text" class="form-control mb-2" placeholder="Isi dengan format &quot;judul:nilai&quot;, tekan enter untuk menambahkan"><span class="link-icon small py-1 px-2 tag">Judul Tag : Nilai Tag | X</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalFilter">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Filter</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Start: detail-table2 -->
+                    <div class="table-responsive table general-table table-sm mb-0 pt-0">
+                        <table class="table mt-3">
+                            <thead>
+                                <tr></tr>
+                            </thead>
+                            <tbody class="no-border">
+                                <tr class="clickable">
+                                    <td class="col">Faktur Pajak<br><span class="description">(ada faktur pajak/ tidak)</span></td>
+                                    <td class="col-auto" width="15px;"><img class="rotate-right" src="../assets/img/up-arrow-angle.svg" width="13px"></td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td class="col">Range Tanggal Jatuh Tempo<br></td>
+                                    <td class="col-auto" width="15px;"><img class="rotate-right" src="../assets/img/up-arrow-angle.svg" width="13px"></td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td class="col">Range Tanggal Invoice</td>
+                                    <td class="col-auto" width="15px;"><img class="rotate-right" src="../assets/img/up-arrow-angle.svg" width="13px"></td>
+                                </tr>
+                                <tr class="clickable">
+                                    <td class="col">Status Pembayaran<br><span class="description">(belum dibayar sama sekali, / dibayar sebagian)</span></td>
+                                    <td class="col-auto" width="15px;"><img class="rotate-right" src="../assets/img/up-arrow-angle.svg" width="13px"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><!-- End: detail-table2 -->
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Terapkan</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modalSort-3">
+                    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Status SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h4 class="modal-title">Urutkan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <p class="small text-success mb-1">Diterbitkan</p>
-                                <p class="small">Dokumen SO sudah di-input kedalam sistem dan dalam keadaan aktif(tidak di void)</p>
-                                <p class="small text-danger mb-1">Dibatalkan</p>
-                                <p class="small">Dokumen SO sudah diterbitkan dan telah dibatalkan.</p>
+                                <!-- Start: detail-table2 -->
+                                <div class="table-responsive table general-table table-sm mb-0 pt-0">
+                                    <table class="table mt-3">
+                                        <thead>
+                                            <tr></tr>
+                                        </thead>
+                                        <tbody class="no-border">
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/checked.svg" width="13px"></td>
+                                                <td class="col">Nomor Invoice kecil ke besar</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Nomor Invoice besar ke kecil</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Tanggal jatuh tempo terdekat</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Tanggal jatuh tempo terlama</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Tanggal Invoice terlama</td>
+                                            </tr>
+                                            <tr class="clickable">
+                                                <td class="col-auto" width="15px;"><img src="../assets/img/check.svg" width="13px"></td>
+                                                <td class="col">Tanggal invoice terbaru</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!-- End: detail-table2 -->
                             </div>
-                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Terapkan</button></div>
                         </div>
                     </div>
                 </div>
