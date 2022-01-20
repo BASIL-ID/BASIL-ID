@@ -319,8 +319,8 @@
                                                 <tr class="mb-2">
                                                     <td></td>
                                                 </tr>
-                                                <tr>
-                                                    <td class="text-center text-muted" colspan="2"><a href="#">Download Dokumen</a></td>
+                                                <tr onclick="openModal(&#39;modalPrev&#39;)">
+                                                    <td class="text-center text-muted" colspan="2"><a href="#" onclick="openModal(&#39;modalPrev&#39;)">Download Dokumen</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -490,6 +490,190 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalPrev">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Contoh Dokumen</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row pt-1">
+                        <p class="ml-2"><strong>Dokumen Checklist Pembayaran Invoice Supplier</strong></p>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-3">
+                                    <p class="description mb-0">No Pembayaran</p>
+                                    <p class="mb-0 subtitle small text-capitalize">PAO-12381381930<br></p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="description mb-0">Dibuat Oleh</p>
+                                    <p class="mb-0 subtitle small text-capitalize">Agus Tri</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="description mb-0">Diperbarui Pada</p>
+                                    <p class="mb-0 subtitle small text-capitalize">26 Januari 2021</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="description mb-0">Kadaluarsa</p>
+                                    <p class="mb-0 description black">30 Januari 2021</p>
+                                </div>
+                            </div><!-- Start: detail-table2 -->
+                            <div class="table-responsive table general-table table-sm mb-0 mt-3">
+                                <table class="table">
+                                    <thead class="no-border">
+                                        <tr class="no-border"></tr>
+                                    </thead>
+                                    <tbody class="no-border">
+                                        <tr>
+                                            <td class="text-start text-right">No. Invoice</td>
+                                            <td class="text-start text-right">Faktur Pajak</td>
+                                            <td class="text-end text-right">Total Tagihan</td>
+                                            <td class="text-end text-right">Sudah DIbayar</td>
+                                            <td class="text-end text-right">Belum Dibayar</td>
+                                            <td class="text-start text-right">Keterangan Bayar</td>
+                                            <td class="text-end text-right">Nominal Bayar</td>
+                                        </tr>
+                                        <tr></tr>
+                                        <tr class="clickable bg-base">
+                                            <td class="text-start text-right" colspan="5">Supplier Vernon.id&nbsp;</td>
+                                            <td class="text-end text-right" colspan="2">Total Bayar 60.000</td>
+                                        </tr>
+                                        <tr class="clickable">
+                                            <td class="text-start text-right"><a>INV_183138327912</a></td>
+                                            <td class="text-start text-right"><a>Ada</a><br></td>
+                                            <td class="text-end text-right">50.000</td>
+                                            <td class="text-end text-right">10.000</td>
+                                            <td class="text-end text-right">40.000</td>
+                                            <td class="text-start text-right">Pelunasan</td>
+                                            <td class="text-end text-right">40.000</td>
+                                        </tr>
+                                        <tr class="clickable">
+                                            <td class="text-start text-right" onclick="opsnModal(&#39;modalItemNew&#39;)"><a>INV-163183791891</a></td>
+                                            <td class="text-start text-right"><a>Ada</a></td>
+                                            <td class="text-end text-right">120.000</td>
+                                            <td class="text-end text-right">120.000</td>
+                                            <td class="text-end text-right">0</td>
+                                            <td class="text-start text-right">Termin 1</td>
+                                            <td class="text-end text-right">20.000</td>
+                                        </tr>
+                                        <tr class="clickable bg-base">
+                                            <td class="text-start text-right" colspan="5">Supplier Calosa&nbsp;</td>
+                                            <td class="text-end text-right" colspan="2">Total Bayar 10.000</td>
+                                        </tr>
+                                        <tr class="clickable">
+                                            <td class="text-start text-right"><a>INV_13718379891</a></td>
+                                            <td class="text-start text-right">Belum DIinput<br></td>
+                                            <td class="text-end text-right">50.000</td>
+                                            <td class="text-end text-right">40.000</td>
+                                            <td class="text-end text-right">10.000</td>
+                                            <td class="text-end text-right">Pelunasan Tagihan</td>
+                                            <td class="text-end text-right">10.000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div><!-- End: detail-table2 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modalDone">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Selesaikan Pembayaran</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row pt-1">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p class="description mb-0">No Pembayaran</p>
+                                                <p class="mb-0 subtitle small text-capitalize">PAO-12381381930<br></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="description mb-0">Oleh</p>
+                                                <p class="mb-0 subtitle small text-capitalize">Agus Tri</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="description mb-0">Diperbarui Pada</p>
+                                                <p class="mb-0 subtitle small text-capitalize">26 Januari 2021</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="description mb-0">Kadaluarsa</p>
+                                                <p class="mb-0 description black">30 Januari 2021</p>
+                                            </div>
+                                        </div>
+                                        <p class="minititle mt-3">* Untuk menyelesaikan pembayaran ini, pastikan mutasi pembayaran bank sudah sesuai dengan tagihan yang diinput untuk dibayar</p><!-- Start: detail-table2 -->
+                                        <div class="table-responsive table general-table table-sm mb-0 mt-3">
+                                            <table class="table">
+                                                <thead class="no-border">
+                                                    <tr class="no-border"></tr>
+                                                </thead>
+                                                <tbody class="no-border">
+                                                    <tr>
+                                                        <td class="text-end text-right"></td>
+                                                        <td class="text-start text-right">No. Invoice</td>
+                                                        <td class="text-start text-right">Faktur Pajak</td>
+                                                        <td class="text-end text-right">Total Tagihan</td>
+                                                        <td class="text-end text-right">Sudah DIbayar</td>
+                                                        <td class="text-end text-right">Belum Dibayar</td>
+                                                        <td class="text-start text-right">Keterangan Bayar</td>
+                                                        <td class="text-end text-right">Nominal Bayar</td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                    <tr class="clickable bg-base">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right" colspan="5">Supplier Vernon.id&nbsp;</td>
+                                                        <td class="text-end text-right" colspan="2">Total Bayar 60.000</td>
+                                                    </tr>
+                                                    <tr class="clickable">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right"><a href="#">INV_183138327912</a></td>
+                                                        <td class="text-start text-right"><a href="#">Ada</a><br></td>
+                                                        <td class="text-end text-right">50.000</td>
+                                                        <td class="text-end text-right">10.000</td>
+                                                        <td class="text-end text-right">40.000</td>
+                                                        <td class="text-start text-right">Pelunasan</td>
+                                                        <td class="text-end text-right">40.000</td>
+                                                    </tr>
+                                                    <tr class="clickable">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right" onclick="opsnModal(&#39;modalItemNew&#39;)"><a href="#">INV-163183791891</a></td>
+                                                        <td class="text-start text-right"><a href="#">Ada</a></td>
+                                                        <td class="text-end text-right">120.000</td>
+                                                        <td class="text-end text-right">120.000</td>
+                                                        <td class="text-end text-right">0</td>
+                                                        <td class="text-start text-right">Termin 1</td>
+                                                        <td class="text-end text-right">20.000</td>
+                                                    </tr>
+                                                    <tr class="clickable bg-base">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right" colspan="5">Supplier Calosa&nbsp;</td>
+                                                        <td class="text-end text-right" colspan="2">Total Bayar 10.000</td>
+                                                    </tr>
+                                                    <tr class="clickable">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right"><a href="#">INV_13718379891</a></td>
+                                                        <td class="text-start text-right">Belum DIinput<br></td>
+                                                        <td class="text-end text-right">50.000</td>
+                                                        <td class="text-end text-right">40.000</td>
+                                                        <td class="text-end text-right">10.000</td>
+                                                        <td class="text-end text-right">Pelunasan Tagihan</td>
+                                                        <td class="text-end text-right">10.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div><!-- End: detail-table2 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Selesaikan Pembayaran</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="modalDone">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -582,6 +766,101 @@
                     </div>
                 </div>
                 <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Selesaikan Pembayaran</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modalDone-2">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Selesaikan Pembayaran</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row pt-1">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <p class="description mb-0">No Pembayaran</p>
+                                                <p class="mb-0 subtitle small text-capitalize">PAO-12381381930<br></p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="description mb-0">Oleh</p>
+                                                <p class="mb-0 subtitle small text-capitalize">Agus Tri</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="description mb-0">Diperbarui Pada</p>
+                                                <p class="mb-0 subtitle small text-capitalize">26 Januari 2021</p>
+                                            </div>
+                                            <div class="col-3">
+                                                <p class="description mb-0">Kadaluarsa</p>
+                                                <p class="mb-0 description black">30 Januari 2021</p>
+                                            </div>
+                                        </div>
+                                        <p class="minititle mt-3">* Untuk menyelesaikan pembayaran ini, pastikan mutasi pembayaran bank sudah sesuai dengan tagihan yang diinput untuk dibayar</p><!-- Start: detail-table2 -->
+                                        <div class="table-responsive table general-table table-sm mb-0 mt-3">
+                                            <table class="table">
+                                                <thead class="no-border">
+                                                    <tr class="no-border"></tr>
+                                                </thead>
+                                                <tbody class="no-border">
+                                                    <tr>
+                                                        <td class="text-end text-right"></td>
+                                                        <td class="text-start text-right">No. Invoice</td>
+                                                        <td class="text-start text-right">Faktur Pajak</td>
+                                                        <td class="text-end text-right">Total Tagihan</td>
+                                                        <td class="text-end text-right">Sudah DIbayar</td>
+                                                        <td class="text-end text-right">Belum Dibayar</td>
+                                                        <td class="text-start text-right">Keterangan Bayar</td>
+                                                        <td class="text-end text-right">Nominal Bayar</td>
+                                                    </tr>
+                                                    <tr></tr>
+                                                    <tr class="clickable bg-base">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right" colspan="5">Supplier Vernon.id&nbsp;</td>
+                                                        <td class="text-end text-right" colspan="2">Total Bayar 60.000</td>
+                                                    </tr>
+                                                    <tr class="clickable">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right"><a href="#">INV_183138327912</a></td>
+                                                        <td class="text-start text-right"><a href="#">Ada</a><br></td>
+                                                        <td class="text-end text-right">50.000</td>
+                                                        <td class="text-end text-right">10.000</td>
+                                                        <td class="text-end text-right">40.000</td>
+                                                        <td class="text-start text-right">Pelunasan</td>
+                                                        <td class="text-end text-right">40.000</td>
+                                                    </tr>
+                                                    <tr class="clickable">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right" onclick="opsnModal(&#39;modalItemNew&#39;)"><a href="#">INV-163183791891</a></td>
+                                                        <td class="text-start text-right"><a href="#">Ada</a></td>
+                                                        <td class="text-end text-right">120.000</td>
+                                                        <td class="text-end text-right">120.000</td>
+                                                        <td class="text-end text-right">0</td>
+                                                        <td class="text-start text-right">Termin 1</td>
+                                                        <td class="text-end text-right">20.000</td>
+                                                    </tr>
+                                                    <tr class="clickable bg-base">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right" colspan="5">Supplier Calosa&nbsp;</td>
+                                                        <td class="text-end text-right" colspan="2">Total Bayar 10.000</td>
+                                                    </tr>
+                                                    <tr class="clickable">
+                                                        <td class="text-end text-right"><img src="../assets/img/check.svg" width="13"></td>
+                                                        <td class="text-start text-right"><a href="#">INV_13718379891</a></td>
+                                                        <td class="text-start text-right">Belum DIinput<br></td>
+                                                        <td class="text-end text-right">50.000</td>
+                                                        <td class="text-end text-right">40.000</td>
+                                                        <td class="text-end text-right">10.000</td>
+                                                        <td class="text-end text-right">Pelunasan Tagihan</td>
+                                                        <td class="text-end text-right">10.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div><!-- End: detail-table2 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Selesaikan Pembayaran</button></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
