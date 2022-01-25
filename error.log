@@ -2738,3 +2738,12 @@ warning: LF will be replaced by CRLF in transaction/index.html.
 The file will have its original line endings in your working directory
 
 
+----------
+
+Tue Jan 25 2022 10:31:32 GMT+0700 (Indochina Time)
+
+To https://github.com/BASIL-ID/basil-id.github.io.git
+ ! [remote rejected] master -> master (cannot lock ref 'refs/heads/master': is at 69cb11eed592859add0451ca9309125a9d958d12 but expected 9ebfa6ee408187089234137019a2b90278e5c4b6)
+error: failed to push some refs to 'https://github.com/BASIL-ID/basil-id.github.io.git'
+
+
