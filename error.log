@@ -2526,3 +2526,215 @@ Tue Jan 25 2022 10:28:50 GMT+0700 (Indochina Time)
 fatal: unable to access 'https://github.com/BASIL-ID/basil-id.github.io.git/': Failed to connect to github.com port 443: Connection was aborted
 
 
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in index.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in DO/[]create.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in DO/create.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DO/index.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in DO/temp/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in DO/temp/katalog-detail.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in SO/create.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in SO/index.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in assets/bootstrap/css/bootstrap.min.css.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in assets/bootstrap/js/bootstrap.min.js.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in assets/img/browse.svg.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in assets/js/script.min.js.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in assets/scss/app.scss.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in faktur/create.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in faktur/index.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in invoice/create.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in invoice/index.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in order/create.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in order/index.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in payment/create.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in payment/index.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in payout/create.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in payout/createEtc.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in payout/createNext.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in payout/index.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in transaction/create.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in transaction/createOrder.html.
+The file will have its original line endings in your working directory
+
+
+----------
+
+Tue Jan 25 2022 10:31:27 GMT+0700 (Indochina Time)
+
+warning: LF will be replaced by CRLF in transaction/index.html.
+The file will have its original line endings in your working directory
+
+
