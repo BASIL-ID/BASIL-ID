@@ -134,10 +134,10 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Input Stok Keluar</p>
+                                        <p class="mb-0 title">Input Stok Opname</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Stok Keluar</a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Input Stok Keluar&nbsp;</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Stok Opname</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Input Stok Opname&nbsp;</a></li>
                                         </ol>
                                     </div>
                                 </div>
@@ -152,59 +152,17 @@
                                                 <p class="mb-0 description black">Andro@skytech.id<br></p>
                                                 <p class="mb-0 description text-muted mt-2">22 Januari 2021<br></p>
                                             </div>
-                                            <div class="col-4"><label class="form-label text-muted">Tipe</label><select class="form-control form-control-sm">
-                                                    <option value="13">Kirim Pesanan</option>
-                                                    <option value="12">Kirim ke Customer</option>
-                                                    <option value="" selected="">Kirim Ke Pegawai</option>
-                                                    <option value="">Lainnya</option>
-                                                </select>
-                                                <p class="mb-0 subtitle small text-capitalize mt-3">Agung Gummy Bear</p>
-                                                <p class="mb-0 description black">Agung@skytech.id<br></p>
-                                                <p class="mb-0 description text-muted">0812345678<br></p><a href="#">Ubah</a>
-                                            </div>
-                                            <div class="col-4"><label class="form-label text-muted">Catatan (opsional)<br></label><textarea class="form-control no-resize" rows="6">Bonus </textarea></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Item (*pemesanan)</strong></label></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="row mx-0 bg-white py-2">
-                                                    <div class="col pr-0"><input type="text" class="form-control" placeholder="No Invoice pemesanan"></div>
-                                                    <div class="col-auto">
-                                                        <p class="link-icon browse-icon"><img src="../assets/img/browse.svg" width="16"></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row mt-2 mx-0">
-                                    <div class="col-12 bg-white py-3">
-                                        <div class="row">
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Invoice Pemesanan</label>
-                                                <p class="mb-0 subtitle small text-capitalize">INV-01235678900<br></p>
-                                                <p class="mb-0 description black">21 Februari 2021, 12:00</p><a href="#">Ubah</a>
-                                            </div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Customer</label>
-                                                <p class="mb-0 subtitle small text-capitalize">Ardian</p>
-                                                <p class="mb-0 description black">Jl. Letjen Sutoyo 103<br></p>
+                                            <div class="col-4"><label class="form-label text-muted">Outlet</label>
+                                                <p class="mb-0 subtitle small text-capitalize">Skytech Klampis</p>
+                                                <p class="mb-0 description black">Jl. Klampis 123<br></p>
                                                 <p class="mb-0 description text-muted">0812345678<br></p>
                                             </div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Penerima</label>
-                                                <p class="mb-0 subtitle small text-capitalize">Titiek Bunga</p>
-                                                <p class="mb-0 description black">Jl. Letjen Sutoyo 101<br></p>
-                                                <p class="mb-0 description text-muted">0812375678<br></p>
-                                            </div>
+                                            <div class="col-4"><label class="form-label text-muted">Catatan (opsional)<br></label><textarea class="form-control no-resize" rows="3"></textarea></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Item (*non pemesanan)</strong></label></div>
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Item&nbsp;</strong></label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
@@ -231,31 +189,27 @@
                                                     <tr class="sub-header no-top">
                                                         <td class="col-2">Kode Item<br>(Material)</td>
                                                         <td class="col-3">Nama Item<br>(Description)</td>
-                                                        <td class="col-2 text-right">Serial Number</td>
-                                                        <td class="text-end col-1">Qty Diterima</td>
+                                                        <td class="text-end col-1">Qty Saat Ini</td>
                                                     </tr>
                                                     <tr class="clickable" onclick="openModal(&#39;modalNoSerial&#39;);">
                                                         <td class="col-2">IT-2</td>
                                                         <td class="col-3">ITEM 2</td>
-                                                        <td class="col-2">Tanpa Serial</td>
-                                                        <td class="text-end col-1">2</td>
+                                                        <td class="text-end col-1"><input type="text" class="form-control text-right" placeholder="Qty" value="1" style="text-align: right;"></td>
                                                     </tr>
                                                     <tr class="clickable bg-warning" onclick="openModal(&#39;modalSerial&#39;);">
                                                         <td class="col-2">IT-3</td>
                                                         <td class="col-3">ITEM 3</td>
-                                                        <td class="col-2">Belum diinput</td>
-                                                        <td class="text-end col-1">0</td>
+                                                        <td class="text-end col-1"><input type="text" class="form-control text-right" placeholder="Qty" value="" style="text-align: right;"></td>
                                                     </tr>
                                                     <tr class="no-bottom clickable normalcursor">
                                                         <td class="col-2">IT-1</td>
                                                         <td class="col-3">ITEM 1</td>
-                                                        <td class="col-2" onclick="openModal(&#39;modalDetailSN&#39;);"><a href="#">2 data diinput</a></td>
-                                                        <td class="text-end col-1">2</td>
+                                                        <td class="text-end col-1"><input type="text" class="form-control text-right" placeholder="Qty" value="1" style="text-align: right;"></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="text-end col-12 mb-3 mt-2"><span class="description p-1">Keterangan</span><span class="description p-1 bg-warning black">QTY Penerimaan Belum Diinput</span></div>
+                                        <div class="text-end col-12 mb-3 mt-2"><span class="description p-1">Keterangan</span><span class="description p-1 bg-warning black">QTY Belum Diinput</span></div>
                                     </div>
                                 </div>
                                 <div class="row mt-3">

@@ -135,10 +135,10 @@
                                 <p class="link-icon-white py-1"><img src="../assets/img/back.png" width="16"></p>
                             </div>
                             <div class="col py-2">
-                                <p class="mb-0 title">GDN-1234567890</p>
+                                <p class="mb-0 title">OPN-1234567890</p>
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Riwayat Stok Keluar</a></li>
-                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Stok Keluar</a></li>
+                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Riwayat Stok Opname</a></li>
+                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Stok Opname</a></li>
                                 </ol>
                             </div>
                             <div class="col-auto pr-0 d-flex flex-row flex-row-reverse align-items-center">
@@ -164,23 +164,19 @@
                                             <tbody class="no-border">
                                                 <tr>
                                                     <td class="col-4">No.</td>
-                                                    <td class="col-8">GDN-1234567890</td>
+                                                    <td class="col-8">OPN-1234567890</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Tanggal Stok Keluar</td>
+                                                    <td class="col-4">Tanggal Stok Opname</td>
                                                     <td class="col-8">23 Januari 2021</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Tipe</td>
-                                                    <td class="col-8">Kirim ke Pegawai</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-4">Pegawai</td>
-                                                    <td class="col-8">Anton<br>anton@skytech.id<br>08123238213</td>
+                                                    <td class="col-4">Outlet</td>
+                                                    <td class="col-8">Skytech Klampis<br>Jl. Klampis 12<br>08123238213</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-4">Catatan</td>
-                                                    <td class="col-8">Bonus</td>
+                                                    <td class="col-8">_</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-4">Diinput Oleh</td>
@@ -200,36 +196,34 @@
                                                 <tr class="sub-header">
                                                     <td class="col-3">Kode Item<br>(Material)</td>
                                                     <td class="col-3">Nama Item<br>(Description)</td>
-                                                    <td class="col-3">Serial Number</td>
-                                                    <td class="text-end col-1">Qty</td>
+                                                    <td class="text-end col-1">Qty<br>Sistem</td>
+                                                    <td class="text-end col-1">Qty<br>Oname</td>
+                                                    <td class="text-end col-1">Qty Selisih</td>
+                                                    <td class="text-end col-1">Hasil Opname</td>
                                                 </tr>
-                                                <tr>
+                                                <tr class="bg-danger clickable normalcursor">
                                                     <td class="col-3">IT-1</td>
                                                     <td class="col-3">ITEM 1</td>
-                                                    <td class="col-3">
-                                                        <ul class="pl-adjust">
-                                                            <li>SN-123123</li>
-                                                            <li>SN-123122</li>
-                                                            <li><a href="#" onclick="openModal(&#39;modalDetail&#39;)">Lihat Lainnya</a></li>
-                                                        </ul>
-                                                    </td>
                                                     <td class="text-end col-1">2</td>
+                                                    <td class="text-end col-1">1</td>
+                                                    <td class="text-end col-1">1</td>
+                                                    <td class="text-end col-1 text-danger">Selisih</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-3">IT-2</td>
                                                     <td class="col-3">ITEM 2</td>
-                                                    <td class="text-start col-3">Tanpa Serial</td>
                                                     <td class="text-end col-1">1</td>
+                                                    <td class="text-end col-1">1</td>
+                                                    <td class="text-end col-1">0</td>
+                                                    <td class="text-end col-1 text-success">Cocok</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-3">IT-3</td>
                                                     <td class="col-3">ITEM 3</td>
-                                                    <td class="col-3">
-                                                        <ul class="pl-adjust">
-                                                            <li>SN-345345</li>
-                                                        </ul>
-                                                    </td>
                                                     <td class="text-end col-1">1</td>
+                                                    <td class="text-end col-1">1</td>
+                                                    <td class="text-end col-1">0</td>
+                                                    <td class="text-end col-1 text-success">Cocok</td>
                                                 </tr>
                                                 <tr></tr>
                                                 <tr></tr>
@@ -292,7 +286,7 @@
                                                     <td class="text-end text-muted"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="text-muted text-center clickable" colspan="2"><a href="#">Cetak Surat Jalan</a></td>
+                                                    <td class="text-muted text-center clickable" colspan="2"><a href="#">Cetak Dokumen Opname</a></td>
                                                 </tr>
                                             </tbody>
                                         </table>
