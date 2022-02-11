@@ -240,7 +240,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Daftar Invoice</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Daftar Retur</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row mx-0 mb-3">
@@ -253,17 +253,17 @@
                             </thead>
                             <tbody class="no-border">
                                 <tr class="sub-header no-border">
-                                    <td class="col-3">Nomor Invoice</td>
-                                    <td class="col-3">Tanggal Invoice</td>
+                                    <td class="col-3">Nomor Retur</td>
+                                    <td class="col-3">Tanggal Retur</td>
                                     <td class="col-3">Supplier</td>
                                 </tr>
                                 <tr class="clickable" onclick="openModal(&#39;modalDetail&#39;)">
-                                    <td class="col-3">INV-01235678</td>
+                                    <td class="col-3">RET-01235678</td>
                                     <td class="col-3">23 Februari 2021</td>
                                     <td class="col-3">Vernon</td>
                                 </tr>
                                 <tr class="clickable" onclick="openModal(&#39;modalItemNew&#39;);">
-                                    <td class="col-3">INV-91236736</td>
+                                    <td class="col-3">RET-91236736</td>
                                     <td class="col-3">27 Februari 2021</td>
                                     <td class="col-3">Metrodata</td>
                                 </tr>
@@ -467,13 +467,13 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Detail SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Detail Retur</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-4 px-2">
-                            <p class="description mb-0">Dokumen SO</p>
-                            <p class="mb-0 subtitle small text-capitalize">SO-01235678900<br></p>
+                            <p class="description mb-0">Dokumen Retur</p>
+                            <p class="mb-0 subtitle small text-capitalize">RET-01235678900<br></p>
                             <p class="mb-0 description black">21 Februari 2021, 12:00</p>
                         </div>
                         <div class="col-4 px-2">
@@ -486,46 +486,56 @@
                     <div class="row pt-3">
                         <div class="col-12">
                             <div class="table-responsive table general-table table-sm mb-0">
-                                <table class="table mt-3 mb-0">
-                                    <thead class="no-border">
-                                        <tr class="no-border"></tr>
+                                <table class="table mt-3">
+                                    <thead>
+                                        <tr></tr>
                                     </thead>
                                     <tbody class="no-border">
                                         <tr class="sub-header">
-                                            <td class="col-2">Kode Item<br>(Material)</td>
-                                            <td class="col-3">Nama Item<br>(Description)</td>
-                                            <td class="text-end col-1">Qty<br>Diipesan</td>
-                                            <td class="text-end col-2 text-right">Qty<br>Diterima</td>
-                                            <td class="text-start col-2 text-right">Ref. DO<br></td>
+                                            <td class="col-3">Kode<br>(Material)</td>
+                                            <td class="col-3">Nama<br>(Description)</td>
+                                            <td class="text-center col-3">Qty Diretur</td>
+                                            <td class="text-center col-1">Qty Diterima</td>
+                                            <td class="text-center col-1">Qty Belum Diterima</td>
+                                            <td class="text-start col-1">Penerimaan Retur</td>
                                         </tr>
                                         <tr>
-                                            <td class="col-2">IT-1</td>
+                                            <td class="col-3">IT-1</td>
                                             <td class="col-3">ITEM 1</td>
-                                            <td class="text-end col-1">2</td>
-                                            <td class="text-end col-2">0</td>
-                                            <td class="text-start col-2 text-right">_</td>
+                                            <td class="text-center col-3">2</td>
+                                            <td class="text-center col-1">1</td>
+                                            <td class="text-center col-1 text-danger">1</td>
+                                            <td class="text-start col-1">
+                                                <ul class="pl-adjust">
+                                                    <li>Ganti Item<br><a href="#">RRET-123617894</a><br></li>
+                                                </ul>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td class="col-2">IT-2</td>
+                                            <td class="col-3">IT-2</td>
                                             <td class="col-3">ITEM 2</td>
-                                            <td class="text-end col-1">2</td>
-                                            <td class="text-end col-2">1</td>
-                                            <td class="text-start col-2 text-right">
+                                            <td class="text-center col-3">1</td>
+                                            <td class="text-center col-1">0</td>
+                                            <td class="text-center col-1 text-danger">1</td>
+                                            <td class="text-center col-1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-3">IT-3</td>
+                                            <td class="col-3">ITEM 3</td>
+                                            <td class="text-center col-3">1</td>
+                                            <td class="text-center col-1">1</td>
+                                            <td class="text-center col-1">0</td>
+                                            <td class="text-start col-1">
                                                 <ul class="pl-adjust">
-                                                    <li class="text-start">DO-123456789</li>
+                                                    <li>Masuk Kredit<br><a href="#">RRET-223617894</a><br></li>
                                                 </ul>
                                             </td>
                                         </tr>
-                                        <tr class="clickable bg-success normalcursor">
-                                            <td class="col-2">IT-3</td>
-                                            <td class="col-3">ITEM 3</td>
-                                            <td class="text-end col-1">4</td>
-                                            <td class="text-end col-2">4</td>
-                                            <td class="text-start col-2 text-right">
-                                                <ul class="pl-adjust">
-                                                    <li class="text-start">DO-123456789</li>
-                                                </ul>
-                                            </td>
+                                        <tr>
+                                            <td colspan="2">Total</td>
+                                            <td class="text-center col-3">4</td>
+                                            <td class="text-center col-1">2</td>
+                                            <td class="text-center col-1 text-danger">2</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -533,7 +543,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Pilih SO Ini</button></div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Pilih</button></div>
                 <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-4">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
