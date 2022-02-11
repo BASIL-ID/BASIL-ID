@@ -200,7 +200,7 @@
                                                         <td class="col-2" onclick="openModal(&#39;modalDetailSN&#39;);"><a href="#">2 data diinput</a></td>
                                                         <td class="text-end col-2 text-right">
                                                             <ul class="pl-adjust">
-                                                                <li class="text-start"><a href="#">RRET-123456789</a></li>
+                                                                <li class="text-start"><a href="#" onclick="openModal(&#39;modalLog&#39;);">RRET-123456789</a></li>
                                                             </ul>
                                                         </td>
                                                     </tr>
@@ -507,7 +507,7 @@
                                             <td class="text-center col-1 text-danger">1</td>
                                             <td class="text-start col-1">
                                                 <ul class="pl-adjust">
-                                                    <li>Ganti Item<br><a href="#">RRET-123617894</a><br></li>
+                                                    <li>Ganti Item<br><a href="#" onclick="openModal(&#39;modalLog&#39;);">RRET-123617894</a><br></li>
                                                 </ul>
                                             </td>
                                         </tr>
@@ -612,6 +612,69 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalLog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Detail Penerimaan Retur</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Dokumen</p>
+                            <p class="mb-0 subtitle small text-capitalize">TRET-01235678900<br></p>
+                            <p class="mb-0 description black">21 Februari 2021, 12:00</p>
+                        </div>
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Supplier</p>
+                            <p class="mb-0 subtitle small text-capitalize">Vernon</p>
+                            <p class="mb-0 description black">Jl. Letjen Sutoyo 103<br></p>
+                            <p class="mb-0 description text-muted">0812345678<br></p>
+                        </div>
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Tipe</p>
+                            <p class="mb-0 subtitle small text-capitalize">Ganti Barang</p>
+                            <p class="description mb-0 mt-2">Status</p>
+                            <p class="mb-0 subtitle small text-capitalize text-success">Diinput</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-12">
+                            <div class="table-responsive table general-table table-sm mb-0">
+                                <table class="table mt-3 mb-0">
+                                    <thead class="no-border">
+                                        <tr class="no-border"></tr>
+                                    </thead>
+                                    <tbody class="no-border">
+                                        <tr class="sub-header">
+                                            <td class="col-2">Kode Item<br>(Material)</td>
+                                            <td class="col-3">Nama Item<br>(Description)</td>
+                                            <td class="text-end col-1">Qty<br>Diretur</td>
+                                            <td class="text-end col-2 text-right">Qty<br>Diterima</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-2">IT-2</td>
+                                            <td class="col-3">ITEM 2</td>
+                                            <td class="text-end col-1">2</td>
+                                            <td class="text-end col-2">1</td>
+                                        </tr>
+                                        <tr class="clickable bg-success normalcursor">
+                                            <td class="col-2">IT-3</td>
+                                            <td class="col-3">ITEM 3</td>
+                                            <td class="text-end col-1">4</td>
+                                            <td class="text-end col-2">4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-end col-12 mb-3 mt-2"><span class="description p-1">Keterangan</span><span class="description p-1 bg-success black">Penerimaan sesuai barang retur</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">OK</button></div>
             </div>
         </div>
     </div>

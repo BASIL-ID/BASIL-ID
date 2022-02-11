@@ -306,7 +306,7 @@
                                                 <tr class="pb-2">
                                                     <td class="text-center pb-0 pt-1" colspan="3"></td>
                                                 </tr>
-                                                <tr onclick="redirect(&#39;/DO/create.html&#39;)">
+                                                <tr onclick="redirect(&#39;/Transfer/detail.html&#39;);">
                                                     <td class="text-center col-4 small clickable" colspan="3"><a href="#">Terima Transfer Stok</a><br></td>
                                                 </tr>
                                                 <tr></tr>
@@ -324,14 +324,14 @@
                                                     <td class="col-4 small pb-0" colspan="3">Log</td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="#">TRCV-1236127978</a><a><br><small class="text-muted">26 Februari 2021</small><br></a></td>
+                                                    <td><a href="#" onclick="openModal(&#39;modalLog&#39;);">TRCV-1236127978</a><a><br><small class="text-muted">26 Februari 2021</small><br></a></td>
                                                     <td class="text-end"></td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text-end pt-1 pb-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="pb-0"><a href="#">TRCV-1234567890<br></a></td>
+                                                    <td class="pb-0"><a href="#" onclick="openModal(&#39;modalLog&#39;);">TRCV-1234567890<br></a></td>
                                                     <td class="text-end pb-0"></td>
                                                 </tr>
                                                 <tr>
@@ -345,7 +345,7 @@
                                                     <td class="text-end pt-1 pb-0"></td>
                                                 </tr>
                                                 <tr>
-                                                    <td><a href="#">TRCV-1234567891<br><small class="text-muted">26 Februari 2021</small><br></a></td>
+                                                    <td><a href="#" onclick="openModal(&#39;modalLog&#39;);">TRCV-1234567891<br><small class="text-muted">26 Februari 2021</small><br></a></td>
                                                     <td class="text-end"></td>
                                                 </tr>
                                             </tbody>
@@ -538,6 +538,73 @@
                     <p class="small">Semua barang yang dikirimkan melalui Transfer Stok sudah diterima semua</p>
                 </div>
                 <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalLog">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Detail Penerimaan Transfer Stok</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Dokumen</p>
+                            <p class="mb-0 subtitle small text-capitalize">TRF-01235678900<br></p>
+                            <p class="mb-0 description black">21 Februari 2021, 12:00</p>
+                        </div>
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Outlet Pengirim</p>
+                            <p class="mb-0 subtitle small text-capitalize">Skytech Klampis</p>
+                            <p class="mb-0 description black">Jl. Klampis 103<br></p>
+                            <p class="mb-0 description text-muted">0812345678<br></p>
+                        </div>
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Status</p>
+                            <p class="mb-0 subtitle small text-capitalize text-success">Diinput</p>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-12">
+                            <div class="table-responsive table general-table table-sm mb-0">
+                                <table class="table mt-3 mb-0">
+                                    <thead class="no-border">
+                                        <tr class="no-border"></tr>
+                                    </thead>
+                                    <tbody class="no-border">
+                                        <tr class="sub-header">
+                                            <td class="col-2">Kode Item<br>(Material)</td>
+                                            <td class="col-3">Nama Item<br>(Description)</td>
+                                            <td class="text-end col-1">Qty<br>Dikirim</td>
+                                            <td class="text-end col-2 text-right">Qty<br>Diterima</td>
+                                        </tr>
+                                        <tr class="clickable bg-danger normalcursor">
+                                            <td class="col-2">IT-1</td>
+                                            <td class="col-3">ITEM 1</td>
+                                            <td class="text-end col-1">2</td>
+                                            <td class="text-end col-2">0</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-2">IT-2</td>
+                                            <td class="col-3">ITEM 2</td>
+                                            <td class="text-end col-1">2</td>
+                                            <td class="text-end col-2">1</td>
+                                        </tr>
+                                        <tr class="clickable bg-success normalcursor">
+                                            <td class="col-2">IT-3</td>
+                                            <td class="col-3">ITEM 3</td>
+                                            <td class="text-end col-1">4</td>
+                                            <td class="text-end col-2">4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="text-end col-12 mb-3 mt-2"><span class="description p-1">Keterangan</span><span class="description p-1 bg-success black">Penerimaan Sesuai Pengiriman</span><span class="description p-1 bg-danger black">Barang Tidak Diterima</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">OK</button></div>
             </div>
         </div>
     </div>
