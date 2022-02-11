@@ -34,7 +34,7 @@
                 <div class="top">
                     <div class="row my-4 mx-0">
                         <div class="col-8">
-                            <p class="title mb-0">Penerimaan</p>
+                            <p class="title mb-0">Pembelian</p>
                         </div>
                         <div class="col-4 d-flex justify-content-end">
                             <p class="link-icon"><img class="rotate-left" src="../assets/img/up-arrow-angle.svg" width="10"></p>
@@ -60,9 +60,29 @@
                             <p class="mb-0 minititle">Input DO<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper">
+                    <div id="menu-transaction-2" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Retur Pembelian</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/retur/index.html&#39;)">
+                        <div class="col py-2 clickable" onclick="redirect(&#39;/SO/index.html&#39;)">
+                            <p class="mb-0 minititle">Liat Retur<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/retur/create.html&#39;)">
                         <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Batalkan DO<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                            <p class="mb-0 minititle">Input Retur<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/retur/resolve.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Penerimaan Item Retur<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/retur/resolvecredit.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Penerimaan Kredit Retur<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
                 </div>

@@ -94,41 +94,38 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Input DO</p>
+                                        <p class="mb-0 title">Input Retur Pembelian</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Penerimaan Barang</a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Input DO&nbsp;</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Retur Pembelian</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Input Retur</a></li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Informasi DO</strong></label></div>
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Informasi Retur</strong></label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 px-3">
                                         <div class="row mx-0 bg-white py-3">
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Diterima</label>
-                                                <p class="mb-0 subtitle small text-capitalize">Skytech Lenmarc</p>
-                                                <p class="mb-0 description black">Lenmarc Mall, Surabaya<br></p>
-                                                <p class="mb-1 description text-muted">0812345678<br></p>
-                                                <p class="description black">Ubah (SUPERVISOR)</p><label class="form-label text-muted mt-3">Di-input</label>
+                                            <div class="col-4 px-2"><label class="form-label text-muted">Oleh</label>
+                                                <p class="mb-0 subtitle small text-capitalize">Anton Wahyudi</p>
+                                                <p class="mb-0 description black">Anton@skytech.id<br></p>
+                                                <p class="mb-1 description text-muted">0812345678<br></p><label class="form-label text-muted mt-3">Di-input</label>
                                                 <p class="mb-1 subtitle small text-capitalize">23 Februari 2021, 12:00<br></p>
-                                                <p class="description black">Ubah (SUPERVISOR)</p>
                                             </div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">No. DO</label><input type="text" class="form-control form-control-sm" placeholder="No. Dokumen"><label class="form-label text-muted mt-3">Tanggal DO</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"><label class="form-label text-muted mt-3">Tanggal Barang Diterima</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"></div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted mt-0">Catatan (opsional)<br></label><textarea class="form-control no-resize" rows="5"></textarea></div>
+                                            <div class="col-8 px-2"><label class="form-label text-muted mt-0">Catatan (opsional)<br></label><textarea class="form-control no-resize" rows="5"></textarea></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Dokumen SO</strong></label></div>
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Dokumen Invoice</strong></label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col">
                                                 <div class="row mx-0 bg-white py-2">
-                                                    <div class="col pr-0"><input type="text" class="form-control" placeholder="No. SO"></div>
+                                                    <div class="col pr-0"><input type="text" class="form-control" placeholder="No. Invoice"></div>
                                                     <div class="col-auto">
                                                         <p class="link-icon browse-icon" onclick="openModal(&#39;modalItem&#39;);"><img src="../assets/img/browse.svg" width="16"></p>
                                                     </div>
@@ -140,8 +137,8 @@
                                 <div class="row mt-2 mx-0">
                                     <div class="col-12 bg-white py-3">
                                         <div class="row">
-                                            <div class="col-6 px-2"><label class="form-label text-muted">Dokumen SO</label>
-                                                <p class="mb-0 subtitle small text-capitalize">SO-01235678900<br></p>
+                                            <div class="col-6 px-2"><label class="form-label text-muted">Dokumen Invoice</label>
+                                                <p class="mb-0 subtitle small text-capitalize">INV-01235678900<br></p>
                                                 <p class="mb-0 description black">21 Februari 2021, 12:00</p><a href="#">Ubah</a>
                                             </div>
                                             <div class="col-6 px-2"><label class="form-label text-muted">Supplier</label>
@@ -164,11 +161,9 @@
                                                         <td class="col-2">Kode Item<br>(Material)</td>
                                                         <td class="col-3">Nama Item<br>(Description)</td>
                                                         <td class="text-end col-1">Qty Dipesan</td>
-                                                        <td class="text-end col-2 text-right">Qty Diinput</td>
+                                                        <td class="text-end col-2 text-right">Qty Diretur</td>
                                                         <td class="col-2 text-right">Serial Number</td>
-                                                        <td class="text-end col-2 text-right">Qty Sudah Diterima</td>
                                                         <td class="text-start col-2 text-right">Ref. DO</td>
-                                                        <td class="text-start col-2 text-right">Keterangan</td>
                                                     </tr>
                                                     <tr class="clickable" onclick="openModal(&#39;modalNoSerial&#39;);">
                                                         <td class="col-2">IT-2</td>
@@ -176,42 +171,39 @@
                                                         <td class="text-end col-1">2</td>
                                                         <td class="text-end col-2 text-right">1</td>
                                                         <td class="col-2">Tanpa Serial</td>
-                                                        <td class="text-end col-2 text-right">0</td>
-                                                        <td class="text-start col-2 text-right">_</td>
-                                                        <td class="text-start col-2 text-right">Belum Diterima</td>
+                                                        <td class="text-start col-2 text-right">
+                                                            <ul class="pl-adjust">
+                                                                <li class="text-start"><a href="#">DO-123456789</a></li>
+                                                            </ul>
+                                                        </td>
                                                     </tr>
-                                                    <tr class="clickable bg-warning" onclick="openModal(&#39;modalSerial&#39;);">
+                                                    <tr class="clickable" onclick="openModal(&#39;modalSerial&#39;);">
                                                         <td class="col-2">IT-3</td>
                                                         <td class="col-3">ITEM 3</td>
                                                         <td class="text-end col-1">4</td>
                                                         <td class="text-end col-2 text-right">0</td>
                                                         <td class="col-2">Belum diinput</td>
-                                                        <td class="text-end col-2 text-right">1</td>
                                                         <td class="text-end col-2 text-right">
                                                             <ul class="pl-adjust">
-                                                                <li class="text-start">DO-123456789</li>
+                                                                <li class="text-start"><a href="#">DO-123456789</a></li>
                                                             </ul>
                                                         </td>
-                                                        <td class="text-start col-2 text-right">Diterima Sebagian</td>
                                                     </tr>
-                                                    <tr class="no-bottom bg-success clickable normalcursor">
+                                                    <tr class="no-bottom clickable normalcursor">
                                                         <td class="col-2">IT-1</td>
                                                         <td class="col-3">ITEM 1</td>
                                                         <td class="text-end col-1">2</td>
-                                                        <td class="text-end col-2 text-right">0</td>
-                                                        <td class="col-2" onclick="openModal(&#39;modalDetailSN&#39;);"><a href="#">2 data diinput</a></td>
                                                         <td class="text-end col-2 text-right">2</td>
+                                                        <td class="col-2" onclick="openModal(&#39;modalDetailSN&#39;);"><a href="#">2 data diinput</a></td>
                                                         <td class="text-end col-2 text-right">
                                                             <ul class="pl-adjust">
-                                                                <li class="text-start">DO-123456789</li>
+                                                                <li class="text-start"><a href="#">DO-123456789</a></li>
                                                             </ul>
                                                         </td>
-                                                        <td class="text-start col-2 text-right">Lengkap</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="text-end col-12 mb-3 mt-2"><span class="description p-1">Keterangan</span><span class="description p-1 bg-success black">Penerimaan Barang Lengkap</span><span class="description p-1 bg-warning black">Penerimaan Barang Belum Lengkap</span></div>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -222,7 +214,7 @@
                                         <div class="row mx-0 bg-white py-3">
                                             <div class="col-12 px-2">
                                                 <div class="row mb-2">
-                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen DO (opsional)</label>
+                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen (opsional)</label>
                                                         <div class="border p-4 clickable">
                                                             <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
                                                         </div>
@@ -244,11 +236,11 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Daftar SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h4 class="modal-title">Daftar Invoice</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="row mx-0 mb-3">
-                        <div class="col-12 input-group px-0 input-group-sm searchbar"><input type="text" class="form-control" placeholder="No. SO"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                        <div class="col-12 input-group px-0 input-group-sm searchbar"><input type="text" class="form-control" placeholder="No. Invoice"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
                     </div>
                     <div class="table-responsive table general-table table-sm mb-0 pt-0">
                         <table class="table mt-3">
@@ -257,17 +249,17 @@
                             </thead>
                             <tbody class="no-border">
                                 <tr class="sub-header no-border">
-                                    <td class="col-3">Nomor SO</td>
-                                    <td class="col-3">Tanggal SO</td>
+                                    <td class="col-3">Nomor Invoice</td>
+                                    <td class="col-3">Tanggal Invoice</td>
                                     <td class="col-3">Supplier</td>
                                 </tr>
                                 <tr class="clickable" onclick="openModal(&#39;modalDetail&#39;)">
-                                    <td class="col-3">SO-01235678</td>
+                                    <td class="col-3">INV-01235678</td>
                                     <td class="col-3">23 Februari 2021</td>
                                     <td class="col-3">Vernon</td>
                                 </tr>
                                 <tr class="clickable" onclick="openModal(&#39;modalItemNew&#39;);">
-                                    <td class="col-3">SO-91236736</td>
+                                    <td class="col-3">INV-91236736</td>
                                     <td class="col-3">27 Februari 2021</td>
                                     <td class="col-3">Metrodata</td>
                                 </tr>
