@@ -139,182 +139,90 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Jurnal Pembelian</p>
+                                        <p class="mb-0 title">Input Rekening Koran</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#"><strong>Jurnal</strong><br></a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Jurnal Pembelian</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Penyesuaian</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Input Rekening Koran</a></li>
                                         </ol>
                                     </div>
                                 </div>
-                                <div class="row mb-3">
-                                    <div class="col-12 px-3"><label class="form-label"></label></div>
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-3 px-3">
-                                                <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="No Dokumen Transfer"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                                <div class="row">
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Informasi</strong></label></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 px-3">
+                                        <div class="row mx-0 bg-white py-3">
+                                            <div class="col-4 px-2"><label class="form-label text-muted">Oleh</label>
+                                                <p class="mb-0 subtitle small text-capitalize">Agus Tri<br></p>
+                                                <p class="mb-0 description black">agus@skytech.id</p>
+                                                <p class="mb-0 description black">08123567800</p>
                                             </div>
-                                            <div class="col-6"></div>
-                                            <div class="col-3 px-3 text-right pr-0">
-                                                <div class="input-group input-group-sm w-auto ml-2 filterDisplay text-right pull-right pr-0"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" onclick="openModal(&#39;modalFilter&#39;)">Filter&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;" onclick="openModal(&#39;modalSort&#39;)">Sort&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
-                                            </div>
+                                            <div class="col-4 px-2"><label class="form-label text-muted">Tanggal Input&nbsp;</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"></div>
+                                            <div class="col-4 px-2"><label class="form-label text-muted mt-0">Catatan&nbsp;</label><textarea class="form-control no-resize" rows="3"></textarea></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Transaksi</strong></label></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 px-3">
+                                        <div class="text-center row mx-0 bg-white">
+                                            <div class="col-6 py-2"><a>Manual</a></div>
+                                            <div class="col-6 py-2 bg-light"><a href="#">Import Data</a></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 px-3">
+                                        <div class="row mx-0 bg-white pt-3">
+                                            <div class="col-6 px-2 pb-2 pt-1">
+                                                <p class="mb-0 subtitle small text-capitalize">Keterangan</p>
+                                            </div>
+                                            <div class="col-6 px-2 pb-2"><input type="text" class="form-control form-control-sm" placeholder="Keterangan" style="text-align: right;" value="Penerimaan Setoran"></div>
+                                            <div class="col-6 px-2 pb-2 pt-1">
+                                                <p class="mb-0 subtitle small text-capitalize">Kas Penerima</p>
+                                            </div>
+                                            <div class="col-6 px-2 pb-2"><select class="form-control form-control-sm text-right" style="text-align:right;">
+                                                    <option value="13" selected="">Kas Kecil 1</option>
+                                                    <option value="12">Kas Kecil 2</option>
+                                                </select></div>
+                                            <div class="col-6 px-2">
+                                                <p class="mb-0 subtitle small text-capitalize pt-1">Nominal</p>
+                                            </div>
+                                            <div class="col-6 px-2"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;" value="1.000.000"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12 px-3">
                                         <div class="row mx-0 bg-white">
-                                            <div class="table-responsive table general-table table-sm mb-0">
-                                                <table class="table mt-3">
-                                                    <thead class="no-border">
-                                                        <tr class="no-border"></tr>
-                                                    </thead>
-                                                    <tbody class="no-border">
-                                                        <tr>
-                                                            <td class="text-start text-right">Tanggal</td>
-                                                            <td class="text-start text-right">Nama Akun</td>
-                                                            <td class="text-start text-right">Keterangan</td>
-                                                            <td class="text-end text-right">Debet</td>
-                                                            <td class="text-end text-right">Kredit</td>
-                                                        </tr>
-                                                        <tr></tr>
-                                                        <tr>
-                                                            <td class="text-start text-right" rowspan="3">27 Januari 2021</td>
-                                                            <td class="text-start">Persediaan</td>
-                                                            <td class="text-start">Skytech Klampis</td>
-                                                            <td class="text-end text-right">500.000</td>
-                                                            <td class="text-end text-right"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-start text-right">&nbsp; &nbsp;&nbsp;Hutang</td>
-                                                            <td class="text-start">Hutang Usaha</td>
-                                                            <td class="text-end"></td>
-                                                            <td class="text-end text-right">500.000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-start text-right small bg-light" colspan="4"><em>* Pembelian barang ref. INV-123621</em></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-start text-right" rowspan="3">28 Januari 2021</td>
-                                                            <td class="text-start">Piutang</td>
-                                                            <td class="text-start">Credit Metro Data</td>
-                                                            <td class="text-end text-right">1.000.000</td>
-                                                            <td class="text-end text-right"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-start text-right">&nbsp; &nbsp;&nbsp;Persediaan</td>
-                                                            <td class="text-start">Skytech Klampis</td>
-                                                            <td class="text-end"></td>
-                                                            <td class="text-end text-right">1.000.000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-start text-right small bg-light" colspan="4"><em>* retur pembelian</em></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-start text-right" rowspan="3">30 Januari 2021</td>
-                                                            <td class="text-start">Persediaan</td>
-                                                            <td class="text-start">Skytech Galaxy</td>
-                                                            <td class="text-end text-right">700.000</td>
-                                                            <td class="text-end text-right"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-start text-right">&nbsp; &nbsp; Kas</td>
-                                                            <td class="text-start">Kas Tunai</td>
-                                                            <td class="text-end"></td>
-                                                            <td class="text-end text-right">700.000</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="text-start text-right small bg-light" colspan="4"><em>* Rekonsiliasi Bank</em></td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                            <div class="col-12 px-2 pb-2 pt-1"><label class="form-label text-muted">Unggah E-Receipt (Import Data)</label>
+                                                <div class="border p-4 clickable">
+                                                    <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
-                                    <div class="col-12 bg-white">
-                                        <div class="table-responsive table general-table table-sm mb-0">
-                                            <table class="table mt-3 mb-0">
-                                                <thead class="no-border">
-                                                    <tr class="no-border"></tr>
-                                                </thead>
-                                                <tbody class="no-border">
-                                                    <tr class="sub-header no-top">
-                                                        <td class="col-2">Kode</td>
-                                                        <td class="col-3">Nama</td>
-                                                        <td class="col-1">Qty</td>
-                                                        <td class="text-end col-2 text-right">Harga/Unit<br>(excl ppn)</td>
-                                                        <td class="text-end col-2 text-right">Harga/Unit<br>(incl ppn)</td>
-                                                        <td class="text-end col-2 text-right">Diskon/Unit<br>(incl ppn)</td>
-                                                        <td class="text-end col-2 text-right">Nett/Unit<br>(incl ppn)</td>
-                                                        <td class="text-end col-2 text-right">Total<br>(incl ppn)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="col-2">IT-1</td>
-                                                        <td class="col-3">ITEM 1</td>
-                                                        <td class="col-1">2</td>
-                                                        <td class="text-end col-2">10.000</td>
-                                                        <td class="text-end col-2 text-right">11.000</td>
-                                                        <td class="text-end col-2 text-right">0</td>
-                                                        <td class="text-end col-2 text-right">11.000</td>
-                                                        <td class="text-end col-2 text-right">22.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="col-2">IT-2</td>
-                                                        <td class="col-3">ITEM 2</td>
-                                                        <td class="col-1">2</td>
-                                                        <td class="text-end col-2">10.000</td>
-                                                        <td class="text-end col-2 text-right">10.000</td>
-                                                        <td class="text-end col-2 text-right">0</td>
-                                                        <td class="text-end col-2 text-right">10.000</td>
-                                                        <td class="text-end col-2 text-right">20.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="col-2">IT-3</td>
-                                                        <td class="col-3">ITEM 3</td>
-                                                        <td class="col-1">4</td>
-                                                        <td class="text-end col-2">5.000</td>
-                                                        <td class="text-end col-2 text-right">5.500</td>
-                                                        <td class="text-end col-2 text-right">0</td>
-                                                        <td class="text-end col-2 text-right">5.500</td>
-                                                        <td class="text-end col-2 text-right">22.000</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                        <div class="table-responsive table general-table table-sm mb-0">
-                                            <table class="table mt-0">
-                                                <thead class="no-border">
-                                                    <tr class="no-border"></tr>
-                                                </thead>
-                                                <tbody class="no-border">
-                                                    <tr>
-                                                        <td class="text-start col-4" colspan="2">Total Sebelum Pajak</td>
-                                                        <td class="text-end col-4 text-right">60.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-start col-4" colspan="2">Cash Diskon (opsional)</td>
-                                                        <td class="text-end col-2 text-right">6.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-start col-3" colspan="2">Grand Total (excl ppn)</td>
-                                                        <td class="text-end col-4 text-right">54.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-start col-4" colspan="2">PPN (10%)</td>
-                                                        <td class="text-end col-2">5.400</td>
-                                                    </tr>
-                                                    <tr class="no-bottom">
-                                                        <td class="text-start col-4" colspan="2"><strong>Grand Total (incl ppn)</strong></td>
-                                                        <td class="text-end col-4 text-right"><strong>59.400</strong></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                <div class="row mt-3">
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Lampiran&nbsp;</strong></label></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 px-3">
+                                        <div class="row mx-0 bg-white py-3">
+                                            <div class="col-12 px-2">
+                                                <div class="row mb-2">
+                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen Bukti Pembayaran (opsional)</label>
+                                                        <div class="border p-4 clickable">
+                                                            <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-3"><label class="form-label text-muted">Tambahkan Tagging Dokumen (opsional)&nbsp;</label><input type="text" class="form-control mb-2" placeholder="Isi dengan format &quot;judul:nilai&quot;, tekan enter untuk menambahkan"><span class="link-icon small py-1 px-2 tag">Judul Tag : Nilai Tag | X</span></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
-                                    <div class="text-center col-12 bg-white"><a class="text-center" href="#" onclick="toggleHideComponent(&#39;.expand-invoice&#39;, &#39;.hide-invoice&#39;)">Sembunyikan Detail Invoice</a></div>
                                 </div>
                             </div>
                         </div>
