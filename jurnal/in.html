@@ -154,7 +154,8 @@
                                         <div class="row mx-0 bg-white py-3">
                                             <div class="col-8 px-2"><label class="form-label text-muted">Judul</label><input type="text" class="form-control form-control" placeholder="Masukkan Judul"></div>
                                             <div class="col-4 px-2"><label class="form-label text-muted">Tipe</label><select class="form-control form-control-sm" value="Memoial Koreksi">
-                                                    <option value="12">Uang Hillang</option>
+                                                    <option value="12">Reimbursement</option>
+                                                    <option value="">Retur</option>
                                                     <option value="">Lain lain</option>
                                                 </select></div>
                                             <div class="col-12 px-2">
@@ -184,11 +185,21 @@
                                                         </thead>
                                                         <tbody class="no-border">
                                                             <tr>
+                                                                <td class="text-start text-right">Akun Debit</td>
                                                                 <td class="text-start text-right">Akun Kredit</td>
                                                                 <td class="text-end text-left">Nominal</td>
                                                             </tr>
                                                             <tr></tr>
                                                             <tr>
+                                                                <td class="text-start text-right"><select class="form-control form-control-sm">
+                                                                        <option value="13" selected="">Kas Penerimaan Pajak</option>
+                                                                        <option value="12">Piutang Supplier</option>
+                                                                    </select></td>
+                                                                <td class="text-start text-right"></td>
+                                                                <td class="text-end text-left"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;" value="1.000.000"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-start text-right"></td>
                                                                 <td class="text-start text-right"><select class="form-control form-control-sm">
                                                                         <option value="13" selected="">BCA 7000</option>
                                                                         <option value="12">BCA 9000</option>
@@ -196,6 +207,7 @@
                                                                 <td class="text-end text-left"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;" value="1.000.000"></td>
                                                             </tr>
                                                             <tr class="no-bottom">
+                                                                <td class="text-start text-right no-bottom"><button class="btn btn-light btn-block w-100" type="button">Tambah Akun Debit</button></td>
                                                                 <td class="text-start text-right no-bottom"><button class="btn btn-light btn-block w-100" type="button">Tambah Akun Kredit</button></td>
                                                                 <td class="text-start text-right no-bottom"></td>
                                                             </tr>
