@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>basil 1</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <div class="body-left-menu">
+            <div class="row mt-2">
+                <div id="home" class="col my-3 mx-1"><img class="img-fluid p-2" src="../assets/img/shop.png"></div>
+                <div id="product" class="col my-3 mx-1"><img class="img-fluid p-2" src="../assets/img/package-6.png"></div>
+                <div id="sales" class="col my-3 mx-1"><img class="img-fluid p-2 active" src="../assets/img/shopping-bag-2.png"></div>
+                <div id="employee" class="col my-3 mx-1"><img class="img-fluid p-2" src="../assets/img/graphic.svg"></div>
+                <div class="col my-3 mx-1">
+                    <hr class="my-0">
+                </div>
+                <div id="user" class="col my-3 mx-1">
+                    <div class="p-1 menu">
+                        <h6 class="text-center my-0 round-link invert bg-darkBlack">A</h6>
+                    </div>
+                </div>
+                <div id="logout" class="col my-3 mx-1"><img class="img-fluid p-2" src="../assets/img/turn-off.png"></div>
+            </div>
+        </div>
+        <div class="body-center-wrapper">
+            <div class="body-center-submenu py-2">
+                <div class="top">
+                    <div class="row my-4 mx-0">
+                        <div class="col-8">
+                            <p class="title mb-0">Finance</p>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end">
+                            <p class="link-icon"><img class="rotate-left" src="../assets/img/up-arrow-angle.svg" width="10"></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-3">
+                        <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Saya Mau"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                    </div>
+                </div>
+                <div class="content scroll">
+                    <div id="menu-transaction-1" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Kas Outlet</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/index.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Akun Kas&nbsp;<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Riwayat Kas&nbsp;<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/out.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input Kas Keluar<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/in.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input Kas Masuk<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div id="menu-transaction-2" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Setoran Kas</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/setor/index.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Riwayat Setoran<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/setor/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input Setoran<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div id="menu-transaction-3" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Top Up Kas</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/topup/index.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Riwayat Top Up<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/topup/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input Permohonan<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-center-content">
+                <div class="content scroll">
+                    <div>
+                        <div class="row mx-0 mb-5 pb-4">
+                            <div class="col px-3">
+                                <div class="row py-2 mt-4 mb-3">
+                                    <div class="col">
+                                        <p class="mb-0 title">Akun Kas Outlet</p>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Kas Outlet</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Akun Kas</a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Kas Hari ini (22 Januari 2021)</strong></label></div>
+                                    <div class="col-12 pb-3">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="row">
+                                                    <div class="col-12 mt-1">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p class="text-start description mb-0 black">Total Saldo</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="text-end mb-0 subtitle small">Rp. 2.000.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row">
+                                                    <div class="col-12 mt-1">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p class="text-start description mb-0 black">Total Kas Masuk</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="text-end mb-0 subtitle small">Rp. 500.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row">
+                                                    <div class="col-12 mt-1">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p class="text-start description mb-0 text-danger">Total Kas Keluar</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="text-end mb-0 subtitle small">Rp. 200.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div>
+                                                <ul class="nav nav-tabs" role="tablist">
+                                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-3">Semua Kas</a></li>
+                                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Kas Kecil</a></li>
+                                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Kas Bank</a></li>
+                                                </ul>
+                                                <div class="tab-content bg-white">
+                                                    <div class="tab-pane" role="tabpanel" id="tab-1">
+                                                        <div class="table-responsive table general-table table-sm mb-0">
+                                                            <table class="table mt-3">
+                                                                <thead class="no-border">
+                                                                    <tr class="no-border"></tr>
+                                                                </thead>
+                                                                <tbody class="no-border">
+                                                                    <tr>
+                                                                        <td class="text-start text-right">Nama Akun</td>
+                                                                        <td class="text-start text-left">Kelompok</td>
+                                                                        <td class="text-end text-right">Saldo Awal<br></td>
+                                                                        <td class="text-end text-right">Total Kas Masuk</td>
+                                                                        <td class="text-end text-right">Total Kas Keluar</td>
+                                                                        <td class="text-end text-right">Saldo Akhir</td>
+                                                                    </tr>
+                                                                    <tr></tr>
+                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start text-right">Kas Kecil 1</td>
+                                                                        <td class="text-start text-left">Kas</td>
+                                                                        <td class="text-end text-right">1.000.000</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                        <td class="text-end text-right">800.000</td>
+                                                                    </tr>
+                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start text-right">Kas kecil 2</td>
+                                                                        <td class="text-start">Kas</td>
+                                                                        <td class="text-end text-right">500.000</td>
+                                                                        <td class="text-end text-right">500.000</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">1.000.000</td>
+                                                                    </tr>
+                                                                    <tr class="bg-light">
+                                                                        <td class="text-start col-2 text-right" colspan="2"><strong>Total</strong></td>
+                                                                        <td class="text-end text-right">1.500.000</td>
+                                                                        <td class="text-end text-right">500.000</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                        <td class="text-end text-right">1.800.000</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" role="tabpanel" id="tab-2">
+                                                        <div class="table-responsive table general-table table-sm mb-0">
+                                                            <table class="table mt-3">
+                                                                <thead class="no-border">
+                                                                    <tr class="no-border"></tr>
+                                                                </thead>
+                                                                <tbody class="no-border">
+                                                                    <tr>
+                                                                        <td class="text-start text-right">Nama Akun</td>
+                                                                        <td class="text-start text-left">Kelompok</td>
+                                                                        <td class="text-end text-right">Saldo Awal<br></td>
+                                                                        <td class="text-end text-right">Total Kas Masuk</td>
+                                                                        <td class="text-end text-right">Total Kas Keluar</td>
+                                                                        <td class="text-end text-right">Saldo Akhir</td>
+                                                                    </tr>
+                                                                    <tr></tr>
+                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start text-right">Bank Bca 9000</td>
+                                                                        <td class="text-start text-left">Bank</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                    </tr>
+                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start text-right">Bank Bca 7000</td>
+                                                                        <td class="text-start">Bank</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                    </tr>
+                                                                    <tr class="bg-light">
+                                                                        <td class="text-start col-2 text-right" colspan="2"><strong>Total</strong></td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane active" role="tabpanel" id="tab-3">
+                                                        <div class="table-responsive table general-table table-sm mb-0">
+                                                            <table class="table mt-3">
+                                                                <thead class="no-border">
+                                                                    <tr class="no-border"></tr>
+                                                                </thead>
+                                                                <tbody class="no-border">
+                                                                    <tr>
+                                                                        <td class="text-start text-right">Nama Akun</td>
+                                                                        <td class="text-start text-left">Kelompok</td>
+                                                                        <td class="text-end text-right">Saldo Awal<br></td>
+                                                                        <td class="text-end text-right">Total Kas Masuk</td>
+                                                                        <td class="text-end text-right">Total Kas Keluar</td>
+                                                                        <td class="text-end text-right">Saldo Akhir</td>
+                                                                    </tr>
+                                                                    <tr></tr>
+                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start text-right">Kas Kecil 1</td>
+                                                                        <td class="text-start text-left">Kas</td>
+                                                                        <td class="text-end text-right">1.000.000</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                        <td class="text-end text-right">800.000</td>
+                                                                    </tr>
+                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start text-right">Kas kecil 2</td>
+                                                                        <td class="text-start">Kas</td>
+                                                                        <td class="text-end text-right">500.000</td>
+                                                                        <td class="text-end text-right">500.000</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">1.000.000</td>
+                                                                    </tr>
+                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start text-right">Bank Bca 9000</td>
+                                                                        <td class="text-start text-left">Bank</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                    </tr>
+                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start text-right">Bank Bca 7000</td>
+                                                                        <td class="text-start">Bank</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">0</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                    </tr>
+                                                                    <tr class="bg-light" onclick="redirect(&#39;/kasir/history.html&#39;)">
+                                                                        <td class="text-start col-2 text-right" colspan="2"><strong>Total</strong></td>
+                                                                        <td class="text-end text-right">1.600.000</td>
+                                                                        <td class="text-end text-right">500.000</td>
+                                                                        <td class="text-end text-right">200.000</td>
+                                                                        <td class="text-end text-right">2.000.000</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" role="tabpanel" id="tab-4">
+                                                        <p>Tab content.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
+                                    <div class="col-12 bg-white">
+                                        <div class="table-responsive table general-table table-sm mb-0">
+                                            <table class="table mt-3 mb-0">
+                                                <thead class="no-border">
+                                                    <tr class="no-border"></tr>
+                                                </thead>
+                                                <tbody class="no-border">
+                                                    <tr class="sub-header no-top">
+                                                        <td class="col-2">Kode</td>
+                                                        <td class="col-3">Nama</td>
+                                                        <td class="col-1">Qty</td>
+                                                        <td class="text-end col-2 text-right">Harga/Unit<br>(excl ppn)</td>
+                                                        <td class="text-end col-2 text-right">Harga/Unit<br>(incl ppn)</td>
+                                                        <td class="text-end col-2 text-right">Diskon/Unit<br>(incl ppn)</td>
+                                                        <td class="text-end col-2 text-right">Nett/Unit<br>(incl ppn)</td>
+                                                        <td class="text-end col-2 text-right">Total<br>(incl ppn)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-2">IT-1</td>
+                                                        <td class="col-3">ITEM 1</td>
+                                                        <td class="col-1">2</td>
+                                                        <td class="text-end col-2">10.000</td>
+                                                        <td class="text-end col-2 text-right">11.000</td>
+                                                        <td class="text-end col-2 text-right">0</td>
+                                                        <td class="text-end col-2 text-right">11.000</td>
+                                                        <td class="text-end col-2 text-right">22.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-2">IT-2</td>
+                                                        <td class="col-3">ITEM 2</td>
+                                                        <td class="col-1">2</td>
+                                                        <td class="text-end col-2">10.000</td>
+                                                        <td class="text-end col-2 text-right">10.000</td>
+                                                        <td class="text-end col-2 text-right">0</td>
+                                                        <td class="text-end col-2 text-right">10.000</td>
+                                                        <td class="text-end col-2 text-right">20.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-2">IT-3</td>
+                                                        <td class="col-3">ITEM 3</td>
+                                                        <td class="col-1">4</td>
+                                                        <td class="text-end col-2">5.000</td>
+                                                        <td class="text-end col-2 text-right">5.500</td>
+                                                        <td class="text-end col-2 text-right">0</td>
+                                                        <td class="text-end col-2 text-right">5.500</td>
+                                                        <td class="text-end col-2 text-right">22.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="table-responsive table general-table table-sm mb-0">
+                                            <table class="table mt-0">
+                                                <thead class="no-border">
+                                                    <tr class="no-border"></tr>
+                                                </thead>
+                                                <tbody class="no-border">
+                                                    <tr>
+                                                        <td class="text-start col-4" colspan="2">Total Sebelum Pajak</td>
+                                                        <td class="text-end col-4 text-right">60.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start col-4" colspan="2">Cash Diskon (opsional)</td>
+                                                        <td class="text-end col-2 text-right">6.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start col-3" colspan="2">Grand Total (excl ppn)</td>
+                                                        <td class="text-end col-4 text-right">54.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start col-4" colspan="2">PPN (10%)</td>
+                                                        <td class="text-end col-2">5.400</td>
+                                                    </tr>
+                                                    <tr class="no-bottom">
+                                                        <td class="text-start col-4" colspan="2"><strong>Grand Total (incl ppn)</strong></td>
+                                                        <td class="text-end col-4 text-right"><strong>59.400</strong></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
+                                    <div class="text-center col-12 bg-white"><a class="text-center" href="#" onclick="toggleHideComponent(&#39;.expand-invoice&#39;, &#39;.hide-invoice&#39;)">Sembunyikan Detail Invoice</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalCancel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Batalkan DO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Anda akan membatalkan dokumen DO ini</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Batal</button><button class="btn btn-danger" type="button">Proses</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusDo">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Status Do</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="small text-success mb-1">Diinput</p>
+                    <p class="small">Barang sudah diterima sesuai dengan informasi yang di-inputkan di dkoumen DO dan dokumen dalam keadaan aktif(tidak di void)</p>
+                    <p class="small text-danger mb-1">Dibatalkan</p>
+                    <p class="small">Dokumen DO sudah diterbitkan dan telah dibatalkan.</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalDetail">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Item 1 (IT-1)</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mx-0 mb-3">
+                        <div class="col-12 px-0 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Cari SN / CN"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                    </div>
+                    <div class="table-responsive table general-table table-sm mb-0">
+                        <table class="table mt-3">
+                            <thead>
+                                <tr></tr>
+                            </thead>
+                            <tbody class="no-border">
+                                <tr class="sub-header">
+                                    <td class="col-3">SN</td>
+                                    <td class="col-3">CN</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">2137q7tdygjhahdja</td>
+                                    <td class="col-1">_</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">asdadjkashdadiasd</td>
+                                    <td class="col-1">_</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">9023jkr23jhksaasd</td>
+                                    <td class="col-1">_</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">918237iskahdjkadsd</td>
+                                    <td class="col-1">_</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-3">72gh37iskahdjkadsd</td>
+                                    <td class="text-start col-1">_</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-2">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Status SO</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="small text-success mb-1">Diterbitkan</p>
+                                <p class="small">Dokumen SO sudah di-input kedalam sistem dan dalam keadaan aktif(tidak di void)</p>
+                                <p class="small text-danger mb-1">Dibatalkan</p>
+                                <p class="small">Dokumen SO sudah diterbitkan dan telah dibatalkan.</p>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>
