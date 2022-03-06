@@ -52,22 +52,12 @@
                     </div>
                     <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/index.html&#39;)">
                         <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Akun Kas&nbsp;<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Riwayat Kas&nbsp;<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                            <p class="mb-0 minititle">Kas Kecil<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
                     <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/out.html&#39;)">
                         <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Input Kas Keluar<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/in.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Input Kas Masuk<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                            <p class="mb-0 minititle">Input Pembayaran<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
                     <div id="menu-transaction-2" class="row mx-0">
@@ -85,21 +75,6 @@
                             <p class="mb-0 minititle">Input Setoran<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
-                    <div id="menu-transaction-3" class="row mx-0">
-                        <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Top Up Kas</p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/topup/index.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Riwayat Top Up<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/topup/create.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Input Permohonan<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="body-center-content">
@@ -109,16 +84,16 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Akun Kas Outlet</p>
+                                        <p class="mb-0 title">Kas Kecil Outlet</p>
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a class="text-hover" href="#">Kas Outlet</a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Akun Kas</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Kas Kecil</a></li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Kas Hari ini (22 Januari 2021)</strong></label></div>
-                                    <div class="col-12 pb-3">
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Kas Hari ini (27 Januari 2021)</strong></label></div>
+                                    <div class="col-12 pb-4">
                                         <div class="row">
                                             <div class="col-4">
                                                 <div class="row">
@@ -170,164 +145,92 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-12 mb-3">
                                         <div class="row">
-                                            <div>
-                                                <ul class="nav nav-tabs" role="tablist">
-                                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-3">Semua Kas</a></li>
-                                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Kas Kecil</a></li>
-                                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-2">Kas Bank</a></li>
-                                                </ul>
-                                                <div class="tab-content bg-white">
-                                                    <div class="tab-pane" role="tabpanel" id="tab-1">
-                                                        <div class="table-responsive table general-table table-sm mb-0">
-                                                            <table class="table mt-3">
-                                                                <thead class="no-border">
-                                                                    <tr class="no-border"></tr>
-                                                                </thead>
-                                                                <tbody class="no-border">
-                                                                    <tr>
-                                                                        <td class="text-start text-right">Nama Akun</td>
-                                                                        <td class="text-start text-left">Kelompok</td>
-                                                                        <td class="text-end text-right">Saldo Awal<br></td>
-                                                                        <td class="text-end text-right">Total Kas Masuk</td>
-                                                                        <td class="text-end text-right">Total Kas Keluar</td>
-                                                                        <td class="text-end text-right">Saldo Akhir</td>
-                                                                    </tr>
-                                                                    <tr></tr>
-                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start text-right">Kas Kecil 1</td>
-                                                                        <td class="text-start text-left">Kas</td>
-                                                                        <td class="text-end text-right">1.000.000</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                        <td class="text-end text-right">800.000</td>
-                                                                    </tr>
-                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start text-right">Kas kecil 2</td>
-                                                                        <td class="text-start">Kas</td>
-                                                                        <td class="text-end text-right">500.000</td>
-                                                                        <td class="text-end text-right">500.000</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">1.000.000</td>
-                                                                    </tr>
-                                                                    <tr class="bg-light">
-                                                                        <td class="text-start col-2 text-right" colspan="2"><strong>Total</strong></td>
-                                                                        <td class="text-end text-right">1.500.000</td>
-                                                                        <td class="text-end text-right">500.000</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                        <td class="text-end text-right">1.800.000</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane" role="tabpanel" id="tab-2">
-                                                        <div class="table-responsive table general-table table-sm mb-0">
-                                                            <table class="table mt-3">
-                                                                <thead class="no-border">
-                                                                    <tr class="no-border"></tr>
-                                                                </thead>
-                                                                <tbody class="no-border">
-                                                                    <tr>
-                                                                        <td class="text-start text-right">Nama Akun</td>
-                                                                        <td class="text-start text-left">Kelompok</td>
-                                                                        <td class="text-end text-right">Saldo Awal<br></td>
-                                                                        <td class="text-end text-right">Total Kas Masuk</td>
-                                                                        <td class="text-end text-right">Total Kas Keluar</td>
-                                                                        <td class="text-end text-right">Saldo Akhir</td>
-                                                                    </tr>
-                                                                    <tr></tr>
-                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start text-right">Bank Bca 9000</td>
-                                                                        <td class="text-start text-left">Bank</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                    </tr>
-                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start text-right">Bank Bca 7000</td>
-                                                                        <td class="text-start">Bank</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                    </tr>
-                                                                    <tr class="bg-light">
-                                                                        <td class="text-start col-2 text-right" colspan="2"><strong>Total</strong></td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane active" role="tabpanel" id="tab-3">
-                                                        <div class="table-responsive table general-table table-sm mb-0">
-                                                            <table class="table mt-3">
-                                                                <thead class="no-border">
-                                                                    <tr class="no-border"></tr>
-                                                                </thead>
-                                                                <tbody class="no-border">
-                                                                    <tr>
-                                                                        <td class="text-start text-right">Nama Akun</td>
-                                                                        <td class="text-start text-left">Kelompok</td>
-                                                                        <td class="text-end text-right">Saldo Awal<br></td>
-                                                                        <td class="text-end text-right">Total Kas Masuk</td>
-                                                                        <td class="text-end text-right">Total Kas Keluar</td>
-                                                                        <td class="text-end text-right">Saldo Akhir</td>
-                                                                    </tr>
-                                                                    <tr></tr>
-                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start text-right">Kas Kecil 1</td>
-                                                                        <td class="text-start text-left">Kas</td>
-                                                                        <td class="text-end text-right">1.000.000</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                        <td class="text-end text-right">800.000</td>
-                                                                    </tr>
-                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start text-right">Kas kecil 2</td>
-                                                                        <td class="text-start">Kas</td>
-                                                                        <td class="text-end text-right">500.000</td>
-                                                                        <td class="text-end text-right">500.000</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">1.000.000</td>
-                                                                    </tr>
-                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start text-right">Bank Bca 9000</td>
-                                                                        <td class="text-start text-left">Bank</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                    </tr>
-                                                                    <tr class="clickable" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start text-right">Bank Bca 7000</td>
-                                                                        <td class="text-start">Bank</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">0</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                    </tr>
-                                                                    <tr class="bg-light" onclick="redirect(&#39;/kasir/history.html&#39;)">
-                                                                        <td class="text-start col-2 text-right" colspan="2"><strong>Total</strong></td>
-                                                                        <td class="text-end text-right">1.600.000</td>
-                                                                        <td class="text-end text-right">500.000</td>
-                                                                        <td class="text-end text-right">200.000</td>
-                                                                        <td class="text-end text-right">2.000.000</td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                    <div class="tab-pane" role="tabpanel" id="tab-4">
-                                                        <p>Tab content.</p>
-                                                    </div>
-                                                </div>
+                                            <div class="col-3 px-3">
+                                                <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Cari Judul"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                                            </div>
+                                            <div class="col-6"></div>
+                                            <div class="col-3 px-3 text-right pr-0">
+                                                <div class="input-group input-group-sm w-auto ml-2 filterDisplay text-right pull-right pr-0"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" onclick="openModal(&#39;modalFilter&#39;)">Filter&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;" onclick="openModal(&#39;modalSort&#39;)">Sort&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 px-3">
+                                        <div class="row mx-0 bg-white">
+                                            <div class="table-responsive table general-table table-sm mb-0">
+                                                <table class="table mt-3">
+                                                    <thead class="no-border">
+                                                        <tr class="no-border"></tr>
+                                                    </thead>
+                                                    <tbody class="no-border">
+                                                        <tr>
+                                                            <td class="text-start text-right">Tanggal</td>
+                                                            <td class="text-start text-right">Judul</td>
+                                                            <td class="text-start text-right">No. Ref</td>
+                                                            <td class="text-start text-right">Status</td>
+                                                            <td class="text-end text-right">Debit</td>
+                                                            <td class="text-end text-right">Kredit</td>
+                                                            <td class="text-end text-right">Saldo</td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                    <div class="dropdown-menu">
+                                                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Pembayaran</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr></tr>
+                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/detail.html&#39;);">
+                                                            <td class="text-start text-right">27 Januari 2021</td>
+                                                            <td class="text-start col-2 text-right">[JRN.001.001] Transfer ke Kas Kecil 27/01/2021</td>
+                                                            <td class="text-start col-2 text-right">#12334567890</td>
+                                                            <td class="text-start text-right text-success">Selesai</td>
+                                                            <td class="text-end text-right">300.000</td>
+                                                            <td class="text-end text-right">0</td>
+                                                            <td class="text-end text-right">2.000.000</td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                    <div class="dropdown-menu">
+                                                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Void Transaksi</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/detail.html&#39;);">
+                                                            <td class="text-start text-right">27 Januari 2020</td>
+                                                            <td class="text-start col-2 text-right">[JRN.001.002] Pembayaran Tagihan Listrik 27/01/2021</td>
+                                                            <td class="text-start col-2 text-right">#12334567890</td>
+                                                            <td class="text-start text-right text-success">Selesai</td>
+                                                            <td class="text-end text-right">0</td>
+                                                            <td class="text-end text-right">200.000</td>
+                                                            <td class="text-end text-right">1.800.000</td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                    <div class="dropdown-menu">
+                                                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Pembayaran</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/detail.html&#39;);">
+                                                            <td class="text-start text-right">27 Januari 2021</td>
+                                                            <td class="text-start col-2 text-right">[JRN.001.003] Terima Reimburement 27/01/2021</td>
+                                                            <td class="text-start col-2 text-right">#12334567890</td>
+                                                            <td class="text-start text-right text-success">Selesai</td>
+                                                            <td class="text-end text-right">200.000</td>
+                                                            <td class="text-end text-right">0</td>
+                                                            <td class="text-end text-right">2.000.000</td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                    <div class="dropdown-menu">
+                                                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Pembayaran</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
                                     </div>

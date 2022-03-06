@@ -100,26 +100,6 @@
                             <p class="mb-0 minititle">Input Biaya<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
-                    <div id="menu-transaction-4" class="row mx-0">
-                        <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Penyesuaian</p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/jurnal/history.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Riwayat<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/jurnal/koreksi.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Jurnal Penyesuaian<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/adf/create.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Asset Disposal<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="body-center-content">
@@ -129,47 +109,68 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Buat Akun Baru / Edit Akun</p>
+                                        <p class="mb-0 title">Input Transfer Keluar</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Akun</a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Buat Akun</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Kas &amp; Bank</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Transfer Kas</a></li>
                                         </ol>
                                     </div>
                                 </div>
-                                <div class="alert alert-warning" role="alert"><span><strong>Edit</strong> hanya bisa dilakukan jika akun belum pernah ditransaksikan</span></div>
                                 <div class="row">
                                     <div class="col-12 px-3"><label class="form-label"><strong>Informasi</strong></label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 px-3">
                                         <div class="row mx-0 bg-white py-3">
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Kategori Akun</label><select class="form-control form-control-sm">
-                                                    <option value="13">Akun Piutang</option>
-                                                    <option value="12">Aktiva Lancar Lainnya</option>
-                                                    <option value="" selected="">Kas &amp; Bank</option>
-                                                </select></div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Detail Akun</label><select class="form-control form-control-sm">
-                                                    <option value="13">Akun Header</option>
-                                                    <option value="" selected="">Akun Subgroup</option>
-                                                </select></div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Akun Header</label><select class="form-control form-control-sm">
-                                                    <option value="13">Kas</option>
-                                                    <option value="" selected="">Bank</option>
-                                                </select></div>
-                                            <div class="col-6 px-2 pt-2"><label class="form-label text-muted">Kode Akun</label><input type="text" class="form-control form-control-sm" placeholder="kode Akun"></div>
-                                            <div class="col-6 px-2 pt-2"><label class="form-label text-muted">Nama Akun</label><input type="text" class="form-control form-control-sm" placeholder="Nama Akun"></div>
-                                            <div class="col-12 px-2 pt-2"><label class="form-label text-muted">Deskripsi Akun</label><textarea class="form-control form-control-sm"></textarea></div>
+                                            <div class="col-4 px-2"><label class="form-label text-muted">Sumber Akun&nbsp;(Kas &amp; Bank)</label>
+                                                <p class="mb-0 subtitle small text-capitalize">1-1.02.02</p>
+                                                <p class="mb-2 description black">Bank BCA No. Rek 1000800010<br></p><a href="#">Ubah</a>
+                                            </div>
+                                            <div class="col-4"><label class="form-label text-muted">Akun Tujuan (Kas &amp; Bank)</label>
+                                                <p class="mb-0 subtitle small text-capitalize">1-1.02.01</p>
+                                                <p class="mb-2 description black">Bank BCA No. Rek 1000800020<br></p><a href="#">Ubah</a>
+                                            </div>
+                                            <div class="col-4"><label class="form-label text-muted">Tanggal Transaksi</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"><label class="form-label text-muted mt-2">No. Referensi (opsional)</label><input type="text" class="form-control form-control-sm" placeholder="No. Referensi"></div>
+                                            <div class="col-12">
+                                                <hr><label class="form-label text-muted">Catatan (opsional)<br></label><textarea class="form-control no-resize" rows="2"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 px-3 mt-3"><label class="form-label"><strong>Detail Transfer</strong></label></div>
+                                <div class="row mt-2 mx-1">
+                                    <div class="col-12 bg-white">
+                                        <div class="table-responsive table general-table table-sm mb-0">
+                                            <table class="table mt-3">
+                                                <thead class="no-border">
+                                                    <tr class="no-border"></tr>
+                                                </thead>
+                                                <tbody class="no-border">
+                                                    <tr class="no-bottom">
+                                                        <td class="text-start col-4" colspan="2">Nominal Transfer</td>
+                                                        <td class="text-end col-4 text-right no-bottom"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Saldo Awal</strong></label></div>
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Lampiran&nbsp;</strong></label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 px-3">
                                         <div class="row mx-0 bg-white py-3">
-                                            <div class="col-6 px-2"><input type="text" class="form-control form-control-sm" placeholder="Tanggal"></div>
-                                            <div class="col-6 px-2"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;"></div>
+                                            <div class="col-12 px-2">
+                                                <div class="row mb-2">
+                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen(opsional)</label>
+                                                        <div class="border p-4 clickable">
+                                                            <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-3"><label class="form-label text-muted">Tambahkan Tagging Dokumen (opsional)&nbsp;</label><input type="text" class="form-control mb-2" placeholder="Isi dengan format &quot;judul:nilai&quot;, tekan enter untuk menambahkan"><span class="link-icon small py-1 px-2 tag">Judul Tag : Nilai Tag | X</span></div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
