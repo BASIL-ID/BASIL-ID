@@ -50,7 +50,7 @@
                             <p class="mb-0 description">Penjualan</p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kasir/index.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/sales/index.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Rekap Penjualan<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
@@ -114,14 +114,67 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Rekap Kas Kecil</p>
+                                        <p class="mb-0 title">Lihat Mutasi Kas Kecil</p>
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a class="text-hover" href="#">Kas Outlet</a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Rekap Kas Kecil</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Kas Kecil</a></li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Kas Hari ini (27 Januari 2021)</strong></label></div>
+                                    <div class="col-12 pb-4">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="row">
+                                                    <div class="col-12 mt-1">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p class="text-start description mb-0 black">Total Saldo</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="text-end mb-0 subtitle small">Rp. 2.000.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row">
+                                                    <div class="col-12 mt-1">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p class="text-start description mb-0 black">Total Kas Masuk</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="text-end mb-0 subtitle small">Rp. 500.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row">
+                                                    <div class="col-12 mt-1">
+                                                        <div class="bg-white p-2 clickable">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <p class="text-start description mb-0 text-danger">Total Kas Keluar</p>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <p class="text-end mb-0 subtitle small">Rp. 200.000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="col-12 mb-3">
                                         <div class="row">
                                             <div class="col-3 px-3">
@@ -143,36 +196,72 @@
                                                     <tbody class="no-border">
                                                         <tr>
                                                             <td class="text-start text-right">Tanggal</td>
-                                                            <td class="text-start text-right">Di input</td>
+                                                            <td class="text-start text-right">Judul</td>
+                                                            <td class="text-start text-right">No. Ref</td>
+                                                            <td class="text-start text-right">Status</td>
                                                             <td class="text-end text-right">Saldo Awal</td>
                                                             <td class="text-end text-right">Debit</td>
                                                             <td class="text-end text-right">Kredit</td>
                                                             <td class="text-end text-right">Saldo Akhir</td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                    <div class="dropdown-menu">
+                                                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Pembayaran</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                         <tr></tr>
-                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/index.html&#39;);">
+                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/detail.html&#39;);">
                                                             <td class="text-start text-right">27 Januari 2021</td>
-                                                            <td class="text-start text-right">Anton Wahyudi</td>
+                                                            <td class="text-start col-2 text-right">[JRN.001.001] Transfer ke Kas Kecil 27/01/2021</td>
+                                                            <td class="text-start col-2 text-right">#12334567890</td>
+                                                            <td class="text-start text-right text-success">Selesai</td>
                                                             <td class="text-end text-right">1.700.000</td>
                                                             <td class="text-end text-right">300.000</td>
                                                             <td class="text-end text-right">0</td>
                                                             <td class="text-end text-right">2.000.000</td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                    <div class="dropdown-menu">
+                                                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Void Transaksi</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
-                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/index.html&#39;);">
-                                                            <td class="text-start text-right">26 Januari 2020</td>
-                                                            <td class="text-start text-right">Anton Wahyudi</td>
+                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/detail.html&#39;);">
+                                                            <td class="text-start text-right">27 Januari 2020</td>
+                                                            <td class="text-start col-2 text-right">[JRN.001.002] Pembayaran Tagihan Listrik 27/01/2021</td>
+                                                            <td class="text-start col-2 text-right">#12334567890</td>
+                                                            <td class="text-start text-right text-success">Selesai</td>
                                                             <td class="text-end text-right">2.000.000</td>
                                                             <td class="text-end text-right">0</td>
                                                             <td class="text-end text-right">200.000</td>
                                                             <td class="text-end text-right">1.800.000</td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                    <div class="dropdown-menu">
+                                                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Pembayaran</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
-                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/index.html&#39;);">
-                                                            <td class="text-start text-right">25 Januari 2021</td>
-                                                            <td class="text-start text-right">Anton Wahyudi</td>
+                                                        <tr class="clickable" onclick="redirect(&#39;/kasir/detail.html&#39;);">
+                                                            <td class="text-start text-right">27 Januari 2021</td>
+                                                            <td class="text-start col-2 text-right">[JRN.001.003] Terima Reimburement 27/01/2021</td>
+                                                            <td class="text-start col-2 text-right">#12334567890</td>
+                                                            <td class="text-start text-right text-success">Selesai</td>
                                                             <td class="text-end text-right">1.800.000</td>
                                                             <td class="text-end text-right">200.000</td>
                                                             <td class="text-end text-right">0</td>
                                                             <td class="text-end text-right">2.000.000</td>
+                                                            <td class="text-end text-right">
+                                                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                    <div class="dropdown-menu">
+                                                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Pembayaran</a>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
