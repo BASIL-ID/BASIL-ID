@@ -149,40 +149,65 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Jurnal Penyesuaian</p>
+                                        <p class="mb-0 title">Input Top Up Kas Kecil Outlet</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Penyesuaian</a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Jurnal Penyesuaian</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Biaya</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">IInput Top Up</a></li>
                                         </ol>
                                     </div>
                                 </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Referensi Permohonan Top Up</strong></label></div>
+                                </div>
                                 <div class="row">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row mx-0 bg-white py-2">
+                                                    <div class="col pr-0"><input type="text" class="form-control" placeholder="No. Permohonan"></div>
+                                                    <div class="col-auto">
+                                                        <p class="link-icon browse-icon" onclick="openModal(&#39;modalItem&#39;);"><img src="../assets/img/browse.svg" width="16"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 mx-0">
+                                    <div class="col-12 bg-white py-3">
+                                        <div class="row">
+                                            <div class="col-4 px-2"><label class="form-label text-muted">Referensi Permohonan</label>
+                                                <p class="mb-0 subtitle small text-capitalize">SO-01235678900<br></p>
+                                                <p class="mb-0 description black">21 Februari 2021, 12:00</p><a href="#">Ubah</a>
+                                            </div>
+                                            <div class="col-4 px-2"><label class="form-label text-muted">Kas Tujuan</label>
+                                                <p class="mb-0 subtitle small text-capitalize">1.01-01.02</p>
+                                                <p class="mb-2 description black">Kas Kecil Skytech Klampis<br></p>
+                                            </div>
+                                            <div class="col-4 px-2"><label class="form-label text-muted">Nominal Dimohon</label>
+                                                <p class="mb-0 subtitle small text-capitalize">IDR 2.000.000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
                                     <div class="col-12 px-3"><label class="form-label"><strong>Informasi</strong></label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 px-3">
                                         <div class="row mx-0 bg-white py-3">
-                                            <div class="col-12 px-2"><label class="form-label text-muted">Judul</label><input type="text" class="form-control form-control" placeholder="Masukkan Judul"></div>
-                                            <div class="col-12 px-2">
-                                                <hr>
-                                            </div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">Oleh</label>
-                                                <p class="mb-0 subtitle small text-capitalize">Agus Tri<br></p>
-                                                <p class="mb-0 description black">agus@skytech.id</p>
-                                                <p class="mb-0 description black">08123567800</p>
-                                            </div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted">No. Referensi</label><input type="text" class="form-control form-control-sm" placeholder="No. Dokumen"><label class="form-label text-muted mt-3">Tanggal Koreksi&nbsp;</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"></div>
-                                            <div class="col-4 px-2"><label class="form-label text-muted mt-0">Catatan&nbsp;</label><textarea class="form-control no-resize" rows="5"></textarea></div>
+                                            <div class="col-6"><label class="form-label text-muted">Tanggal Transaksi</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"></div>
+                                            <div class="col-6"><label class="form-label text-muted">Catatan (opsional)<br></label><textarea class="form-control no-resize" rows="2"></textarea></div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Entri</strong></label></div>
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Detail</strong></label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12 px-3">
                                         <div class="row mx-0 bg-white pt-3">
-                                            <div class="col-12 px-2"><label class="form-label text-muted">Keterangan&nbsp;</label><input type="text" class="form-control form-control" placeholder="Masukkan Keterangan Entri"><label class="form-label text-muted mt-3">Rician&nbsp;</label>
+                                            <div class="col-12 px-2">
                                                 <div class="table-responsive table general-table table-sm mb-0">
                                                     <table class="table">
                                                         <thead class="no-border">
@@ -190,9 +215,9 @@
                                                         </thead>
                                                         <tbody class="no-border">
                                                             <tr>
-                                                                <td class="text-start text-right">Akun (COA)</td>
-                                                                <td class="text-end text-right">Debit</td>
-                                                                <td class="text-end text-left">Kredit</td>
+                                                                <td class="text-start text-right">Akun Sumber</td>
+                                                                <td class="text-start text-right">No Ref.</td>
+                                                                <td class="text-end text-left">Nominal<br></td>
                                                             </tr>
                                                             <tr></tr>
                                                             <tr>
@@ -201,8 +226,9 @@
                                                                         <option value="12">1-01.01.02 Kas Kecil Klampis</option>
                                                                         <option value=""></option>
                                                                     </select></td>
+                                                                <td class="text-start"><input type="text" class="form-control form-control-sm" placeholder="Opsional"></td>
                                                                 <td class="text-end text-left"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;"></td>
-                                                                <td class="text-end text-left"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;"></td>
+                                                                <td class="text-end text-left">X</td>
                                                             </tr>
                                                             <tr>
                                                                 <td class="text-start text-right"><select class="form-control form-control-sm" value="Lain Lain">
@@ -210,21 +236,43 @@
                                                                         <option value="12">1-01.01.02 Kas Kecil Klampis</option>
                                                                         <option value=""></option>
                                                                     </select></td>
-                                                                <td class="text-start text-right"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;"></td>
+                                                                <td class="text-start"><input type="text" class="form-control form-control-sm" placeholder="Opsional"></td>
                                                                 <td class="text-end text-left"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="text-start text-right" colspan="3"><button class="btn btn-light btn-block w-100" type="button">Tambah Data</button></td>
+                                                                <td class="text-end text-left">X</td>
                                                             </tr>
                                                             <tr class="no-bottom">
-                                                                <td class="text-start text-right"><strong>Total</strong></td>
-                                                                <td class="text-end text-left"><strong>0</strong></td>
-                                                                <td class="text-end text-left"><strong>0</strong></td>
+                                                                <td class="text-start text-right no-bottom" colspan="4"><button class="btn btn-light btn-block w-100" type="button">Tambah Data</button></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 mx-1">
+                                    <div class="col-12 bg-white">
+                                        <div class="table-responsive table general-table table-sm mb-0">
+                                            <table class="table mt-3">
+                                                <thead class="no-border">
+                                                    <tr class="no-border"></tr>
+                                                </thead>
+                                                <tbody class="no-border">
+                                                    <tr>
+                                                        <td class="text-start col-4" colspan="2">Jumlah Dimohon</td>
+                                                        <td class="text-end col-4 text-right">IDR 2.000.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start col-4">Jumlah Akan Dicairkan</td>
+                                                        <td class="text-end col-2 text-right"></td>
+                                                        <td class="text-end col-2">0</td>
+                                                    </tr>
+                                                    <tr class="no-bottom">
+                                                        <td class="text-start col-4 text-danger" colspan="2">Selisih</td>
+                                                        <td class="text-end text-right col-4 text-danger">IDR 2.000.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -236,7 +284,7 @@
                                         <div class="row mx-0 bg-white py-3">
                                             <div class="col-12 px-2">
                                                 <div class="row mb-2">
-                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen Bukti Pembayaran (opsional)</label>
+                                                    <div class="col-12"><label class="form-label text-muted">Unggah Dokumen(opsional)</label>
                                                         <div class="border p-4 clickable">
                                                             <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
                                                         </div>

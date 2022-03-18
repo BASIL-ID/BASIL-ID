@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>basil 1</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <div class="body-left-menu">
+            <div class="row mt-2">
+                <div id="home" class="col my-3 mx-1"><img class="img-fluid p-2" src="../assets/img/shop.png"></div>
+                <div id="product" class="col my-3 mx-1"><img class="img-fluid p-2" src="../assets/img/package-6.png"></div>
+                <div id="sales" class="col my-3 mx-1"><img class="img-fluid p-2 active" src="../assets/img/shopping-bag-2.png"></div>
+                <div id="employee" class="col my-3 mx-1"><img class="img-fluid p-2" src="../assets/img/graphic.svg"></div>
+                <div class="col my-3 mx-1">
+                    <hr class="my-0">
+                </div>
+                <div id="user" class="col my-3 mx-1">
+                    <div class="p-1 menu">
+                        <h6 class="text-center my-0 round-link invert bg-darkBlack">A</h6>
+                    </div>
+                </div>
+                <div id="logout" class="col my-3 mx-1"><img class="img-fluid p-2" src="../assets/img/turn-off.png"></div>
+            </div>
+        </div>
+        <div class="body-center-wrapper">
+            <div class="body-center-submenu py-2">
+                <div class="top">
+                    <div class="row my-4 mx-0">
+                        <div class="col-8">
+                            <p class="title mb-0">Finance</p>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end">
+                            <p class="link-icon"><img class="rotate-left" src="../assets/img/up-arrow-angle.svg" width="10"></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-3">
+                        <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Saya Mau"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                    </div>
+                </div>
+                <div class="content scroll">
+                    <div id="menu-transaction-1" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Akun</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/Akun/index.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Lihat Akun<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/Akun/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Buat Akun<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div id="menu-transaction-2" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Kas &amp; Bank</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kas/list.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Lihat Kas<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kas/in.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Kas Masuk<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kas/out.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Kas Keluar<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/kas/transfer.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Transfer<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div id="menu-transaction-3" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Biaya</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/biaya/list.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Lihat Biaya<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/biaya/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input Biaya<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div id="menu-transaction-4" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">Penyesuaian</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/jurnal/history.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Riwayat<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/jurnal/koreksi.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Jurnal Penyesuaian<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/adf/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Asset Disposal<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-center-content py-2">
+                <div class="content scroll">
+                    <div id="top-menu" class="content-menu-top p-2">
+                        <div class="row mx-0 content align-items-center" margin-top="78px;">
+                            <div class="left-pane p-2">
+                                <p class="link-icon-white py-1"><img src="../assets/img/back.png" width="16"></p>
+                            </div>
+                            <div class="col py-2">
+                                <p class="mb-0 title">BCA 90000</p>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Rekonsiliasi</a></li>
+                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Akun</a></li>
+                                </ol>
+                            </div>
+                            <div class="col-auto pr-0 d-flex flex-row flex-row-reverse align-items-center">
+                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                    <div class="dropdown-menu">
+                                        <h6 class="dropdown-header b-dropdown-text">Menu Rekonsiliasi</h6><a class="dropdown-item" href="#">Import E-statement</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0" style="margin-top: 85px;">
+                        <div class="col px-4">
+                            <div class="row">
+                                <div id="left-section-1" class="col-9 border-right">
+                                    <div class="table-responsive">
+                                        <table class="table table stripe table-sm mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Informasi Akun</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td class="col-4">Nama Akun</td>
+                                                    <td class="col-8">BCA 9000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-4">Saldo Akhir</td>
+                                                    <td class="col-8">1.000.000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="mt-3">
+                                        <ul class="nav nav-tabs" role="tablist">
+                                            <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-bs-toggle="tab" href="#tab-1">Transaksi Pending (2)</a></li>
+                                            <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-bs-toggle="tab" href="#tab-2">Riwayat Transaksi (2)</a></li>
+                                        </ul>
+                                        <div class="tab-content bg-white">
+                                            <div class="tab-pane" role="tabpanel" id="tab-1">
+                                                <div class="table-responsive table general-table table-sm mb-0">
+                                                    <table class="table mt-3">
+                                                        <thead class="no-border">
+                                                            <tr class="no-border"></tr>
+                                                        </thead>
+                                                        <tbody class="no-border">
+                                                            <tr>
+                                                                <td class="text-start text-right">Tanggal</td>
+                                                                <td class="text-start text-right">Ref#</td>
+                                                                <td class="text-start text-right">Remark</td>
+                                                                <td class="text-end text-left">Debit</td>
+                                                                <td class="text-end text-left">Kredit</td>
+                                                            </tr>
+                                                            <tr></tr>
+                                                            <tr class="clickable" onclick="openModal(&#39;modalInput&#39;)">
+                                                                <td class="text-start col-2 text-right">22 januari 2022</td>
+                                                                <td class="text-start text-right">0401/FTSCY/WS95051</td>
+                                                                <td class="text-start text-right">Penerimaan Setoran Outlet Galaxy</td>
+                                                                <td class="text-end text-left">1.000.000</td>
+                                                                <td class="text-end text-left">0</td>
+                                                            </tr>
+                                                            <tr class="clickable" onclick="openModal(&#39;modalInput&#39;)">
+                                                                <td class="text-start col-2 text-right">23 Januari 2022</td>
+                                                                <td class="text-start text-right">1401/FTFVA/WS95051</td>
+                                                                <td class="text-start text-right">Bayar Keamanan</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end text-left">1.000.000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane active" role="tabpanel" id="tab-2">
+                                                <div class="table-responsive table general-table table-sm mb-0">
+                                                    <table class="table mt-3">
+                                                        <thead class="no-border">
+                                                            <tr class="no-border"></tr>
+                                                        </thead>
+                                                        <tbody class="no-border">
+                                                            <tr>
+                                                                <td class="text-start text-right">Tanggal</td>
+                                                                <td class="text-start text-right">Ref#</td>
+                                                                <td class="text-start text-right">Remark</td>
+                                                                <td class="text-end text-left">Debit</td>
+                                                                <td class="text-end text-left">Kredit</td>
+                                                            </tr>
+                                                            <tr></tr>
+                                                            <tr class="clickable" onclick="openModal(&#39;modalDetail&#39;)">
+                                                                <td class="text-start col-2 text-right">22 januari 2021</td>
+                                                                <td class="text-start text-right">0401/FTSCY/WS95051</td>
+                                                                <td class="text-start text-right">Penerimaan Setoran Outlet Klampis</td>
+                                                                <td class="text-end text-left">10.000.000</td>
+                                                                <td class="text-end text-left">0</td>
+                                                            </tr>
+                                                            <tr class="clickable" onclick="openModal(&#39;modalDetail&#39;)">
+                                                                <td class="text-start col-2 text-right">23 Januari 2021</td>
+                                                                <td class="text-start text-right">1401/FTFVA/WS95051</td>
+                                                                <td class="text-start text-right">Bayar Keamanan</td>
+                                                                <td class="text-end">0</td>
+                                                                <td class="text-end text-left">500.000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="right-section-1" class="col-3">
+                                    <div class="table-responsive">
+                                        <table class="table table stripe table-sm mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Transaksi Terakhir</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td class="text-start" colspan="2">Biaya Keamanan</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nominal&nbsp;</td>
+                                                    <td class="text-end">1.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tanggal&nbsp; Diinput</td>
+                                                    <td class="text-end">26 Januari 2021</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table stripe table-sm mb-0 mt-3">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalInput">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Catat Transaksi</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Referensi</p>
+                            <p class="mb-0 subtitle small text-capitalize">0401/FTSCY/WS95051</p>
+                            <p class="mb-0 description black">Penerimaan Kas Outlet Galaxy<br></p>
+                        </div>
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Diinput Oleh</p>
+                            <p class="mb-0 subtitle small">Agung</p>
+                            <p class="mb-0 description black">Agung@skytech.id<br>081236123189</p>
+                        </div>
+                        <div class="col-4 px-2"><label class="form-label text-muted">Catatan<br></label><textarea class="form-control no-resize" rows="2"></textarea></div>
+                    </div>
+                    <div class="row pt-1">
+                        <div class="col-12">
+                            <hr class="my-2">
+                            <div class="row">
+                                <div class="col-12 px-2"><label class="form-label text-muted">Tanggal Transaksi</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"><label class="form-label text-muted mt-3">Rincian&nbsp;</label>
+                                    <div class="table-responsive table general-table table-sm mb-0">
+                                        <table class="table">
+                                            <thead class="no-border">
+                                                <tr class="no-border"></tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td class="text-start text-right">Akun Debit</td>
+                                                    <td class="text-start text-right">Akun Kredit</td>
+                                                    <td class="text-end text-left">Nominal</td>
+                                                </tr>
+                                                <tr></tr>
+                                                <tr>
+                                                    <td class="text-start text-right">BCA-Galaxy 1100</td>
+                                                    <td class="text-start text-right"></td>
+                                                    <td class="text-end text-left">1.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start text-right"></td>
+                                                    <td class="text-start text-right"><select class="form-control form-control-sm">
+                                                            <option value="13" selected="">BCA 9000</option>
+                                                            <option value="12">BCA 7000</option>
+                                                        </select></td>
+                                                    <td class="text-end text-left"><input type="text" class="form-control form-control-sm" placeholder="Nominal" style="text-align: right;" value="1.000.000"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start text-right"></td>
+                                                    <td class="text-start text-right"><button class="btn btn-light btn-block w-100" type="button">Tambah Akun Kredit</button></td>
+                                                    <td class="text-start text-right"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start text-right" colspan="2">Selisih</td>
+                                                    <td class="text-end text-left">0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-12"><label class="form-label text-muted mt-3">Unggah Dokumen (opsional)</label>
+                                    <div class="border p-4 clickable">
+                                        <p class="description text-muted mb-0" style="text-align: center;">Unggah</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-3"><label class="form-label text-muted">Tambahkan Tagging Dokumen (opsional)&nbsp;</label><input type="text" class="form-control mb-2" placeholder="Isi dengan format &quot;judul:nilai&quot;, tekan enter untuk menambahkan"><span class="link-icon small py-1 px-2 tag">Judul Tag : Nilai Tag | X</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalDetail">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Detail Transaksi</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Referensi</p>
+                            <p class="mb-0 subtitle small text-capitalize">0401/FTSCY/WS95051</p>
+                            <p class="mb-0 description black">Penerimaan Kas Outlet Galaxy<br></p>
+                        </div>
+                        <div class="col-4 px-2">
+                            <p class="description mb-0">Diinput Oleh</p>
+                            <p class="mb-0 subtitle small">Agung</p>
+                            <p class="mb-0 description black">Agung@skytech.id<br>081236123189</p>
+                        </div>
+                        <div class="col-4 px-2"><label class="form-label text-muted">Catatan<br></label>
+                            <p class="mb-0 description black">Sudah diinput dengan benar<br></p>
+                        </div>
+                    </div>
+                    <div class="row pt-1">
+                        <div class="col-12">
+                            <hr class="my-2">
+                            <div class="row">
+                                <div class="col-12 px-2"><label class="form-label text-muted">Tanggal Transaksi</label>
+                                    <p class="mb-0 subtitle small text-capitalize">12 Januari 2022</p><label class="form-label text-muted mt-3">Rincian&nbsp;</label>
+                                    <div class="table-responsive table general-table table-sm mb-0">
+                                        <table class="table">
+                                            <thead class="no-border">
+                                                <tr class="no-border"></tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td class="text-start text-right">Akun Debit</td>
+                                                    <td class="text-start text-right">Akun Kredit</td>
+                                                    <td class="text-end text-left">Nominal</td>
+                                                </tr>
+                                                <tr></tr>
+                                                <tr>
+                                                    <td class="text-start text-right">BCA-Galaxy 1100</td>
+                                                    <td class="text-start text-right"></td>
+                                                    <td class="text-end text-left">1.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start text-right"></td>
+                                                    <td class="text-start text-right">BCA-Galaxy 9000</td>
+                                                    <td class="text-end text-left">1.000.000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-start text-right" colspan="2">Selisih</td>
+                                                    <td class="text-end text-left">0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row mx-0 mt-1">
+                                        <div class="col-12 px-1">
+                                            <p class="description mb-2 text-muted">Unggahan Dokumen</p>
+                                            <div class="row">
+                                                <div class="col-4"><img class="clickable img-fluid" src="../assets/img/644ba460-45c0-48d3-9153-a4435f5b0226.jpg" onclick="openImage(this);"></div>
+                                                <div class="col-4"><img class="clickable img-fluid" src="../assets/img/644ba460-45c0-48d3-9153-a4435f5b0226.jpg" onclick="openImage(this);"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 mt-4">
+                                        <div class="col-12 px-1">
+                                            <p class="description mb-2 text-muted">Tagging Dokumen</p><span class="link-icon small py-1 px-2 tag">Judul Tag : Nilai Tag</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.min.js"></script>
+</body>
+
+</html>
