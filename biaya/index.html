@@ -129,18 +129,15 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Akun Kas Kecil Klampis (1-1.01.02)</p>
+                                        <p class="mb-0 title">Daftar Biaya</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#"><strong>Akun</strong><br></a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Detail Akun</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#"><strong>Biaya</strong><br></a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Lihat Biaya</a></li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-12 px-3 mb-4"><label class="form-label"><strong>Deskripsi Akun</strong></label>
-                                        <p class="text-muted small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Transaksi Akun</strong></label></div>
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Jurnal Transaksi Akun</strong></label></div>
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-3 px-3">
@@ -163,35 +160,60 @@
                                                 <tbody class="no-border">
                                                     <tr>
                                                         <td class="text-start text-right">Tanggal</td>
-                                                        <td class="text-start text-right">Deskripsi</td>
-                                                        <td class="text-start text-right">Terima</td>
-                                                        <td class="text-end text-right">Kirim</td>
-                                                        <td class="text-end text-right">Saldo</td>
+                                                        <td class="text-start text-right">Nomor</td>
+                                                        <td class="text-start text-right">Kategori</td>
+                                                        <td class="text-end text-right">Status</td>
+                                                        <td class="text-end text-right">Total</td>
+                                                        <td class="text-end text-right">
+                                                            <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                <div class="dropdown-menu">
+                                                                    <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Biaya</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr></tr>
                                                     <tr class="bg-white">
                                                         <td class="text-start text-right">01/03/2022</td>
-                                                        <td class="text-start text-right">Bank Withdrawal #kdsh1273<br><span class="text-muted small"><em>Beban Transportasi&nbsp;</em></span><br></td>
-                                                        <td class="text-start text-right">0</td>
-                                                        <td class="text-end text-right">23.000</td>
+                                                        <td class="text-start text-right">Expense #10398<br></td>
+                                                        <td class="text-start text-right">Beban Asuransi</td>
+                                                        <td class="text-end text-right">Selesai</td>
                                                         <td class="text-end text-right">2.000.000</td>
-                                                        <td class="text-end text-right"></td>
+                                                        <td class="text-end text-right">
+                                                            <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                <div class="dropdown-menu">
+                                                                    <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Void Transaksi</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr class="bg-white">
                                                         <td class="text-start text-right">03/03/2022</td>
-                                                        <td class="text-start text-right">Bank Transfer #Tdsh1273<br><span class="text-muted small"><em>Transfer dari Akun: Bank BCA No.rek 1002229000&nbsp;</em></span><br></td>
-                                                        <td class="text-start text-right">100.000</td>
-                                                        <td class="text-end text-right">0</td>
+                                                        <td class="text-start text-right">Expense #10399<br></td>
+                                                        <td class="text-start text-right">Beban Penjualan Lainnya</td>
+                                                        <td class="text-end text-right">Void</td>
                                                         <td class="text-end text-right">2.100.000<br></td>
-                                                        <td class="text-end text-right"></td>
+                                                        <td class="text-end text-right">
+                                                            <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                <div class="dropdown-menu">
+                                                                    <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item disabled" href="#">Void Transaksi</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr class="bg-white">
                                                         <td class="text-start text-right">03/03/2022</td>
-                                                        <td class="text-start text-right">Bank Withdrawal #Jdsh1273<br><span class="text-muted small"><em>Beban Transportasi&nbsp;</em></span><br></td>
-                                                        <td class="text-start text-right">0</td>
-                                                        <td class="text-end text-right">100.000</td>
+                                                        <td class="text-start text-right">Expense #10400<br></td>
+                                                        <td class="text-start text-right">Beban Asuransi</td>
+                                                        <td class="text-end text-right">Selesai</td>
                                                         <td class="text-end text-right">2.000.000</td>
-                                                        <td class="text-end text-right"></td>
+                                                        <td class="text-end text-right">
+                                                            <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                                                <div class="dropdown-menu">
+                                                                    <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Void Transaksi</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
