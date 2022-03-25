@@ -45,6 +45,21 @@
                     </div>
                 </div>
                 <div class="content scroll">
+                    <div id="menu-transaction-6" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">SR</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/GRN/index.html&#39;)">
+                        <div class="col py-2 clickable" onclick="redirect(&#39;/SO/index.html&#39;)">
+                            <p class="mb-0 minititle">Riwayat SR&nbsp;<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/GRN/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input SR<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
                     <div id="menu-transaction-1" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
                             <p class="mb-0 description">Stok Masuk</p>
@@ -100,12 +115,17 @@
                             <p class="mb-0 description">&nbsp;Stok Dipakai</p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/SR/index.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/Usage/index.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Riwayat Pemakaian<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/SR/create.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/Usage/request.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Permintaan Stok<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/Usage/create.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Input Pemakaian Stok<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
@@ -134,10 +154,10 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Input Pemakaian Stok</p>
+                                        <p class="mb-0 title">Input SR</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Stok Keluar</a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Input Pemakaian Stok&nbsp;</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">SR</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Input SR&nbsp;</a></li>
                                         </ol>
                                     </div>
                                 </div>
@@ -152,17 +172,24 @@
                                                 <p class="mb-0 description black">Andro@skytech.id<br></p>
                                                 <p class="mb-0 description text-muted mt-2">22 Januari 2021<br></p>
                                             </div>
-                                            <div class="col-4"><label class="form-label text-muted">Outlet / Departemen</label>
+                                            <div class="col-4"><label class="form-label text-muted">Outlet&nbsp;</label>
                                                 <p class="mb-0 subtitle small text-capitalize">Nakoa Bondowoso</p>
                                                 <p class="mb-0 description black">jl bondowoso 12<br></p>
                                                 <p class="mb-0 description text-muted">0812345678<br></p>
                                             </div>
-                                            <div class="col-4"><label class="form-label text-muted">Keterangan (opsional)<br></label><textarea class="form-control no-resize" rows="3"></textarea></div>
+                                            <div class="col-4"><label class="form-label text-muted">Tujuan&nbsp;</label><select class="form-control form-control-sm">
+                                                    <option value="13">Operasional</option>
+                                                    <option value="12">Produksi</option>
+                                                    <option value="" selected="">Lain Lain</option>
+                                                </select></div>
+                                            <div class="col-12">
+                                                <hr><label class="form-label text-muted">Keterangan (Wajib jika tujuan lain2)<br></label><textarea class="form-control no-resize" rows="2"></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Item</strong></label></div>
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Item&nbsp;</strong></label></div>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">

@@ -45,21 +45,6 @@
                     </div>
                 </div>
                 <div class="content scroll">
-                    <div id="menu-transaction-6" class="row mx-0">
-                        <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">SR</p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/GRN/index.html&#39;)">
-                        <div class="col py-2 clickable" onclick="redirect(&#39;/SO/index.html&#39;)">
-                            <p class="mb-0 minititle">Riwayat SR&nbsp;<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/GRN/create.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Input SR<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
                     <div id="menu-transaction-1" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
                             <p class="mb-0 description">Stok Masuk</p>
@@ -147,175 +132,165 @@
                     </div>
                 </div>
             </div>
-            <div class="body-center-content py-2">
+            <div class="body-center-content">
                 <div class="content scroll">
-                    <div id="top-menu" class="content-menu-top p-2">
-                        <div class="row mx-0 content align-items-center" margin-top="78px;">
-                            <div class="left-pane p-2">
-                                <p class="link-icon-white py-1"><img src="../assets/img/back.png" width="16"></p>
-                            </div>
-                            <div class="col py-2">
-                                <p class="mb-0 title">GRN-1234567890</p>
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Riwayat Stok Masuk</a></li>
-                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Stok Masuk</a></li>
-                                </ol>
-                            </div>
-                            <div class="col-auto pr-0 d-flex flex-row flex-row-reverse align-items-center">
-                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
-                                    <div class="dropdown-menu">
-                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Muat Ulang</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalCancel&#39;)">Batalkan</a>
+                    <div>
+                        <div class="row mx-0 mb-5 pb-4">
+                            <div class="col px-3">
+                                <div class="row py-2 mt-4 mb-3">
+                                    <div class="col">
+                                        <p class="mb-0 title">Daftar Permintaan Stok</p>
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#">Pemakaian Stok</a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Permintaan Stok</a></li>
+                                        </ol>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mx-0" style="margin-top: 85px;">
-                        <div class="col px-4">
-                            <div class="row">
-                                <div id="left-section-1" class="col-9 border-right">
-                                    <div class="table-responsive">
-                                        <table class="table table stripe table-sm mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th colspan="2">Informasi</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="no-border">
-                                                <tr>
-                                                    <td class="col-4">No.</td>
-                                                    <td class="col-8">GRN-1234567890</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-4">Tanggal Stok Masuk</td>
-                                                    <td class="col-8">23 Januari 2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-4">Asal Stok</td>
-                                                    <td class="col-8">Supplier</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-4">Supplier</td>
-                                                    <td class="col-8">Vernon<br>Jl. Letjen Sutoyo 103<br>admin@vernon.id - 238213</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-4">Catatan</td>
-                                                    <td class="col-8">_</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-4">Diinput Oleh</td>
-                                                    <td class="col-8">Andro<br>andro@skytech.id<br>0812367189</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="table-responsive table general-table table-sm mb-0">
-                                        <table class="table mt-3">
-                                            <thead>
-                                                <tr>
-                                                    <th class="table-title" colspan="2">Item</th>
-                                                    <th class="table-title" colspan="2">Item</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="no-border">
-                                                <tr class="sub-header">
-                                                    <td class="col-3">Kode Item<br>(Material)</td>
-                                                    <td class="col-3">Nama Item<br>(Description)</td>
-                                                    <td class="col-3">Serial Number</td>
-                                                    <td class="text-end col-1">Qty</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-3">IT-1</td>
-                                                    <td class="col-3">ITEM 1</td>
-                                                    <td class="col-3">
-                                                        <ul class="pl-adjust">
-                                                            <li>SN-123123</li>
-                                                            <li>SN-123122</li>
-                                                            <li><a href="#" onclick="openModal(&#39;modalDetail&#39;)">Lihat Lainnya</a></li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="text-end col-1">2</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-3">IT-2</td>
-                                                    <td class="col-3">ITEM 2</td>
-                                                    <td class="text-start col-3">Tanpa Serial</td>
-                                                    <td class="text-end col-1">1</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-3">IT-3</td>
-                                                    <td class="col-3">ITEM 3</td>
-                                                    <td class="col-3">
-                                                        <ul class="pl-adjust">
-                                                            <li>SN-345345</li>
-                                                        </ul>
-                                                    </td>
-                                                    <td class="text-end col-1">1</td>
-                                                </tr>
-                                                <tr></tr>
-                                                <tr></tr>
-                                                <tr></tr>
-                                                <tr></tr>
-                                                <tr></tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="table-responsive table general-table table-sm mb-0">
-                                        <table class="table mt-3 mb-2">
-                                            <thead class="no-border">
-                                                <tr class="no-border">
-                                                    <th class="table-title no-border pb-0" colspan="2">Lampiran</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="no-border"></tbody>
-                                        </table>
-                                    </div>
-                                    <div class="row mx-0">
-                                        <div class="col-12 px-1">
-                                            <p class="description mb-2 text-muted">Unggahan Dokumen</p>
-                                            <div class="row">
-                                                <div class="col-4"><img class="clickable img-fluid" src="../assets/img/644ba460-45c0-48d3-9153-a4435f5b0226.jpg" onclick="openImage(this);"></div>
-                                                <div class="col-4"><img class="clickable img-fluid" src="../assets/img/644ba460-45c0-48d3-9153-a4435f5b0226.jpg" onclick="openImage(this);"></div>
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-3 px-3">
+                                                <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="No Dokumen"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                                            </div>
+                                            <div class="col-6"></div>
+                                            <div class="col-3 px-3 text-right pr-0">
+                                                <div class="input-group input-group-sm w-auto ml-2 filterDisplay text-right pull-right pr-0"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" onclick="openModal(&#39;modalFilter&#39;)">Filter&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;" onclick="openModal(&#39;modalSort&#39;)">Sort&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row mx-0 mt-4">
-                                        <div class="col-12 px-1">
-                                            <p class="description mb-2 text-muted">Tagging Dokumen&nbsp;</p><span class="link-icon small py-1 px-2 tag">Judul Tag : Nilai Tag</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 px-3">
+                                        <div class="row g-white">
+                                            <div class="table-responsive table general-table table-sm mb-0">
+                                                <table class="table mt-3">
+                                                    <thead class="no-border">
+                                                        <tr class="no-border"></tr>
+                                                    </thead>
+                                                    <tbody class="no-border">
+                                                        <tr>
+                                                            <td class="text-start text-right">&nbsp; No. Dokumen</td>
+                                                            <td class="text-start text-right">Tanggal Permohonan</td>
+                                                            <td class="text-start text-right">Departemen</td>
+                                                            <td class="text-start text-right">Tujuan</td>
+                                                            <td class="text-end text-right">Status Pengiriman</td>
+                                                            <td class="text-end text-right">Status Dokumen</td>
+                                                        </tr>
+                                                        <tr></tr>
+                                                        <tr class="clickable" onclick="redirect(&#39;/Usage/requestdetail.html&#39;);">
+                                                            <td class="text-start col-2 text-right">&nbsp; SR-12334567890</td>
+                                                            <td class="text-start text-right">27 Januari 2021</td>
+                                                            <td class="text-start text-right">Produksi</td>
+                                                            <td class="text-start text-right">Bahan Produksi</td>
+                                                            <td class="text-end text-right text-success">Selesai</td>
+                                                            <td class="text-end text-right text-success">Diinput</td>
+                                                        </tr>
+                                                        <tr class="clickable" onclick="redirect(&#39;/Usage/requestdetail.html&#39;);">
+                                                            <td class="text-start col-2 text-right">&nbsp; TRF-12334567875</td>
+                                                            <td class="text-start text-right">27 Januari 2020</td>
+                                                            <td class="text-start text-right">Produksi</td>
+                                                            <td class="text-start text-right">Bahan Produksi</td>
+                                                            <td class="text-end text-right">Dikirim Sebagian</td>
+                                                            <td class="text-end text-right text-success">Diinput</td>
+                                                        </tr>
+                                                        <tr class="clickable" onclick="redirect(&#39;/Usage/requestdetail.html&#39;);">
+                                                            <td class="text-start col-2 text-right">&nbsp; TRF-12334567892</td>
+                                                            <td class="text-start text-right">27 Januari 2020</td>
+                                                            <td class="text-start text-right">Produksi</td>
+                                                            <td class="text-start text-right">Bahan Produksi</td>
+                                                            <td class="text-end text-right">Belum Dikirim</td>
+                                                            <td class="text-end text-right text-success">Diinput</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="clearfix py-4"></div>
                                 </div>
-                                <div id="right-section-1" class="col-3">
-                                    <div class="table-responsive">
-                                        <table class="table table stripe table-sm mb-0">
-                                            <thead>
-                                                <tr>
-                                                    <th>Dokumen</th>
-                                                    <th class="text-end"><a class="small" href="#" onclick="openModal(&#39;modalStatusDo&#39;)">Info</a></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="no-border">
-                                                <tr>
-                                                    <td>Status&nbsp;</td>
-                                                    <td class="text-end text-success">Diinput</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Tanggal&nbsp; Diinput</td>
-                                                    <td class="text-end">26 Januari 2021</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-muted">Tanggal&nbsp; Dibatalkan</td>
-                                                    <td class="text-end text-muted">_</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-muted"></td>
-                                                    <td class="text-end text-muted"></td>
-                                                </tr>
-                                                <tr></tr>
-                                            </tbody>
-                                        </table>
+                                <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
+                                    <div class="col-12 bg-white">
+                                        <div class="table-responsive table general-table table-sm mb-0">
+                                            <table class="table mt-3 mb-0">
+                                                <thead class="no-border">
+                                                    <tr class="no-border"></tr>
+                                                </thead>
+                                                <tbody class="no-border">
+                                                    <tr class="sub-header no-top">
+                                                        <td class="col-2">Kode</td>
+                                                        <td class="col-3">Nama</td>
+                                                        <td class="col-1">Qty</td>
+                                                        <td class="text-end col-2 text-right">Harga/Unit<br>(excl ppn)</td>
+                                                        <td class="text-end col-2 text-right">Harga/Unit<br>(incl ppn)</td>
+                                                        <td class="text-end col-2 text-right">Diskon/Unit<br>(incl ppn)</td>
+                                                        <td class="text-end col-2 text-right">Nett/Unit<br>(incl ppn)</td>
+                                                        <td class="text-end col-2 text-right">Total<br>(incl ppn)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-2">IT-1</td>
+                                                        <td class="col-3">ITEM 1</td>
+                                                        <td class="col-1">2</td>
+                                                        <td class="text-end col-2">10.000</td>
+                                                        <td class="text-end col-2 text-right">11.000</td>
+                                                        <td class="text-end col-2 text-right">0</td>
+                                                        <td class="text-end col-2 text-right">11.000</td>
+                                                        <td class="text-end col-2 text-right">22.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-2">IT-2</td>
+                                                        <td class="col-3">ITEM 2</td>
+                                                        <td class="col-1">2</td>
+                                                        <td class="text-end col-2">10.000</td>
+                                                        <td class="text-end col-2 text-right">10.000</td>
+                                                        <td class="text-end col-2 text-right">0</td>
+                                                        <td class="text-end col-2 text-right">10.000</td>
+                                                        <td class="text-end col-2 text-right">20.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-2">IT-3</td>
+                                                        <td class="col-3">ITEM 3</td>
+                                                        <td class="col-1">4</td>
+                                                        <td class="text-end col-2">5.000</td>
+                                                        <td class="text-end col-2 text-right">5.500</td>
+                                                        <td class="text-end col-2 text-right">0</td>
+                                                        <td class="text-end col-2 text-right">5.500</td>
+                                                        <td class="text-end col-2 text-right">22.000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="table-responsive table general-table table-sm mb-0">
+                                            <table class="table mt-0">
+                                                <thead class="no-border">
+                                                    <tr class="no-border"></tr>
+                                                </thead>
+                                                <tbody class="no-border">
+                                                    <tr>
+                                                        <td class="text-start col-4" colspan="2">Total Sebelum Pajak</td>
+                                                        <td class="text-end col-4 text-right">60.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start col-4" colspan="2">Cash Diskon (opsional)</td>
+                                                        <td class="text-end col-2 text-right">6.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start col-3" colspan="2">Grand Total (excl ppn)</td>
+                                                        <td class="text-end col-4 text-right">54.000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start col-4" colspan="2">PPN (10%)</td>
+                                                        <td class="text-end col-2">5.400</td>
+                                                    </tr>
+                                                    <tr class="no-bottom">
+                                                        <td class="text-start col-4" colspan="2"><strong>Grand Total (incl ppn)</strong></td>
+                                                        <td class="text-end col-4 text-right"><strong>59.400</strong></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
+                                </div>
+                                <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
+                                    <div class="text-center col-12 bg-white"><a class="text-center" href="#" onclick="toggleHideComponent(&#39;.expand-invoice&#39;, &#39;.hide-invoice&#39;)">Sembunyikan Detail Invoice</a></div>
                                 </div>
                             </div>
                         </div>

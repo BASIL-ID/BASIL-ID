@@ -45,6 +45,21 @@
                     </div>
                 </div>
                 <div class="content scroll">
+                    <div id="menu-transaction-6" class="row mx-0">
+                        <div class="col-12 pt-2 pb-1">
+                            <p class="mb-0 description">SR</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/GRN/index.html&#39;)">
+                        <div class="col py-2 clickable" onclick="redirect(&#39;/SO/index.html&#39;)">
+                            <p class="mb-0 minititle">Riwayat SR&nbsp;<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/GRN/create.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Input SR<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
                     <div id="menu-transaction-1" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
                             <p class="mb-0 description">Stok Masuk</p>
@@ -100,12 +115,17 @@
                             <p class="mb-0 description">&nbsp;Stok Dipakai</p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/SR/index.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/Usage/index.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Riwayat Pemakaian<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/SR/create.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/Usage/request.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Permintaan Stok<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/Usage/create.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Input Pemakaian Stok<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
@@ -137,14 +157,14 @@
                             <div class="col py-2">
                                 <p class="mb-0 title">SR-1234567890</p>
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Riwayat Penggunaan Stok</a></li>
-                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Penggunaan Stok</a></li>
+                                    <li class="breadcrumb-item"><a class="text-hover" href="#">SR</a></li>
+                                    <li class="breadcrumb-item"><a class="active" href="#">Detail SR</a></li>
                                 </ol>
                             </div>
                             <div class="col-auto pr-0 d-flex flex-row flex-row-reverse align-items-center">
                                 <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
                                     <div class="dropdown-menu">
-                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Muat Ulang</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalCancel&#39;)">Batalkan</a>
+                                        <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Muat Ulang</a><a class="dropdown-item disabled" href="#" onclick="openModal(&#39;modalCancel&#39;)">Setujui</a><a class="dropdown-item disabled" href="#" onclick="openModal(&#39;modalCancel&#39;)">Tolak</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalCancel&#39;)">Batalkan</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,20 +187,24 @@
                                                     <td class="col-8">SR-1234567890</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Tanggal Pemakaian</td>
+                                                    <td class="col-4">Tanggal Permohonan</td>
                                                     <td class="col-8">23 Januari 2021</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Tipe</td>
-                                                    <td class="col-8">Kirim ke Pegawai</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-4">Outlet/Departement</td>
+                                                    <td class="col-4">Outlet</td>
                                                     <td class="col-8">Nakoa Bondowoso<br>Jl Bndowoso 1<br>081236749</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Catatan</td>
+                                                    <td class="col-4">Departement</td>
+                                                    <td class="col-8">Produksi</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-4">Tujuan</td>
                                                     <td class="col-8">Penggunaan harian</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-4">Keterangan</td>
+                                                    <td class="col-8">Digunakan untuk proses produksi</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-4">Diinput Oleh</td>
@@ -277,8 +301,33 @@
                                                     <td class="text-muted"></td>
                                                     <td class="text-end text-muted"></td>
                                                 </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table table stripe table-sm mb-0">
+                                            <thead>
                                                 <tr>
-                                                    <td class="text-muted text-center clickable" colspan="2"><a href="#">Cetak Rekap</a></td>
+                                                    <th>Approval</th>
+                                                    <th class="text-end"><a class="small" href="#" onclick="openModal(&#39;modalStatusDo&#39;)">Info</a></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td>Status&nbsp;</td>
+                                                    <td class="text-end text-success">Disetujui</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tanggal&nbsp; Disetujui</td>
+                                                    <td class="text-end">26 Januari 2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Disetujui Oleh</td>
+                                                    <td class="text-end">Andreas Lukmanto<br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-muted"></td>
+                                                    <td class="text-end text-muted"></td>
                                                 </tr>
                                             </tbody>
                                         </table>

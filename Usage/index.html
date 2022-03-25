@@ -45,21 +45,6 @@
                     </div>
                 </div>
                 <div class="content scroll">
-                    <div id="menu-transaction-6" class="row mx-0">
-                        <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">SR</p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/GRN/index.html&#39;)">
-                        <div class="col py-2 clickable" onclick="redirect(&#39;/SO/index.html&#39;)">
-                            <p class="mb-0 minititle">Riwayat SR&nbsp;<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/GRN/create.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Input SR<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
                     <div id="menu-transaction-1" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
                             <p class="mb-0 description">Stok Masuk</p>
@@ -155,10 +140,10 @@
                                 <p class="link-icon-white py-1"><img src="../assets/img/back.png" width="16"></p>
                             </div>
                             <div class="col py-2">
-                                <p class="mb-0 title">GRN-1234567890</p>
+                                <p class="mb-0 title">GDN-1234567890</p>
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Riwayat Stok Masuk</a></li>
-                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Stok Masuk</a></li>
+                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Riwayat Penggunaan Stok</a></li>
+                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Penggunaan Stok</a></li>
                                 </ol>
                             </div>
                             <div class="col-auto pr-0 d-flex flex-row flex-row-reverse align-items-center">
@@ -184,23 +169,23 @@
                                             <tbody class="no-border">
                                                 <tr>
                                                     <td class="col-4">No.</td>
-                                                    <td class="col-8">GRN-1234567890</td>
+                                                    <td class="col-8">GDN-1234567890</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Tanggal Stok Masuk</td>
+                                                    <td class="col-4">No. SR</td>
+                                                    <td class="col-8">SR-1234567890</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-4">Tanggal Pemakaian</td>
                                                     <td class="col-8">23 Januari 2021</td>
                                                 </tr>
                                                 <tr>
-                                                    <td class="col-4">Asal Stok</td>
-                                                    <td class="col-8">Supplier</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="col-4">Supplier</td>
-                                                    <td class="col-8">Vernon<br>Jl. Letjen Sutoyo 103<br>admin@vernon.id - 238213</td>
+                                                    <td class="col-4">Outlet</td>
+                                                    <td class="col-8">Nakoa Bondowoso<br>Jl Bndowoso 1<br>081236749</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-4">Catatan</td>
-                                                    <td class="col-8">_</td>
+                                                    <td class="col-8">Penggunaan harian</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-4">Diinput Oleh</td>
@@ -214,42 +199,27 @@
                                             <thead>
                                                 <tr>
                                                     <th class="table-title" colspan="2">Item</th>
-                                                    <th class="table-title" colspan="2">Item</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="no-border">
                                                 <tr class="sub-header">
                                                     <td class="col-3">Kode Item<br>(Material)</td>
                                                     <td class="col-3">Nama Item<br>(Description)</td>
-                                                    <td class="col-3">Serial Number</td>
                                                     <td class="text-end col-1">Qty</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-3">IT-1</td>
                                                     <td class="col-3">ITEM 1</td>
-                                                    <td class="col-3">
-                                                        <ul class="pl-adjust">
-                                                            <li>SN-123123</li>
-                                                            <li>SN-123122</li>
-                                                            <li><a href="#" onclick="openModal(&#39;modalDetail&#39;)">Lihat Lainnya</a></li>
-                                                        </ul>
-                                                    </td>
                                                     <td class="text-end col-1">2</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-3">IT-2</td>
                                                     <td class="col-3">ITEM 2</td>
-                                                    <td class="text-start col-3">Tanpa Serial</td>
                                                     <td class="text-end col-1">1</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="col-3">IT-3</td>
                                                     <td class="col-3">ITEM 3</td>
-                                                    <td class="col-3">
-                                                        <ul class="pl-adjust">
-                                                            <li>SN-345345</li>
-                                                        </ul>
-                                                    </td>
                                                     <td class="text-end col-1">1</td>
                                                 </tr>
                                                 <tr></tr>
@@ -312,7 +282,9 @@
                                                     <td class="text-muted"></td>
                                                     <td class="text-end text-muted"></td>
                                                 </tr>
-                                                <tr></tr>
+                                                <tr>
+                                                    <td class="text-muted text-center clickable" colspan="2"><a href="#">Cetak Rekap</a></td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
