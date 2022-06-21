@@ -149,19 +149,19 @@
                                 <div class="row">
                                     <div class="col-12 px-3">
                                         <div class="row mx-0 bg-white py-3">
-                                            <div class="col-6"><label class="form-label text-muted">Nama Aset</label><input type="text" class="form-control form-control-sm" placeholder="Nama"><label class="form-label text-muted mt-2">Nomor Aset</label><input type="text" class="form-control form-control-sm" placeholder="No Aset"><label class="form-label text-muted mt-2">QTY</label><input type="text" class="form-control form-control-sm" placeholder="Jumlah Qty Aset"><label class="form-label text-muted mt-2"><span style="color: rgb(51, 51, 51);">Akun Aset Tetap</span><br></label><select class="form-control form-control-sm" value="Lain Lain">
+                                            <div class="col-6"><label class="form-label text-muted">Nama Aset</label><input type="text" class="form-control form-control-sm" placeholder="Nama"><label class="form-label text-muted mt-2">Nomor Aset (uniq, harus fetch ke API, aset index untuk cek apa no aset tersedia/tdk)</label><input type="text" class="form-control form-control-sm" placeholder="No Aset"><label class="form-label text-muted mt-2">QTY</label><input type="text" class="form-control form-control-sm" placeholder="Jumlah Qty Aset"><label class="form-label text-muted mt-2"><span style="color: rgb(51, 51, 51);">Akun Aset Tetap</span><br></label><select class="form-control form-control-sm" value="Lain Lain">
                                                     <option value="13">1-10705 Aset Tetap</option>
                                                     <option value="12">1-2.0.1 Inventaris</option>
                                                     <option value=""></option>
-                                                </select></div>
-                                            <div class="col-6"><label class="form-label text-muted">Tanggal Akusisi</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"><label class="form-label text-muted mt-2">Nilai Perolehan</label><input type="text" class="form-control form-control-sm" placeholder="Nominal"><label class="form-label text-muted mt-2"><span style="color: rgb(51, 51, 51);">Akun Dikreditkan</span><br></label><select class="form-control form-control-sm" value="Lain Lain">
+                                                </select><label class="form-label text-info"><span style="color: rgb(51, 51, 51);">* akun yang dipilih adalah akun subsidiary </span><br><span style="color: rgb(51, 51, 51);">(hanya tampil jika yg dipilih user adalah akun subsidiary)</span><br></label></div>
+                                            <div class="col-6"><label class="form-label text-muted mt-2"><span style="color: rgb(51, 51, 51);">Status Aset</span><br></label><select class="form-control form-control-sm" value="Lain Lain">
+                                                    <option value="13" selected="">Aset Aktif</option>
+                                                    <option value="12">Aset Tertunda</option>
+                                                </select><label class="form-label text-muted">Tanggal Akusisi</label><input type="text" class="form-control form-control-sm" placeholder="DD/MM/YYYY"><label class="form-label text-muted mt-2">Nilai Perolehan</label><input type="text" class="form-control form-control-sm" placeholder="Nominal"><label class="form-label text-muted mt-2"><span style="color: rgb(51, 51, 51);">Akun Dikreditkan</span><br></label><select class="form-control form-control-sm" value="Lain Lain">
                                                     <option value="13">1-1.01.01 Kas</option>
                                                     <option value="12">1-1.01.02 Kas Kecil</option>
                                                     <option value="">1-1.01.03 Kas Cadangan</option>
-                                                </select><label class="form-label text-muted mt-2"><span style="color: rgb(51, 51, 51);">Status Aset</span><br></label><select class="form-control form-control-sm" value="Lain Lain">
-                                                    <option value="13" selected="">Aset Aktif</option>
-                                                    <option value="12">Aset Tertunda</option>
-                                                </select></div>
+                                                </select><label class="form-label text-info"><span style="color: rgb(51, 51, 51);">* akun yang dipilih adalah akun subsidiary </span><br><span style="color: rgb(51, 51, 51);">(hanya tampil jika yg dipilih user adalah akun subsidiary)</span><br></label></div>
                                             <div class="col-12">
                                                 <hr><label class="form-label text-muted">Deskripsi Aset(opsional)<br></label><textarea class="form-control no-resize" rows="2"></textarea>
                                             </div>
