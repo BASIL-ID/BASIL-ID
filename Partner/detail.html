@@ -129,173 +129,106 @@
                     </div><!-- End: link-clickable -->
                 </div>
             </div>
-            <div class="body-center-content">
+            <div class="body-center-content py-2">
                 <div class="content scroll">
-                    <div>
-                        <div class="row mx-0 mb-5 pb-4">
-                            <div class="col px-3">
-                                <div class="row py-2 mt-4 mb-3">
-                                    <div class="col">
-                                        <p class="mb-0 title">Akun Kas Kecil Klampis (1-1.01.02)</p>
-                                        <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#"><strong>Akun</strong><br></a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Detail Akun</a></li>
-                                        </ol>
+                    <!-- Start: detail-topbar -->
+                    <div id="top-menu" class="content-menu-top p-2">
+                        <div class="row mx-0 content align-items-center" margin-top="78px;">
+                            <div class="left-pane p-2">
+                                <p class="link-icon-white py-1"><img src="../assets/img/back.png" width="16"></p>
+                            </div>
+                            <div class="col py-2">
+                                <p class="mb-0 title">Detail Partner</p>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a class="text-hover" href="#">Partner</a></li>
+                                    <li class="breadcrumb-item"><a class="active" href="#">Detail Partner</a></li>
+                                </ol>
+                            </div>
+                            <div class="col-auto pr-0 d-flex flex-row flex-row-reverse align-items-center">
+                                <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
+                                    <div class="dropdown-menu">
+                                        <h6 class="dropdown-header b-dropdown-text">Menu Aset</h6><a class="dropdown-item" href="#">Muat Ulang</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalCancel&#39;)">Lepas/Jual Aset</a><a class="dropdown-item" href="#" onclick="openModal(&#39;modalCancel&#39;)">Hapus Aset</a>
                                     </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-12 px-3 mb-4"><label class="form-label"><strong>Deskripsi Akun</strong></label>
-                                        <p class="text-muted small mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Transaksi Akun</strong></label></div>
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-3 px-3">
-                                                <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Cari Deskripsi"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
-                                            </div>
-                                            <div class="col-6"></div>
-                                            <div class="col-3 px-3 text-right pr-0">
-                                                <div class="input-group input-group-sm w-auto ml-2 filterDisplay text-right pull-right pr-0"><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" onclick="openModal(&#39;modalFilter&#39;)">Filter&nbsp;&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span><span class="clickable dropdown filter-title text-capitalize round left input-group-text no-border all" style="margin-left:1rem;" onclick="openModal(&#39;modalSort&#39;)">Sort&nbsp;<img src="../assets/img/up-arrow-angle.svg" width="11px" style="transform: rotate(180deg);"></span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row h-100">
-                                    <div class="col-12 px-3 h-100">
-                                        <!-- Start: detail-table2 -->
-                                        <div class="table-responsive table general-table table-sm mb-0 h-100">
-                                            <table class="table mt-3">
-                                                <thead class="no-border">
-                                                    <tr class="no-border"></tr>
-                                                </thead>
-                                                <tbody class="no-border">
-                                                    <tr>
-                                                        <td class="text-start text-right">Tanggal</td>
-                                                        <td class="text-start text-right">Deskripsi</td>
-                                                        <td class="text-start text-right">Terima</td>
-                                                        <td class="text-end text-right">Kirim</td>
-                                                        <td class="text-end text-right">Saldo</td>
-                                                    </tr>
-                                                    <tr></tr>
-                                                    <tr class="bg-white">
-                                                        <td class="text-start text-right">01/03/2022</td>
-                                                        <td class="text-start text-right">Bank Withdrawal #kdsh1273<br><span class="text-muted small"><em>Beban Transportasi&nbsp;</em></span><br></td>
-                                                        <td class="text-start text-right">0</td>
-                                                        <td class="text-end text-right">23.000</td>
-                                                        <td class="text-end text-right">2.000.000</td>
-                                                        <td class="text-end text-right"></td>
-                                                    </tr>
-                                                    <tr class="bg-white">
-                                                        <td class="text-start text-right">03/03/2022</td>
-                                                        <td class="text-start text-right">Bank Transfer #Tdsh1273<br><span class="text-muted small"><em>Transfer dari Akun: Bank BCA No.rek 1002229000&nbsp;</em></span><br></td>
-                                                        <td class="text-start text-right">100.000</td>
-                                                        <td class="text-end text-right">0</td>
-                                                        <td class="text-end text-right">2.100.000<br></td>
-                                                        <td class="text-end text-right"></td>
-                                                    </tr>
-                                                    <tr class="bg-white">
-                                                        <td class="text-start text-right">03/03/2022</td>
-                                                        <td class="text-start text-right">Bank Withdrawal #Jdsh1273<br><span class="text-muted small"><em>Beban Transportasi&nbsp;</em></span><br></td>
-                                                        <td class="text-start text-right">0</td>
-                                                        <td class="text-end text-right">100.000</td>
-                                                        <td class="text-end text-right">2.000.000</td>
-                                                        <td class="text-end text-right"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div><!-- End: detail-table2 -->
-                                    </div>
-                                </div>
-                                <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
-                                    <div class="col-12 bg-white">
-                                        <!-- Start: detail-table2 -->
-                                        <div class="table-responsive table general-table table-sm mb-0">
-                                            <table class="table mt-3 mb-0">
-                                                <thead class="no-border">
-                                                    <tr class="no-border"></tr>
-                                                </thead>
-                                                <tbody class="no-border">
-                                                    <tr class="sub-header no-top">
-                                                        <td class="col-2">Kode</td>
-                                                        <td class="col-3">Nama</td>
-                                                        <td class="col-1">Qty</td>
-                                                        <td class="text-end col-2 text-right">Harga/Unit<br>(excl ppn)</td>
-                                                        <td class="text-end col-2 text-right">Harga/Unit<br>(incl ppn)</td>
-                                                        <td class="text-end col-2 text-right">Diskon/Unit<br>(incl ppn)</td>
-                                                        <td class="text-end col-2 text-right">Nett/Unit<br>(incl ppn)</td>
-                                                        <td class="text-end col-2 text-right">Total<br>(incl ppn)</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="col-2">IT-1</td>
-                                                        <td class="col-3">ITEM 1</td>
-                                                        <td class="col-1">2</td>
-                                                        <td class="text-end col-2">10.000</td>
-                                                        <td class="text-end col-2 text-right">11.000</td>
-                                                        <td class="text-end col-2 text-right">0</td>
-                                                        <td class="text-end col-2 text-right">11.000</td>
-                                                        <td class="text-end col-2 text-right">22.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="col-2">IT-2</td>
-                                                        <td class="col-3">ITEM 2</td>
-                                                        <td class="col-1">2</td>
-                                                        <td class="text-end col-2">10.000</td>
-                                                        <td class="text-end col-2 text-right">10.000</td>
-                                                        <td class="text-end col-2 text-right">0</td>
-                                                        <td class="text-end col-2 text-right">10.000</td>
-                                                        <td class="text-end col-2 text-right">20.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="col-2">IT-3</td>
-                                                        <td class="col-3">ITEM 3</td>
-                                                        <td class="col-1">4</td>
-                                                        <td class="text-end col-2">5.000</td>
-                                                        <td class="text-end col-2 text-right">5.500</td>
-                                                        <td class="text-end col-2 text-right">0</td>
-                                                        <td class="text-end col-2 text-right">5.500</td>
-                                                        <td class="text-end col-2 text-right">22.000</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div><!-- End: detail-table2 -->
-                                        <!-- Start: detail-table2 -->
-                                        <div class="table-responsive table general-table table-sm mb-0">
-                                            <table class="table mt-0">
-                                                <thead class="no-border">
-                                                    <tr class="no-border"></tr>
-                                                </thead>
-                                                <tbody class="no-border">
-                                                    <tr>
-                                                        <td class="text-start col-4" colspan="2">Total Sebelum Pajak</td>
-                                                        <td class="text-end col-4 text-right">60.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-start col-4" colspan="2">Cash Diskon (opsional)</td>
-                                                        <td class="text-end col-2 text-right">6.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-start col-3" colspan="2">Grand Total (excl ppn)</td>
-                                                        <td class="text-end col-4 text-right">54.000</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="text-start col-4" colspan="2">PPN (10%)</td>
-                                                        <td class="text-end col-2">5.400</td>
-                                                    </tr>
-                                                    <tr class="no-bottom">
-                                                        <td class="text-start col-4" colspan="2"><strong>Grand Total (incl ppn)</strong></td>
-                                                        <td class="text-end col-4 text-right"><strong>59.400</strong></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div><!-- End: detail-table2 -->
-                                    </div>
-                                </div>
-                                <div class="row mt-2 mx-0 expand-invoice" style="display:none;">
-                                    <div class="text-center col-12 bg-white"><a class="text-center" href="#" onclick="toggleHideComponent(&#39;.expand-invoice&#39;, &#39;.hide-invoice&#39;)">Sembunyikan Detail Invoice</a></div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- End: detail-topbar -->
+                    <!-- Start: detail-content -->
+                    <div class="row mx-0" style="margin-top: 85px;">
+                        <div class="col px-4">
+                            <div class="row">
+                                <div id="left-section-1" class="col-9 border-right">
+                                    <!-- Start: detail-table -->
+                                    <div class="table-responsive">
+                                        <table class="table table stripe table-sm mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th colspan="2">Informasi&nbsp;</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td class="col-4">Nama Aset</td>
+                                                    <td class="col-8"><span style="color: rgb(51, 51, 51); background-color: rgb(247, 249, 249);">Antono Wahyudi</span><br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-4">No. Telepon</td>
+                                                    <td class="col-8"><span style="color: rgb(51, 51, 51); background-color: rgb(247, 249, 249);">08123651351</span><br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-4">Email</td>
+                                                    <td class="col-8">antono@gmail.com</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-4">Alamat</td>
+                                                    <td class="col-8">Jl. anggur 12<br>Malang</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- End: detail-table -->
+                                    <div class="clearfix py-4"></div>
+                                </div>
+                                <div id="right-section-1" class="col-3">
+                                    <!-- Start: detail-table -->
+                                    <div class="table-responsive">
+                                        <table class="table table stripe table-sm mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Aset</th>
+                                                    <th class="text-end"><a class="small" href="#" onclick="openModal(&#39;modalStatus&#39;)">Info</a></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr>
+                                                    <td>Status&nbsp;</td>
+                                                    <td class="text-end text-success">Aktif</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nilai Buku</td>
+                                                    <td class="text-end"><span style="color: rgb(51, 51, 51); background-color: rgb(247, 249, 249);">Rp. 2.300.000,00</span><br></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-muted">Sisa Manfaat</td>
+                                                    <td class="text-end text-muted">0 tahun 0 Bulan</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- End: detail-table -->
+                                    <!-- Start: detail-table -->
+                                    <div class="table-responsive">
+                                        <table class="table table stripe table-sm mb-0 mt-3">
+                                            <thead>
+                                                <tr></tr>
+                                            </thead>
+                                            <tbody class="no-border">
+                                                <tr></tr>
+                                            </tbody>
+                                        </table>
+                                    </div><!-- End: detail-table -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End: detail-content -->
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>basil 1</title>
+    <title>[new]basil 1 1</title>
     <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="../../assets/css/styles.min.css">
@@ -49,35 +49,41 @@
                         <div class="col-12 pt-2 pb-1">
                             <p class="mb-0 description">Finance</p>
                         </div>
-                    </div>
+                    </div><!-- Start: link-clickable -->
                     <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/report/finance/neraca.html&#39;)">
-                        <div class="col py-2 clickable">
+                        <div class="col py-2 clickable" onclick="redirect(&#39;/SO/index.html&#39;)">
                             <p class="mb-0 minititle">Neraca<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
-                    </div>
+                    </div><!-- End: link-clickable -->
+                    <!-- Start: link-clickable -->
                     <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/report/finance/buku.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Buku Besar<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/report/finance/cashflow.html&#39;)">
-                        <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Alur Kas<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
-                        </div>
-                    </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/report/finance/jurnal.html&#39;)">
+                    </div><!-- End: link-clickable -->
+                    <div class="row mx-0 icon-wrapper" onnclick="redirect(&#39;/report/finance/jurnal.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Jurnal<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/report/finance/laba.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onnclick="redirect(&#39;/report/finance/laba.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Rugi Laba<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/report/finance/trial.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onnclick="redirect(&#39;/report/finance/trial.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Trial Balance<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onnclick="redirect(&#39;/report/finance/hutang.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Hutang<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
+                        </div>
+                    </div>
+                    <div class="row mx-0 icon-wrapper" onnclick="redirect(&#39;/report/finance/piutang.html&#39;)">
+                        <div class="col py-2 clickable">
+                            <p class="mb-0 minititle">Piutang<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div>
                     <div id="menu-transaction-2" class="row mx-0">
@@ -85,7 +91,7 @@
                             <p class="mb-0 description">Pajak</p>
                         </div>
                     </div>
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/report/tax/sales.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onnclick="redirect(&#39;/report/tax/sales.html&#39;)">
                         <div class="col py-2 clickable">
                             <p class="mb-0 minititle">Pajak Penjualan<span class="pull-right"><img class="rotate-right icon icon text-small" src="../../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
@@ -94,6 +100,7 @@
             </div>
             <div class="body-center-content py-2">
                 <div class="content scroll">
+                    <!-- Start: detail-topbar -->
                     <div id="top-menu" class="content-menu-top p-2">
                         <div class="row mx-0 content align-items-center" margin-top="78px;">
                             <div class="col py-2">
@@ -118,10 +125,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- End: detail-topbar -->
+                    <!-- Start: detail-content -->
                     <div class="row mx-0" style="margin-top: 85px;">
                         <div class="row h-100">
                             <div class="col-12 px-3 h-100">
+                                <!-- Start: detail-table2 -->
                                 <div class="table-responsive table general-table table-sm mb-0 h-100">
                                     <table class="table mt-3">
                                         <thead class="no-border">
@@ -235,10 +244,10 @@
                                             <tr class="bg-white"></tr>
                                         </tbody>
                                     </table>
-                                </div>
+                                </div><!-- End: detail-table2 -->
                             </div>
                         </div>
-                    </div>
+                    </div><!-- End: detail-content -->
                 </div>
             </div>
         </div>
@@ -371,6 +380,7 @@
                     <h4 class="modal-title">Detail Penerimaan</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <!-- Start: detail-table2 -->
                     <div class="table-responsive table general-table table-sm mb-0">
                         <table class="table mt-3">
                             <thead>
@@ -413,7 +423,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div><!-- End: detail-table2 -->
                 </div>
                 <div class="modal-footer"><button class="btn btn-light btn-block w-100" type="button">Ok</button></div>
                 <div class="modal fade" role="dialog" tabindex="-1" id="modalStatusSo-4">

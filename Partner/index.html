@@ -107,24 +107,24 @@
                     </div><!-- End: link-clickable -->
                     <div id="menu-transaction-4" class="row mx-0">
                         <div class="col-12 pt-2 pb-1">
-                            <p class="mb-0 description">Aset</p>
+                            <p class="mb-0 description">Penyesuaian</p>
                         </div>
                     </div><!-- Start: link-clickable -->
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/aset/list.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/jurnal/history.html&#39;)">
                         <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Lihat Aset<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                            <p class="mb-0 minititle">Riwayat<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div><!-- End: link-clickable -->
                     <!-- Start: link-clickable -->
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/aset/create.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/jurnal/koreksi.html&#39;)">
                         <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Input Aset<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                            <p class="mb-0 minititle">Jurnal Penyesuaian<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div><!-- End: link-clickable -->
                     <!-- Start: link-clickable -->
-                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/aset/sell.html&#39;)">
+                    <div class="row mx-0 icon-wrapper" onclick="redirect(&#39;/adf/create.html&#39;)">
                         <div class="col py-2 clickable">
-                            <p class="mb-0 minititle">Input Penjualan Aset<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
+                            <p class="mb-0 minititle">Asset Disposal<span class="pull-right"><img class="rotate-right icon icon text-small" src="../assets/img/up-arrow-angle.svg"></span></p>
                         </div>
                     </div><!-- End: link-clickable -->
                 </div>
@@ -136,19 +136,19 @@
                             <div class="col px-3">
                                 <div class="row py-2 mt-4 mb-3">
                                     <div class="col">
-                                        <p class="mb-0 title">Lihat Kas &amp; Bank</p>
+                                        <p class="mb-0 title">Lihat Partner</p>
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a class="text-hover" href="#"><strong>Akun</strong><br></a></li>
-                                            <li class="breadcrumb-item"><a class="active" href="#">Lihat Kas &amp; Bank</a></li>
+                                            <li class="breadcrumb-item"><a class="text-hover" href="#"><strong>Partner</strong><br></a></li>
+                                            <li class="breadcrumb-item"><a class="active" href="#">Lihat Partner</a></li>
                                         </ol>
                                     </div>
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-12 px-3"><label class="form-label"><strong>Daftar Kas &amp; Bank</strong></label></div>
+                                    <div class="col-12 px-3"><label class="form-label"><strong>Daftar Partner</strong></label></div>
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-3 px-3">
-                                                <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Nama Akun"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
+                                                <div class="col-12 input-group input-group-sm searchbar"><input type="text" class="form-control" placeholder="Nama Partner"><span class="input-group-text"><img class="icon" src="../assets/img/search.svg" width="10"></span></div>
                                             </div>
                                             <div class="col-6"></div>
                                             <div class="col-3 px-3 text-right pr-0">
@@ -167,83 +167,20 @@
                                                 </thead>
                                                 <tbody class="no-border">
                                                     <tr>
-                                                        <td class="text-start text-right">Kode Akun</td>
-                                                        <td class="text-start text-right">Nama Akun</td>
-                                                        <td class="text-start text-right">Kategori Akun</td>
-                                                        <td class="text-start text-right">Tanggal Buat Akun</td>
-                                                        <td class="text-end text-right">Saldo Awal</td>
-                                                        <td class="text-end text-right">Saldo Sekarang</td>
-                                                        <td class="text-end text-right">
-                                                            <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
-                                                                <div class="dropdown-menu">
-                                                                    <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Kas Masuk</a><a class="dropdown-item" href="#">Input Kas Keluar</a><a class="dropdown-item" href="#">Transfer Kas</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
+                                                        <td class="text-start text-right">Nama</td>
+                                                        <td class="text-start text-right">Email</td>
+                                                        <td class="text-start text-right">No. Telp</td>
                                                     </tr>
                                                     <tr></tr>
-                                                    <tr class="bg-light">
-                                                        <td class="text-start col-2 text-right">1-0-01</td>
-                                                        <td class="text-start text-right">Kas &amp; Setara Kas</td>
-                                                        <td class="text-start text-right">Kas &amp; Bank</td>
-                                                        <td class="text-start text-right">12 Januari 2020</td>
-                                                        <td class="text-end text-right">11.000.000</td>
-                                                        <td class="text-end text-right">14.000.000</td>
-                                                        <td class="text-end text-right"></td>
+                                                    <tr class="clickable bg-white" onclick="redirect(&#39;/Akun/detail.html&#39;)">
+                                                        <td class="text-start col-2 text-right">Anton Setiorini</td>
+                                                        <td class="text-start text-right">Anton@gmail.com</td>
+                                                        <td class="text-start text-right">08123451238713</td>
                                                     </tr>
-                                                    <tr class="clickable bg-white" onclick="redirect(&#39;/kas/detail.html&#39;)">
-                                                        <td class="text-start col-2 text-right">&nbsp; 1-0-01.01</td>
-                                                        <td class="text-start text-right">&nbsp; Kas</td>
-                                                        <td class="text-start text-right">Kas &amp; Bank</td>
-                                                        <td class="text-start text-right">12 Januari 2020</td>
-                                                        <td class="text-end text-right">10.000.000</td>
-                                                        <td class="text-end text-right">12.000.000</td>
-                                                        <td class="text-end text-right">
-                                                            <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
-                                                                <div class="dropdown-menu">
-                                                                    <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Kas Masuk</a><a class="dropdown-item" href="#">Input Kas Keluar</a><a class="dropdown-item" href="#">Transfer Kas</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="clickable bg-white" onclick="redirect(&#39;/kas/detail.html&#39;)">
-                                                        <td class="text-start col-2 text-right">&nbsp; 1-0-01.02</td>
-                                                        <td class="text-start text-right">&nbsp; Kas Kecil Klampis</td>
-                                                        <td class="text-start text-right">Kas &amp; Bank</td>
-                                                        <td class="text-start text-right">12 Januari 2020</td>
-                                                        <td class="text-end text-right">1.000.000</td>
-                                                        <td class="text-end text-right">2.000.000</td>
-                                                        <td class="text-end text-right">
-                                                            <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
-                                                                <div class="dropdown-menu">
-                                                                    <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Kas Masuk</a><a class="dropdown-item" href="#">Input Kas Keluar</a><a class="dropdown-item" href="#">Transfer Kas</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="bg-light">
-                                                        <td class="text-start col-2 text-right">1-1.02</td>
-                                                        <td class="text-start text-right">Bank</td>
-                                                        <td class="text-start text-right">Kas &amp; Bank</td>
-                                                        <td class="text-start text-right">12 Januari 2020</td>
-                                                        <td class="text-end text-right">10.000.000</td>
-                                                        <td class="text-end text-right">12.000.000</td>
-                                                        <td class="text-end text-right"></td>
-                                                    </tr>
-                                                    <tr class="clickable bg-white" onclick="redirect(&#39;/kas/detail.html&#39;)">
-                                                        <td class="text-start col-2 text-right">&nbsp; 1-0-2.01</td>
-                                                        <td class="text-start text-right">&nbsp; Bank BCA No. Rek 1000800020</td>
-                                                        <td class="text-start text-right">Kas &amp; Bank</td>
-                                                        <td class="text-start text-right">12 Januari 2020</td>
-                                                        <td class="text-end text-right">10.000.000</td>
-                                                        <td class="text-end text-right">12.000.000</td>
-                                                        <td class="text-end text-right">
-                                                            <div class="dropdown dropdown b-dropdown btn-group mr-1 ml-3 p-0"><button class="btn dropdown-toggle btn dropdown-toggle btn-link btn-small text-decoration-none dropdown-toggle-no-caret" aria-expanded="false" data-bs-toggle="dropdown" type="button">Menu&nbsp;</button>
-                                                                <div class="dropdown-menu">
-                                                                    <h6 class="dropdown-header b-dropdown-text">Menu</h6><a class="dropdown-item" href="#">Input Kas Masuk</a><a class="dropdown-item" href="#">Input Kas Keluar</a><a class="dropdown-item" href="#">Transfer Kas</a>
-                                                                </div>
-                                                            </div>
-                                                        </td>
+                                                    <tr class="clickable bg-white" onclick="redirect(&#39;/Akun/detail.html&#39;)">
+                                                        <td class="text-start col-2 text-right">Robert Albert</td>
+                                                        <td class="text-start text-right">Robert@gmail.com<br></td>
+                                                        <td class="text-start text-right">08123451238713<br></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
